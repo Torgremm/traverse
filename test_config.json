@@ -1,0 +1,32 @@
+
+{
+  "tables": [
+    {
+      "name": "valves",
+      "primary_key": "id",
+      "columns": [
+        { "name": "id", "type": "int" },
+        { "name": "open_fb", "type": "text" },
+        { "name": "close_fb", "type": "text" },
+        { "name": "controller_id", "type": "int" }
+      ],
+      "foreign_keys": [
+        {
+          "column": "controller_id",
+          "references": {
+            "table": "controllers",
+            "column": "id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "controllers",
+      "primary_key": "id",
+      "columns": [
+        { "name": "id", "type": "int" },
+        { "name": "name", "type": "text" }
+      ]
+    }
+  ]
+}
