@@ -14,10 +14,9 @@ async fn main() -> Result<()> {
         if load_project(dir).await.is_none() {
             continue;
         }
-        //Load config and data into SQLite in memory
         log::info!("Successfully loaded project");
     }
-    Ok(())
+    //Ok(())
 }
 
 async fn load_project(dir: &Path) -> Option<()> {
@@ -28,13 +27,19 @@ async fn load_project(dir: &Path) -> Option<()> {
             return None;
         }
     };
-    let _data = match load::load_data(&Path::new(dir), config) {
-        Ok(v) => Some(v),
+    let data = match load::load_data(&Path::new(dir), &config) {
+        Ok(v) => v,
         Err(e) => {
             log::error!("{e}");
-            None
+            return None;
         }
     };
+    match data::init(config, data).await {
+        Ok(_) => {}
+        Err(e) => {
+            log::error!("{e}");
+            return None;
+        }
+    }
     None
-    // let _data = load::load_data(&Path::new(dir))?;
 }

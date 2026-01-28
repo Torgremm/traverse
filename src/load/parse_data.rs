@@ -5,13 +5,13 @@ use std::path::Path;
 
 use crate::load::parse_tables::SchemaConfig;
 
-type Row = HashMap<String, Value>;
-type DataFile = HashMap<String, Vec<Row>>;
+type Row = serde_json::Map<String, Value>;
+pub type DataFile = HashMap<String, Vec<Row>>;
 
-pub fn load_data(dir: &Path, schema: SchemaConfig) -> Result<DataFile> {
+pub fn load_data(dir: &Path, schema: &SchemaConfig) -> Result<DataFile> {
     let json = std::fs::read_to_string(dir).map_err(|e| anyhow::anyhow!("{e}"))?;
     let data: DataFile = serde_json::from_str(&json)?;
-    validate(&data, &schema)?;
+    validate(&data, schema)?;
     Ok(data)
 }
 

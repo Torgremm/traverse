@@ -10,5 +10,5 @@ full = "0.3.0"
 log = "0.4.29"
 serde = "1.0.228"
 serde_json = "1.0.149"
-sqlx = "0.8.6"
+sqlx = { version = "0.8.6", features = ["sqlite", "macros", "runtime-tokio-native-tls"]}
 tokio = {version = "1.49.0", features=["full"]}
