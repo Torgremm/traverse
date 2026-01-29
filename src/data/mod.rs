@@ -1,7 +1,5 @@
-use crate::{
-    data::init::Storage,
-    load::{parse_data::DataFile, parse_tables::SchemaConfig},
-};
+use crate::load::{parse_data::DataFile, parse_tables::SchemaConfig};
+pub use init::Storage;
 use sqlx::Result;
 
 mod init;
