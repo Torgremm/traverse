@@ -1,0 +1,40 @@
+{
+  "io": [
+    {
+      "id": "IO_OPEN_1",
+      "rack": 0,
+      "db": 10,
+      "address": 0
+    },
+    {
+      "id": "IO_CLOSED_1",
+      "rack": 0,
+      "db": 10,
+      "address": 1
+    },
+    {
+      "id": "IO_OPEN_2",
+      "rack": 0,
+      "db": 11,
+      "address": 0
+    },
+    {
+      "id": "IO_CLOSED_2",
+      "rack": 0,
+      "db": 11,
+      "address": 1
+    }
+  ],
+  "valves": [
+    {
+      "name": "V101",
+      "open_feedback": "IO_OPEN_1",
+      "closed_feedback": "IO_CLOSED_1"
+    },
+    {
+      "name": "V102",
+      "open_feedback": "IO_OPEN_2",
+      "closed_feedback": "IO_CLOSED_2"
+    }
+  ]
+}

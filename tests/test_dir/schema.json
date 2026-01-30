@@ -1,0 +1,33 @@
+{
+  "tables": [
+    {
+      "name": "io",
+      "primary_key": "id",
+      "columns": [
+        { "name": "id", "type": "text" },
+        { "name": "rack", "type": "int" },
+        { "name": "db", "type": "int" },
+        { "name": "address", "type": "int" }
+      ]
+    },
+    {
+      "name": "valves",
+      "primary_key": "name",
+      "columns": [
+        { "name": "name", "type": "text" },
+        { "name": "open_feedback", "type": "text" },
+        { "name": "closed_feedback", "type": "text" }
+      ],
+      "foreign_keys": [
+        {
+          "column": "open_feedback",
+          "references": { "table": "io", "column": "id" }
+        },
+        {
+          "column": "closed_feedback",
+          "references": { "table": "io", "column": "id" }
+        }
+      ]
+    }
+  ]
+}

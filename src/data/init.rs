@@ -12,6 +12,7 @@ const MEM: &str = "sqlite::memory:";
 
 impl Storage {
     pub async fn new(schema: SchemaConfig, data: DataFile) -> Result<Self> {
+        log::info!("Loaded file, creating SQLite database");
         let pool = SqlitePool::connect(MEM).await?;
         let s = Self { pool };
 
@@ -93,7 +94,7 @@ impl Storage {
         let columns: Vec<&String> = batch[0].keys().collect();
 
         let mut qb = sqlx::QueryBuilder::new(format!(
-            "INSERT INTO {} ({}) VALUES ",
+            "INSERT INTO {} ({})",
             table_name,
             columns
                 .iter()

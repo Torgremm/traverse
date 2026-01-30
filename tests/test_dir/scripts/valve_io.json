@@ -1,0 +1,4 @@
+{
+  "fetch": "SELECT  v.name, io_open.rack AS open_rack, io_open.db AS open_db, io_open.address AS open_addr, io_closed.rack AS closed_rack, io_closed.db AS closed_db, io_closed.address AS closed_addr FROM valves v JOIN io io_open ON io_open.id = v.open_feedback JOIN io io_closed ON io_closed.id = v.closed_feedback;",
+  "act": "Valve {{ name }}:\n  OPEN FB  => Rack {{ open_rack }}, DB {{ open_db }}, Addr {{ open_addr }}\n  CLOSED FB=> Rack {{ closed_rack }}, DB {{ closed_db }}, Addr {{ closed_addr }}\n"
+}
