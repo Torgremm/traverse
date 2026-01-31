@@ -110,3 +110,21 @@ async fn load_project(dir: &Path) -> Option<()> {
     log::info!("Successfully loaded project");
     Some(())
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[tokio::test]
+    async fn should_not_crash() {
+        env_logger::Builder::new()
+            .filter_level(log::LevelFilter::Trace)
+            .init();
+        let test_path = Path::new("D:\\repo\\traverse\\tests\\test_dir");
+
+        load_project(&test_path).await.unwrap();
+        let script_path = &test_path.join("scripts").join("valve_io.json");
+        let script = script::Script::load(script_path).unwrap();
+        script.run(data::get_storage()).await.unwrap();
+    }
+}

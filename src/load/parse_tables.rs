@@ -3,12 +3,12 @@ use serde::Deserialize;
 use std::collections::HashSet;
 use std::path::Path;
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone)]
 pub struct SchemaConfig {
     pub tables: Vec<TableConfig>,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone)]
 pub struct TableConfig {
     pub name: String,
     pub primary_key: String,
@@ -17,20 +17,20 @@ pub struct TableConfig {
     pub foreign_keys: Vec<ForeignKeyConfig>,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone)]
 pub struct ColumnConfig {
     pub name: String,
     #[serde(rename = "type")]
     pub col_type: String,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone)]
 pub struct ForeignKeyConfig {
     pub column: String,
     pub references: ReferenceConfig,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone)]
 pub struct ReferenceConfig {
     pub table: String,
     pub column: String,

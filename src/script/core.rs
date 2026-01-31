@@ -13,7 +13,22 @@ use tera::{Context, Tera};
 #[derive(Debug, Deserialize)]
 pub struct Script {
     fetch: String,
+    #[serde(default)]
+    mode: FetchMode,
     act: String,
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(rename_all = "lowercase")]
+pub enum FetchMode {
+    Raw,
+    Scope,
+}
+
+impl Default for FetchMode {
+    fn default() -> Self {
+        FetchMode::Scope
+    }
 }
 
 impl Script {
@@ -37,51 +52,81 @@ impl Script {
         Some(s)
     }
     pub async fn run(&self, storage: &Storage) -> Result<()> {
-        let data: Vec<SqliteRow> = storage.query(&self.fetch).await?;
-
-        let first = match data.first() {
-            Some(v) => v,
-            None => {
-                return Err(anyhow::anyhow!(
-                    "Query returned 0 rows, check your FETCH section"
-                ));
-            }
+        let sql = match self.mode {
+            FetchMode::Raw => self.fetch.clone(),
+            FetchMode::Scope => storage.build_scope_query(&self.fetch)?,
         };
-        let tokens: Vec<String> = first
-            .columns()
-            .iter()
-            .map(|col| col.name().to_string())
-            .collect();
+        let rows: Vec<SqliteRow> = storage.query(&sql).await?;
+        log::debug!("Query returned {} rows, rendering script:", rows.len());
 
-        for row in data {
-            let std_out = self.fill_data(row, &tokens);
-            println!("{std_out}");
+        if rows.is_empty() {
+            return Err(anyhow::anyhow!(
+                "Query returned 0 rows, check your FETCH section"
+            ));
         }
 
+        match self.mode {
+            FetchMode::Raw => {
+                for row in rows {
+                    let mut tera = Tera::default();
+                    tera.add_raw_template("script", &self.act)?;
+
+                    let mut context = Context::new();
+
+                    for col in row.columns() {
+                        let name = col.name();
+
+                        if let Ok(v) = row.try_get::<String, _>(name) {
+                            context.insert(name, &v);
+                        } else if let Ok(v) = row.try_get::<i64, _>(name) {
+                            context.insert(name, &v);
+                        } else if let Ok(v) = row.try_get::<f64, _>(name) {
+                            context.insert(name, &v);
+                        }
+                    }
+                    let out = tera.render("script", &context)?;
+                    println!("{out}");
+                }
+            }
+
+            FetchMode::Scope => {
+                for row in rows {
+                    print_sqlite_row(&row);
+                    let object_id: String = row.try_get("root_id")?;
+                    let scope_json: String = row.try_get("scope_json")?;
+
+                    let scope: std::collections::HashMap<String, serde_json::Value> =
+                        serde_json::from_str(&scope_json)?;
+
+                    let mut tera = Tera::default();
+                    tera.add_raw_template("script", &self.act)?;
+
+                    let mut context = Context::new();
+                    context.insert("object_id", &object_id);
+
+                    for (k, v) in scope {
+                        context.insert(&k, &v);
+                    }
+
+                    let out = tera.render("script", &context)?;
+                    println!("{out}");
+                }
+            }
+        }
         Ok(())
     }
+}
+pub fn print_sqlite_row(row: &SqliteRow) {
+    let mut output = Vec::new();
 
-    fn fill_data(&self, data: SqliteRow, tokens: &Vec<String>) -> String {
-        let mut tera = Tera::default();
-
-        match tera.add_raw_template("script", &self.act) {
-            Ok(_) => {}
-            Err(e) => log::error!("{e}"),
+    for col in row.columns() {
+        let name = col.name();
+        let value: Result<String, _> = row.try_get(name);
+        match value {
+            Ok(v) => output.push(format!("{}={}", name, v)),
+            Err(_) => output.push(format!("{}=<non-string>", name)),
         }
-
-        let mut context = Context::new();
-
-        for name in tokens {
-            if let Ok(v) = data.try_get::<String, _>(name.as_str()) {
-                context.insert(name, &v);
-            } else if let Ok(v) = data.try_get::<i64, _>(name.as_str()) {
-                context.insert(name, &v);
-            } else if let Ok(v) = data.try_get::<f64, _>(name.as_str()) {
-                context.insert(name, &v);
-            }
-        }
-
-        tera.render("script", &context)
-            .unwrap_or_else(|e| format!("TEMPLATE ERROR: {e}"))
     }
+
+    log::debug!("SqliteRow {{ {} }}", output.join(", "));
 }

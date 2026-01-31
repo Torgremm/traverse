@@ -5,17 +5,24 @@ use sqlx::{Result, SqlitePool};
 use sqlx::{Row, sqlite::SqlitePoolOptions};
 
 pub struct Storage {
+    pub schema: SchemaConfig,
     pub pool: SqlitePool,
 }
 
-const MEM: &str = "sqlite::memory:";
+const MEM: &str = "sqlite::memory:?cache=shared";
 
 impl Storage {
     pub async fn new(schema: SchemaConfig, data: DataFile) -> Result<Self> {
         log::info!("Loaded file, creating SQLite database");
-        let pool = SqlitePool::connect(MEM).await?;
-        let s = Self { pool };
+        let pool = SqlitePoolOptions::new()
+            .max_connections(1)
+            .connect(MEM)
+            .await?;
 
+        let s = Self {
+            schema: schema.clone(),
+            pool,
+        };
         for table in schema.tables {
             s.create_table(&table).await?;
         }
@@ -128,7 +135,6 @@ fn bind_json_value<'q>(
             } else if let Some(f) = n.as_f64() {
                 row_builder.push_bind(f);
             } else {
-                // fallback for weird numbers (rare)
                 row_builder.push_bind(n.to_string());
             }
         }
@@ -139,7 +145,6 @@ fn bind_json_value<'q>(
             row_builder.push_bind(None::<String>);
         }
         _ => {
-            // everything else as string
             row_builder.push_bind(value.to_string());
         }
     }
