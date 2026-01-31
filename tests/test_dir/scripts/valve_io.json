@@ -1,4 +1,4 @@
 {
   "fetch": "SELECT * FROM valves;",
-  "act": "Valve {{ name }}:\n  OPEN FB  => Rack {{ open_feedback.rack }}, DB {{ open_feedback.db }}, Addr {{ open_feedback.address }}\n  CLOSED FB=> Rack {{ closed_feedback.rack }}, DB {{ closed_feedback.db }}, Addr {{ closed_feedback.address }}\n"
+  "act": "Valve {{ name }}:\n  OPEN FB  => Rack {{ open_feedback_rack }}, DB {{ open_feedback_db }}, Addr {{ open_feedback_address }}\n  CLOSED FB=> Rack {{ closed_feedback_rack }}, DB {{ closed_feedback_db }}, Addr {{ closed_feedback_address }}\n"
 }

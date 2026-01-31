@@ -121,7 +121,7 @@ impl Storage {
                 qb.push("    st.root_id,\n");
                 qb.push("    CASE WHEN st.path_prefix = '' THEN '");
                 qb.push(&col.name);
-                qb.push("' ELSE st.path_prefix || '.' || '");
+                qb.push("' ELSE st.path_prefix || '_' || '");
                 qb.push(&col.name);
                 qb.push("' END AS path,\n");
                 qb.push("    CAST(t.");
@@ -141,9 +141,9 @@ impl Storage {
 
         // Final aggregation
         qb.push(")\n");
-        qb.push("SELECT root_id, json_group_object(path, value) AS scope_json\n");
+        qb.push("SELECT root_id, path, value\n");
         qb.push("FROM expanded\n");
-        qb.push("GROUP BY root_id;");
+        qb.push("ORDER BY root_id;");
 
         Ok(qb.build().sql().to_string())
     }
