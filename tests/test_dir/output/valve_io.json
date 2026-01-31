@@ -1,0 +1,6 @@
+Valve V102:
+  OPEN FB  => Rack 0, DB 11, Addr 0
+  CLOSED FB=> Rack 0, DB 11, Addr 1
+Valve V101:
+  OPEN FB  => Rack 0, DB 10, Addr 0
+  CLOSED FB=> Rack 0, DB 10, Addr 1

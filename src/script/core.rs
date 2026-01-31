@@ -1,4 +1,5 @@
 use std::path::Path;
+use std::path::PathBuf;
 
 use crate::data::Storage;
 use anyhow::Result;
@@ -12,8 +13,13 @@ use sqlx::{Arguments, sqlite::SqliteArguments};
 use std::collections::HashMap;
 use tera::{Context, Tera};
 
-#[derive(Debug, Deserialize)]
 pub struct Script {
+    data: UserScript,
+    output: PathBuf,
+}
+
+#[derive(Debug, Deserialize)]
+pub struct UserScript {
     fetch: String,
     #[serde(default)]
     mode: FetchMode,
@@ -43,20 +49,22 @@ impl Script {
             }
         };
 
-        let s: Script = match serde_json::from_str(&raw_text) {
+        let s: UserScript = match serde_json::from_str(&raw_text) {
             Ok(v) => v,
             Err(e) => {
                 log::error!("Failed to serialize script: {:?} \n {}", path, e);
                 return None;
             }
         };
+        let filename = path.file_name()?;
+        let output = path.parent()?.parent()?.join("output").join(filename);
 
-        Some(s)
+        Some(Self { data: s, output })
     }
     pub async fn run(&self, storage: &Storage) -> Result<()> {
-        let sql = match self.mode {
-            FetchMode::Raw => self.fetch.clone(),
-            FetchMode::Scope => storage.build_scope_query(&self.fetch)?,
+        let sql = match self.data.mode {
+            FetchMode::Raw => self.data.fetch.clone(),
+            FetchMode::Scope => storage.build_scope_query(&self.data.fetch)?,
         };
         let rows: Vec<SqliteRow> = storage.query(&sql).await?;
         log::debug!("Query returned {} rows, rendering script:", rows.len());
@@ -66,12 +74,13 @@ impl Script {
                 "Query returned 0 rows, check your FETCH section"
             ));
         }
+        self.clear()?;
 
-        match self.mode {
+        match self.data.mode {
             FetchMode::Raw => {
                 for row in rows {
                     let mut tera = Tera::default();
-                    tera.add_raw_template("script", &self.act)?;
+                    tera.add_raw_template("script", &self.data.act)?;
 
                     let mut context = Context::new();
 
@@ -87,7 +96,8 @@ impl Script {
                         }
                     }
                     let out = tera.render("script", &context)?;
-                    println!("{out}");
+                    log::debug!("{out}");
+                    self.write(out)?;
                 }
             }
             FetchMode::Scope => {
@@ -96,6 +106,7 @@ impl Script {
                     let root_id: String = row.try_get("root_id")?;
                     grouped.entry(root_id.clone()).or_default().push(row);
                 }
+                log::debug!("Grouped {} objects", grouped.len());
 
                 for (object_id, rows_for_object) in grouped {
                     let mut nested_scope: Map<String, Value> = Map::new();
@@ -113,12 +124,33 @@ impl Script {
                     log::debug!("{:?}", context);
 
                     let mut tera = Tera::default();
-                    tera.add_raw_template("script", &self.act)?;
+                    tera.add_raw_template("script", &self.data.act)?;
                     let out = tera.render("script", &context)?;
-                    println!("{out}");
+                    log::debug!("{out}");
+                    self.write(out)?;
                 }
             }
         }
         Ok(())
+    }
+    fn clear(&self) -> Result<()> {
+        std::fs::create_dir_all(&self.output.parent().expect("Impossible"))?;
+
+        std::fs::write(&self.output, "")
+            .map_err(|e| anyhow::anyhow!("Failed to write to file: {}", e))
+    }
+
+    fn write(&self, s: String) -> Result<()> {
+        use std::fs::OpenOptions;
+        use std::io::Write;
+
+        let mut file = OpenOptions::new()
+            .create(true)
+            .append(true)
+            .open(&self.output)
+            .map_err(|e| anyhow::anyhow!("Failed to open file: {}", e))?;
+
+        file.write_all(s.as_bytes())
+            .map_err(|e| anyhow::anyhow!("Failed to append to file: {}", e))
     }
 }
