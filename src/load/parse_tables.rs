@@ -37,6 +37,7 @@ pub struct ReferenceConfig {
 }
 
 pub fn load_config(dir: &Path) -> Result<SchemaConfig> {
+    let dir = dir.join("schema.json");
     let json = std::fs::read_to_string(dir).expect("Failed to read config file");
     let schema: SchemaConfig =
         serde_json::from_str(&json).expect("Failed to serialize the config, unexpected pattern");

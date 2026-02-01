@@ -1,20 +1,33 @@
+use std::path::PathBuf;
+
 use anyhow::anyhow;
 use sqlx::Sqlite;
+use sqlx::sqlite::{SqliteConnectOptions, SqlitePoolOptions};
 use sqlx::{
     Execute, QueryBuilder, Result,
     sqlite::{SqliteQueryResult, SqliteRow},
 };
 
 use crate::data::init::Storage;
+use crate::load::parse_tables::SchemaConfig;
 
 impl Storage {
-    pub async fn query(&self, q: &String) -> Result<Vec<SqliteRow>> {
+    pub async fn query(q: &String, project: &PathBuf) -> Result<Vec<SqliteRow>> {
+        let db_file = Storage::db_file_for_project(project);
+        let pool = SqlitePoolOptions::new()
+            .max_connections(1)
+            .connect_with(
+                SqliteConnectOptions::new()
+                    .filename(&db_file)
+                    .create_if_missing(false),
+            )
+            .await?;
         let mut qb = QueryBuilder::new(q);
-        let result = qb.build().fetch_all(&self.pool).await?;
+        let result = qb.build().fetch_all(&pool).await?;
         Ok(result)
     }
 
-    pub fn build_scope_query(&self, user_query: &str) -> anyhow::Result<String> {
+    pub fn build_scope_query(schema: &SchemaConfig, user_query: &str) -> anyhow::Result<String> {
         let user_query = user_query.trim_end_matches(';');
 
         let root_table_name = user_query
@@ -25,8 +38,7 @@ impl Storage {
             .map(|w| w[1])
             .ok_or_else(|| anyhow!("No root table detected in user query"))?;
 
-        let root_table = self
-            .schema
+        let root_table = schema
             .tables
             .iter()
             .find(|t| t.name == root_table_name)
@@ -55,7 +67,7 @@ impl Storage {
         qb.push(")\n");
 
         // Recursive case: follow FKs
-        for table in &self.schema.tables {
+        for table in &schema.tables {
             for fk in &table.foreign_keys {
                 let fk_col = &fk.column;
                 let fk_ref_table = &fk.references.table;
@@ -103,7 +115,7 @@ impl Storage {
         qb.push("),\nexpanded AS (\n");
 
         let mut first_table = true;
-        for table in &self.schema.tables {
+        for table in &schema.tables {
             if !first_table {
                 qb.push("  UNION ALL\n");
             }

@@ -1,28 +1,44 @@
+use std::path::{Path, PathBuf};
+
 use crate::load::parse_data::DataFile;
 use crate::load::parse_tables::{SchemaConfig, TableConfig};
-use sqlx::sqlite::SqliteQueryResult;
+use fxhash::FxHasher;
+use sqlx::sqlite::{SqliteConnectOptions, SqlitePoolOptions};
 use sqlx::{Result, SqlitePool};
-use sqlx::{Row, sqlite::SqlitePoolOptions};
+use std::hash::Hasher;
 
 pub struct Storage {
-    pub schema: SchemaConfig,
     pub pool: SqlitePool,
 }
-
-const MEM: &str = "sqlite::memory:?cache=shared";
-
 impl Storage {
-    pub async fn new(schema: SchemaConfig, data: DataFile) -> Result<Self> {
+    pub fn db_file_for_project(project_path: &Path) -> PathBuf {
+        let mut hasher = FxHasher::default();
+        hasher.write(project_path.to_string_lossy().as_bytes());
+        let hash = hasher.finish() & 0xFFFF_FFFF;
+
+        let db_file = std::env::temp_dir().join(format!("traverse_{:08x}.db", hash));
+
+        if let Some(parent) = db_file.parent() {
+            std::fs::create_dir_all(parent).unwrap();
+        }
+
+        db_file
+    }
+    pub async fn new(schema: SchemaConfig, data: DataFile, path: &Path) -> Result<Self> {
         log::info!("Loaded file, creating SQLite database");
+        let db_file = Storage::db_file_for_project(path);
+        log::debug!("{:?}", db_file);
+        std::fs::remove_file(&db_file)?;
         let pool = SqlitePoolOptions::new()
             .max_connections(1)
-            .connect(MEM)
+            .connect_with(
+                SqliteConnectOptions::new()
+                    .filename(&db_file)
+                    .create_if_missing(true),
+            )
             .await?;
 
-        let s = Self {
-            schema: schema.clone(),
-            pool,
-        };
+        let s = Self { pool };
         for table in schema.tables {
             s.create_table(&table).await?;
         }
@@ -47,7 +63,7 @@ impl Storage {
 
         for fk in &table.foreign_keys {
             separated.push(format!(
-                "FOREIGN KEY ({}) REFERENCES {}({})",
+                "FOREIGN KEY ({}) REFERENCES {}({}) DEFERRABLE INITIALLY DEFERRED",
                 fk.column, fk.references.table, fk.references.column
             ));
         }

@@ -9,8 +9,14 @@ type Row = serde_json::Map<String, Value>;
 pub type DataFile = HashMap<String, Vec<Row>>;
 
 pub fn load_data(dir: &Path, schema: &SchemaConfig) -> Result<DataFile> {
-    let json = std::fs::read_to_string(dir).map_err(|e| anyhow::anyhow!("{e}"))?;
-    let data: DataFile = serde_json::from_str(&json)?;
+    let mut files = std::fs::read_dir(dir)?;
+    let mut data = DataFile::new();
+    while let Some(Ok(file)) = files.next() {
+        let json: String =
+            std::fs::read_to_string(file.path()).map_err(|e| anyhow::anyhow!("{e}"))?;
+        let data_part: DataFile = serde_json::from_str(&json)?;
+        data.extend(data_part);
+    }
     validate(&data, schema)?;
     Ok(data)
 }
