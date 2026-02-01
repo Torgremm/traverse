@@ -24,7 +24,7 @@ impl Storage {
 
         db_file
     }
-    pub async fn new(schema: SchemaConfig, data: DataFile, path: &Path) -> Result<Self> {
+    pub async fn init(schema: SchemaConfig, data: DataFile, path: &Path) -> Result<PathBuf> {
         log::info!("Loaded file, creating SQLite database");
         let db_file = Storage::db_file_for_project(path);
         log::debug!("{:?}", db_file);
@@ -44,7 +44,7 @@ impl Storage {
         }
 
         s.init_data(&data).await?;
-        Ok(s)
+        Ok(db_file)
     }
 
     async fn create_table(&self, table: &TableConfig) -> Result<(), sqlx::Error> {

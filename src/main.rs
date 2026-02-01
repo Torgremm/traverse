@@ -16,8 +16,11 @@ async fn main() -> Result<()> {
         .filter_level(log::LevelFilter::Trace)
         .init();
 
+    let cwd = std::env::current_dir()?;
+    let handler = CommandHandler::new(cwd);
+
     let args = std::env::args().skip(1);
-    CommandHandler::accept(args).await;
+    handler.accept(args).await;
 
     Ok(())
 }
@@ -31,8 +34,7 @@ mod tests {
     #[tokio::test]
     async fn should_not_crash() {
         env_logger::Builder::new()
-            .filter_level(log::LevelFilter::Trace)
-            .is_test(true)
+            .filter_level(log::LevelFilter::Info)
             .init();
 
         let root = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
@@ -40,16 +42,14 @@ mod tests {
 
         let mut args = Vec::new();
         args.push("load".to_string());
-        args.push(test_dir.to_string_lossy().to_string());
+        let handler = CommandHandler::new(test_dir);
+        handler.accept(args.iter().map(|s| s.to_string())).await;
 
-        CommandHandler::accept(args.clone().into_iter()).await;
-
-        let script_path = test_dir.join("scripts").join("valve_io.json");
+        let script_path = "valve_io.json".to_string();
 
         let mut args = Vec::new();
         args.push("run".to_string());
-        args.push(script_path.to_string_lossy().to_string());
-
-        CommandHandler::accept(args.into_iter()).await;
+        args.push(script_path);
+        handler.accept(args.iter().map(|s| s.to_string())).await;
     }
 }
