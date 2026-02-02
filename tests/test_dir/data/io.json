@@ -1,0 +1,28 @@
+{
+  "io": [
+    {
+      "address": 0,
+      "db": 10,
+      "id": "IO_OPEN_1",
+      "rack": 0
+    },
+    {
+      "address": 1,
+      "db": 10,
+      "id": "IO_CLOSED_1",
+      "rack": 0
+    },
+    {
+      "address": 0,
+      "db": 11,
+      "id": "IO_OPEN_2",
+      "rack": 0
+    },
+    {
+      "address": 1,
+      "db": 11,
+      "id": "IO_CLOSED_2",
+      "rack": 0
+    }
+  ]
+}

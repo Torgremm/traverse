@@ -1,0 +1,14 @@
+{
+  "valves": [
+    {
+      "closed_feedback": "IO_CLOSED_1",
+      "name": "V101",
+      "open_feedback": "IO_OPEN_1"
+    },
+    {
+      "closed_feedback": "IO_CLOSED_2",
+      "name": "V102",
+      "open_feedback": "IO_OPEN_2"
+    }
+  ]
+}

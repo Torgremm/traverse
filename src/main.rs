@@ -32,7 +32,7 @@ mod tests {
     use super::*;
 
     #[tokio::test]
-    async fn should_not_crash() {
+    async fn non_mutating_operations_should_not_alter_data() {
         env_logger::Builder::new()
             .filter_level(log::LevelFilter::Info)
             .init();
@@ -40,16 +40,40 @@ mod tests {
         let root = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
         let test_dir = root.join("tests").join("test_dir");
 
+        let before = list_dir_recursive(&test_dir);
+
         let mut args = Vec::new();
         args.push("load".to_string());
-        let handler = CommandHandler::new(test_dir);
+        let handler = CommandHandler::new(test_dir.clone());
         handler.accept(args.iter().map(|s| s.to_string())).await;
 
         let script_path = "valve_io.json".to_string();
 
-        let mut args = Vec::new();
+        args.clear();
         args.push("run".to_string());
         args.push(script_path);
         handler.accept(args.iter().map(|s| s.to_string())).await;
+
+        args.clear();
+        args.push("save".to_string());
+        handler.accept(args.iter().map(|s| s.to_string())).await;
+
+        let after = list_dir_recursive(&test_dir);
+        assert_eq!(before, after);
+    }
+
+    fn list_dir_recursive(path: &PathBuf) -> Vec<String> {
+        let mut entries = Vec::new();
+        for entry in std::fs::read_dir(path).unwrap() {
+            let entry = entry.unwrap();
+            let path = entry.path();
+            if path.is_dir() {
+                entries.extend(list_dir_recursive(&path));
+            } else {
+                entries.push(path.to_string_lossy().to_string());
+            }
+        }
+        entries.sort();
+        entries
     }
 }

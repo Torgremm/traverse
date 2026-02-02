@@ -5,8 +5,9 @@ use std::path::Path;
 
 use crate::load::parse_tables::SchemaConfig;
 
-type Row = serde_json::Map<String, Value>;
+pub type Row = serde_json::Map<String, Value>;
 pub type DataFile = HashMap<String, Vec<Row>>;
+pub type DataCollection = HashMap<String, Vec<Row>>; //For later refactor
 
 pub fn load_data(dir: &Path, schema: &SchemaConfig) -> Result<DataFile> {
     let mut files = std::fs::read_dir(dir)?;

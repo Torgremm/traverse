@@ -13,5 +13,5 @@ pub async fn init(schema: SchemaConfig, data: DataFile, path: &Path) -> Result<P
     Ok(db_path)
 }
 pub async fn save(schema: SchemaConfig, path: &Path) -> Result<()> {
-    Storage::save(schema, path)
+    Storage::save(&schema, path).await
 }
