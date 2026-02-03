@@ -84,8 +84,7 @@ impl Script {
             ));
         }
 
-        let capacity = self.data.act.capacity() * 2 * rows.len();
-        let mut stdout = String::with_capacity(capacity);
+        let mut stdout = String::new();
 
         match self.data.mode {
             FetchMode::Raw => {
@@ -97,14 +96,9 @@ impl Script {
 
                     for col in row.columns() {
                         let name = col.name();
+                        let val = Storage::parse_col(&row, col)?;
 
-                        if let Ok(v) = row.try_get::<String, _>(name) {
-                            context.insert(name, &v);
-                        } else if let Ok(v) = row.try_get::<i64, _>(name) {
-                            context.insert(name, &v);
-                        } else if let Ok(v) = row.try_get::<f64, _>(name) {
-                            context.insert(name, &v);
-                        }
+                        context.insert(name, &val);
                     }
                     let out = tera.render("script", &context)?;
                     log::debug!("{out}");
@@ -124,8 +118,8 @@ impl Script {
 
                     for row in rows_for_object {
                         let path: String = row.try_get("path")?;
-                        let value: String = row.try_get("value")?;
-                        nested_scope.insert(path, Value::String(value));
+                        let value = Storage::parse_col(&row, row.column("value"))?;
+                        nested_scope.insert(path, value);
                     }
                     let mut context = Context::new();
                     context.insert("object_id", &object_id);

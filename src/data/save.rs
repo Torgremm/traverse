@@ -4,6 +4,8 @@ use serde_json::Map;
 use serde_json::Value;
 use sqlx::Column;
 use sqlx::Row as SqlxRow;
+use sqlx::sqlite::SqliteTypeInfo;
+use sqlx::sqlite::SqliteValueRef;
 use std::path::Path;
 
 impl Storage {
@@ -25,7 +27,7 @@ impl Storage {
             for row in rows.iter() {
                 let mut json_row = Map::new();
                 for col in row.columns() {
-                    let val = parse_col(row, col.name())?;
+                    let val = Storage::parse_col(row, col)?;
                     json_row.insert(col.name().to_string(), val);
                 }
                 rows_array.push(Value::Object(json_row));
@@ -39,19 +41,50 @@ impl Storage {
 
         Ok(())
     }
-}
-fn parse_col(row: &sqlx::sqlite::SqliteRow, col_name: &str) -> Result<Value> {
-    if let Ok(i) = row.try_get::<i64, _>(col_name) {
-        return Ok(Value::from(i));
-    }
 
-    if let Ok(f) = row.try_get::<f64, _>(col_name) {
-        return Ok(Value::from(f));
-    }
+    pub fn parse_col(
+        row: &sqlx::sqlite::SqliteRow,
+        col: &sqlx::sqlite::SqliteColumn,
+    ) -> Result<Value> {
+        use sqlx::TypeInfo;
 
-    if let Ok(s) = row.try_get::<String, _>(col_name) {
-        return Ok(Value::from(s));
-    }
+        if col.type_info().is_null() {
+            return Ok(Value::String("NULL".to_string()));
+        }
 
-    Ok(Value::Null)
+        match col.type_info().name() {
+            "INTEGER" | "BOOLEAN" | "INT" | "INT4" => {
+                let i: i64 = row.try_get(col.ordinal())?;
+                Ok(Value::from(i))
+            }
+            "REAL" | "FLOAT" | "DOUBLE" => {
+                let f: f64 = row.try_get(col.ordinal())?;
+                Ok(Value::from(f))
+            }
+            "TEXT" => {
+                let s: String = row.try_get(col.ordinal())?;
+                Ok(Value::from(s))
+            }
+            "BLOB" => {
+                let b: Vec<u8> = row.try_get(col.ordinal())?;
+                // Try to interpret as UTF-8 string first
+                match String::from_utf8(b) {
+                    Ok(s) => Ok(Value::from(s)),
+                    Err(_) => {
+                        todo!()
+                    }
+                }
+            }
+            _ => {
+                let s: Result<String, _> = row.try_get(col.ordinal());
+                match s {
+                    Ok(s) => Ok(Value::from(s)),
+                    Err(_) => Err(anyhow::anyhow!(
+                        "Unsupported column type: {}",
+                        col.type_info().name()
+                    )),
+                }
+            }
+        }
+    }
 }

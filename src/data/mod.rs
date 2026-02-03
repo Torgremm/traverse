@@ -4,6 +4,7 @@ use crate::load::{parse_data::DataFile, parse_tables::SchemaConfig};
 use anyhow::Result;
 pub use init::Storage;
 
+mod globals;
 mod init;
 mod query;
 mod save;

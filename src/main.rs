@@ -70,7 +70,7 @@ mod tests {
             if path.is_dir() {
                 entries.extend(list_dir_recursive(&path));
             } else {
-                entries.push(path.to_string_lossy().to_string());
+                entries.push(std::fs::read_to_string(path).unwrap());
             }
         }
         entries.sort();
