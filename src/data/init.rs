@@ -43,7 +43,8 @@ impl Storage {
             s.create_table(&table).await?;
         }
 
-        //data.extend(s.init_globals(path).await?);
+        data.extend(s.init_globals(path).await?);
+        s.init_data(&data).await?;
         Ok(db_file)
     }
 
