@@ -1,78 +1,104 @@
 use crate::{
     data::Storage,
-    load::parse_tables::{ColumnConfig, TableConfig},
+    load::{
+        parse_data::{DataFile, Row},
+        parse_tables::{ColumnConfig, TableConfig},
+    },
 };
-use serde_json::Value;
-use sqlx::Column;
-use sqlx::Row;
-use std::path::{Path, PathBuf};
-pub struct Global {
-    name: String,
-    value: String,
-    children: Vec<String>,
-}
-use tera::Tera;
+use anyhow::{Result, anyhow};
+use sqlx::Row as SqlxRow;
+use std::{
+    collections::HashMap,
+    path::{Path, PathBuf},
+};
 
-impl Global {
-    pub async fn resolve_with_tera(&self, tera: &mut Tera, depth: usize) -> anyhow::Result<String> {
-        const MAX_DEPTH: usize = 10;
+impl Storage {
+    pub async fn init_globals(&self, path: &Path) -> sqlx::Result<DataFile> {
+        log::info!("Loading globals");
 
-        if depth > MAX_DEPTH {
-            return Err(anyhow::anyhow!(
-                "Maximum recursion depth of {} exceeded at global '{}'",
-                MAX_DEPTH,
-                self.name
-            ));
+        let globals_dir = path.join("globals");
+
+        let table_cfg = globals_table_config();
+        self.create_table(&table_cfg).await?;
+
+        let mut rows: Vec<Row> = Vec::new();
+
+        if !globals_dir.exists() {
+            return Ok(HashMap::from([("_GLOBALS_".to_string(), rows)]));
         }
 
-        if self.children.is_empty() {
-            let mut context = tera::Context::new();
-            context.insert("object_id", &self.name);
-            return tera.render_str(&self.value, &context).map_err(Into::into);
+        let entries = std::fs::read_dir(&globals_dir)?;
+
+        for entry in entries {
+            let entry = entry?;
+            let path = entry.path();
+
+            if !path.is_file() {
+                continue;
+            }
+
+            let name = path
+                .file_stem()
+                .and_then(|s| s.to_str())
+                .ok_or_else(|| sqlx::Error::Protocol("Invalid filename".into()))?
+                .to_string();
+
+            let value = std::fs::read_to_string(&path)?;
+
+            let mut row = Row::new();
+            row.insert("name".to_string(), serde_json::Value::String(name));
+            row.insert("value".to_string(), serde_json::Value::String(value));
+
+            rows.push(row);
         }
 
-        let placeholders = self
-            .children
-            .iter()
-            .map(|_| "?")
-            .collect::<Vec<_>>()
-            .join(", ");
-        let query = format!("SELECT * FROM _GLOBALS_ WHERE name IN ({})", placeholders);
-        let rows = Storage::query(&query, todo!()).await?;
+        let mut datafile = DataFile::new();
+        datafile.insert("_GLOBALS_".to_string(), rows);
 
-        let mut scope = tera::Map::new();
-        for row in rows {
-            let name: String = row.try_get("name")?;
-            let value: String = row.try_get("value")?;
-
-            let children: Vec<String> = {
-                let col = row
-                    .columns()
-                    .iter()
-                    .find(|&c| c.name() == "children")
-                    .expect("children column missing");
-                match Storage::parse_col(&row, col)? {
-                    Value::String(s) => serde_json::from_str(&s)?,
-                    _ => vec![],
-                }
-            };
-            let child_global = Global {
-                name: name.clone(),
-                value,
-                children,
-            };
-            let rendered_child = child_global.resolve_with_tera(tera, depth + 1).await?;
-            scope.insert(name, tera::Value::String(rendered_child));
+        Ok(datafile)
+    }
+    pub async fn fetch_scoped_globals(
+        globals: &[String],
+        path: &PathBuf,
+    ) -> Result<HashMap<String, String>> {
+        if globals.is_empty() {
+            return Ok(HashMap::new());
         }
 
-        let mut context = tera::Context::new();
-        context.insert("object_id", &self.name);
-        for (k, v) in scope {
-            context.insert(&k, &v);
-        }
+        let placeholders = globals.iter().map(|_| "?").collect::<Vec<_>>().join(", ");
+        let sql = format!(
+            "SELECT name, value FROM _GLOBALS_ WHERE name IN ({})",
+            placeholders
+        );
 
-        tera.render_str(&self.value, &context).map_err(Into::into)
+        let rows = Storage::query(&sql, path).await?;
+
+        let map: HashMap<String, String> = rows
+            .into_iter()
+            .map(|row| {
+                let name: String = row.try_get("name")?;
+                let value: String = row.try_get("value")?;
+                Ok((name, value))
+            })
+            .collect::<anyhow::Result<_>>()?;
+
+        Ok(map)
     }
 }
-
-impl Storage {}
+fn globals_table_config() -> TableConfig {
+    TableConfig {
+        name: "_GLOBALS_".to_string(),
+        primary_key: "name".to_string(),
+        columns: vec![
+            ColumnConfig {
+                name: "name".to_string(),
+                col_type: "text".to_string(),
+            },
+            ColumnConfig {
+                name: "value".to_string(),
+                col_type: "text".to_string(),
+            },
+        ],
+        foreign_keys: vec![],
+    }
+}
