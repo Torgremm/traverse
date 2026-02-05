@@ -46,45 +46,19 @@ impl Storage {
         row: &sqlx::sqlite::SqliteRow,
         col: &sqlx::sqlite::SqliteColumn,
     ) -> Result<Value> {
-        use sqlx::TypeInfo;
-
-        if col.type_info().is_null() {
-            return Ok(Value::String("NULL".to_string()));
+        use serde_json::Value::String as Out;
+        if let Ok(v) = row.try_get::<String, _>(col.name()) {
+            return Ok(Out(v));
         }
-
-        match col.type_info().name() {
-            "INTEGER" | "BOOLEAN" | "INT" | "INT4" => {
-                let i: i64 = row.try_get(col.ordinal())?;
-                Ok(Value::from(i))
-            }
-            "REAL" | "FLOAT" | "DOUBLE" => {
-                let f: f64 = row.try_get(col.ordinal())?;
-                Ok(Value::from(f))
-            }
-            "TEXT" => {
-                let s: String = row.try_get(col.ordinal())?;
-                Ok(Value::from(s))
-            }
-            "BLOB" => {
-                let b: Vec<u8> = row.try_get(col.ordinal())?;
-                // Try to interpret as UTF-8 string first
-                match String::from_utf8(b) {
-                    Ok(s) => Ok(Value::from(s)),
-                    Err(_) => {
-                        todo!()
-                    }
-                }
-            }
-            _ => {
-                let s: Result<String, _> = row.try_get(col.ordinal());
-                match s {
-                    Ok(s) => Ok(Value::from(s)),
-                    Err(_) => Err(anyhow::anyhow!(
-                        "Unsupported column type: {}",
-                        col.type_info().name()
-                    )),
-                }
-            }
+        if let Ok(v) = row.try_get::<i64, _>(col.name()) {
+            return Ok(Out(v.to_string()));
         }
+        if let Ok(v) = row.try_get::<f64, _>(col.name()) {
+            return Ok(Out(v.to_string()));
+        }
+        Err(anyhow::anyhow!(
+            "Failed to match value in column: {}",
+            col.name()
+        ))
     }
 }
