@@ -85,13 +85,25 @@ impl Script {
         }
 
         let mut stdout = String::new();
+        let mut tera = Tera::default();
+        tera.add_raw_template("script", &self.data.act)?;
+
+        if let Ok(entries) = std::fs::read_dir(self.project_dir.join("templates")) {
+            let files: Vec<(std::path::PathBuf, Option<String>)> = entries
+                .filter_map(Result::ok)
+                .map(|e| {
+                    let path = e.path();
+                    let name = path.file_name().unwrap().to_string_lossy().to_string();
+                    (path, Some(name))
+                })
+                .collect();
+            tera.add_template_files(files)?;
+        }
+        log::debug!("{:#?}", tera.get_template_names().collect::<String>());
 
         match self.data.mode {
             FetchMode::Raw => {
                 for row in rows {
-                    let mut tera = Tera::default();
-                    tera.add_raw_template("script", &self.data.act)?;
-
                     let mut context = Context::new();
 
                     for col in row.columns() {
@@ -128,8 +140,6 @@ impl Script {
                     }
                     log::debug!("{:?}", context);
 
-                    let mut tera = Tera::default();
-                    tera.add_raw_template("script", &self.data.act)?;
                     let out = tera.render("script", &context)?;
                     log::debug!("{out}");
                     stdout.push_str(&out);

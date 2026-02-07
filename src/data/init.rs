@@ -27,8 +27,10 @@ impl Storage {
     pub async fn init(schema: SchemaConfig, data: DataFile, path: &Path) -> Result<PathBuf> {
         log::info!("Loaded file, creating SQLite database");
         let db_file = Storage::db_file_for_project(path);
-        log::debug!("{:?}", db_file);
-        std::fs::remove_file(&db_file)?;
+        log::info!("{:?}", db_file);
+        if db_file.exists() {
+            std::fs::remove_file(&db_file)?;
+        }
         let pool = SqlitePoolOptions::new()
             .max_connections(1)
             .connect_with(

@@ -27,6 +27,22 @@ impl Storage {
         Ok(result)
     }
 
+    pub async fn mutate(q: &String, project: &PathBuf) -> Result<u64> {
+        let db_file = Storage::db_file_for_project(project);
+        let pool = SqlitePoolOptions::new()
+            .max_connections(1)
+            .connect_with(
+                SqliteConnectOptions::new()
+                    .filename(&db_file)
+                    .create_if_missing(false),
+            )
+            .await?;
+        let mut qb = QueryBuilder::new(q);
+        let result = qb.build().execute(&pool).await?;
+
+        Ok(result.rows_affected())
+    }
+
     pub fn build_scope_query(schema: &SchemaConfig, user_query: &str) -> anyhow::Result<String> {
         let user_query = user_query.trim_end_matches(';');
 

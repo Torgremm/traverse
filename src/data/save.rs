@@ -47,14 +47,14 @@ impl Storage {
         col: &sqlx::sqlite::SqliteColumn,
     ) -> Result<Value> {
         use serde_json::Value::String as Out;
-        if let Ok(v) = row.try_get::<String, _>(col.name()) {
-            return Ok(Out(v));
-        }
         if let Ok(v) = row.try_get::<i64, _>(col.name()) {
             return Ok(Out(v.to_string()));
         }
         if let Ok(v) = row.try_get::<f64, _>(col.name()) {
             return Ok(Out(v.to_string()));
+        }
+        if let Ok(v) = row.try_get::<String, _>(col.name()) {
+            return Ok(Out(v));
         }
         Err(anyhow::anyhow!(
             "Failed to match value in column: {}",

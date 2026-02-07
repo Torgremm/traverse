@@ -1,7 +1,7 @@
 use std::path::{Path, PathBuf};
 
 use crate::{
-    data,
+    data::{self, Storage},
     load::{self, parse_tables::SchemaConfig},
     script,
 };
@@ -14,6 +14,7 @@ pub enum Command<'a> {
     Load,
     Run(&'a Path),
     Save,
+    Query(String),
 }
 impl CommandHandler {
     pub fn new(directory: PathBuf) -> Self {
@@ -89,7 +90,16 @@ impl CommandHandler {
                     )
                 }
             }
-            _ => log::info!("\nInvalid command, valid commands are:\nload <dir>\nrun <path>"),
+            "query" => {
+                if let Some(q) = args.next() {
+                    self.handle(Command::Query(q)).await
+                } else {
+                    log::error!("No query given.")
+                }
+            }
+            _ => log::info!(
+                "\nInvalid command, valid commands are:\nload\nrun <path>\nsave\nquery <sql query>"
+            ),
         }
     }
     async fn handle(&self, c: Command<'_>) {
@@ -97,29 +107,33 @@ impl CommandHandler {
             Command::Load => self.load_project().await,
             Command::Run(p) => self.run_script(p).await,
             Command::Save => self.save_project().await,
+            Command::Query(q) => match Storage::mutate(&q, &self.directory).await {
+                Err(e) => log::error!("Query failed: {}", e),
+                _ => {}
+            },
         }
     }
     async fn load_project(&self) {
         let dir = &self.directory;
-        log::debug!("Loading project at: {:?}", dir);
+        log::info!("Loading project at: {:?}", dir);
         let config = match load::load_config(&Path::new(dir)) {
             Ok(v) => v,
             Err(e) => {
-                log::error!("{e}");
+                log::error!("Failed to load schema config: {e}");
                 return;
             }
         };
         let data = match load::load_data(&Path::new(dir).join("data"), &config) {
             Ok(v) => v,
             Err(e) => {
-                log::error!("{e}");
+                log::error!("Failed to load data: {e}");
                 return;
             }
         };
         let db_file = match data::init(config, data, dir).await {
             Ok(v) => v,
             Err(e) => {
-                log::error!("{e}");
+                log::error!("Failed to initialize data: {e}");
                 return;
             }
         };

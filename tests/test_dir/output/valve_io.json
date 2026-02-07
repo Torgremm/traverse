@@ -1,6 +1,3000 @@
-Valve NULL:
-  OPEN FB  => Rack NULL, DB NULL, Addr NULL
-  CLOSED FB=> Rack NULL, DB NULL, Addr NULL
-Valve NULL:
-  OPEN FB  => Rack NULL, DB NULL, Addr NULL
-  CLOSED FB=> Rack NULL, DB NULL, Addr NULL
+Valve V001:
+	OPEN FB  => Rack 0, DB 1, Addr 0
+	CLOSED FB=> Rack 0, DB 1, Addr 1
+Valve V002:
+	OPEN FB  => Rack 0, DB 2, Addr 0
+	CLOSED FB=> Rack 0, DB 2, Addr 1
+Valve V003:
+	OPEN FB  => Rack 0, DB 3, Addr 0
+	CLOSED FB=> Rack 0, DB 3, Addr 1
+Valve V004:
+	OPEN FB  => Rack 0, DB 4, Addr 0
+	CLOSED FB=> Rack 0, DB 4, Addr 1
+Valve V005:
+	OPEN FB  => Rack 0, DB 5, Addr 0
+	CLOSED FB=> Rack 0, DB 5, Addr 1
+Valve V006:
+	OPEN FB  => Rack 0, DB 6, Addr 0
+	CLOSED FB=> Rack 0, DB 6, Addr 1
+Valve V007:
+	OPEN FB  => Rack 0, DB 7, Addr 0
+	CLOSED FB=> Rack 0, DB 7, Addr 1
+Valve V008:
+	OPEN FB  => Rack 0, DB 8, Addr 0
+	CLOSED FB=> Rack 0, DB 8, Addr 1
+Valve V009:
+	OPEN FB  => Rack 0, DB 9, Addr 0
+	CLOSED FB=> Rack 0, DB 9, Addr 1
+Valve V010:
+	OPEN FB  => Rack 0, DB 10, Addr 0
+	CLOSED FB=> Rack 0, DB 10, Addr 1
+Valve V011:
+	OPEN FB  => Rack 0, DB 11, Addr 0
+	CLOSED FB=> Rack 0, DB 11, Addr 1
+Valve V012:
+	OPEN FB  => Rack 0, DB 12, Addr 0
+	CLOSED FB=> Rack 0, DB 12, Addr 1
+Valve V013:
+	OPEN FB  => Rack 0, DB 13, Addr 0
+	CLOSED FB=> Rack 0, DB 13, Addr 1
+Valve V014:
+	OPEN FB  => Rack 0, DB 14, Addr 0
+	CLOSED FB=> Rack 0, DB 14, Addr 1
+Valve V015:
+	OPEN FB  => Rack 0, DB 15, Addr 0
+	CLOSED FB=> Rack 0, DB 15, Addr 1
+Valve V016:
+	OPEN FB  => Rack 0, DB 16, Addr 0
+	CLOSED FB=> Rack 0, DB 16, Addr 1
+Valve V017:
+	OPEN FB  => Rack 0, DB 17, Addr 0
+	CLOSED FB=> Rack 0, DB 17, Addr 1
+Valve V018:
+	OPEN FB  => Rack 0, DB 18, Addr 0
+	CLOSED FB=> Rack 0, DB 18, Addr 1
+Valve V019:
+	OPEN FB  => Rack 0, DB 19, Addr 0
+	CLOSED FB=> Rack 0, DB 19, Addr 1
+Valve V020:
+	OPEN FB  => Rack 0, DB 20, Addr 0
+	CLOSED FB=> Rack 0, DB 20, Addr 1
+Valve V021:
+	OPEN FB  => Rack 0, DB 21, Addr 0
+	CLOSED FB=> Rack 0, DB 21, Addr 1
+Valve V022:
+	OPEN FB  => Rack 0, DB 22, Addr 0
+	CLOSED FB=> Rack 0, DB 22, Addr 1
+Valve V023:
+	OPEN FB  => Rack 0, DB 23, Addr 0
+	CLOSED FB=> Rack 0, DB 23, Addr 1
+Valve V024:
+	OPEN FB  => Rack 0, DB 24, Addr 0
+	CLOSED FB=> Rack 0, DB 24, Addr 1
+Valve V025:
+	OPEN FB  => Rack 0, DB 25, Addr 0
+	CLOSED FB=> Rack 0, DB 25, Addr 1
+Valve V026:
+	OPEN FB  => Rack 0, DB 26, Addr 0
+	CLOSED FB=> Rack 0, DB 26, Addr 1
+Valve V027:
+	OPEN FB  => Rack 0, DB 27, Addr 0
+	CLOSED FB=> Rack 0, DB 27, Addr 1
+Valve V028:
+	OPEN FB  => Rack 0, DB 28, Addr 0
+	CLOSED FB=> Rack 0, DB 28, Addr 1
+Valve V029:
+	OPEN FB  => Rack 0, DB 29, Addr 0
+	CLOSED FB=> Rack 0, DB 29, Addr 1
+Valve V030:
+	OPEN FB  => Rack 0, DB 30, Addr 0
+	CLOSED FB=> Rack 0, DB 30, Addr 1
+Valve V031:
+	OPEN FB  => Rack 0, DB 31, Addr 0
+	CLOSED FB=> Rack 0, DB 31, Addr 1
+Valve V032:
+	OPEN FB  => Rack 0, DB 32, Addr 0
+	CLOSED FB=> Rack 0, DB 32, Addr 1
+Valve V033:
+	OPEN FB  => Rack 0, DB 33, Addr 0
+	CLOSED FB=> Rack 0, DB 33, Addr 1
+Valve V034:
+	OPEN FB  => Rack 0, DB 34, Addr 0
+	CLOSED FB=> Rack 0, DB 34, Addr 1
+Valve V035:
+	OPEN FB  => Rack 0, DB 35, Addr 0
+	CLOSED FB=> Rack 0, DB 35, Addr 1
+Valve V036:
+	OPEN FB  => Rack 0, DB 36, Addr 0
+	CLOSED FB=> Rack 0, DB 36, Addr 1
+Valve V037:
+	OPEN FB  => Rack 0, DB 37, Addr 0
+	CLOSED FB=> Rack 0, DB 37, Addr 1
+Valve V038:
+	OPEN FB  => Rack 0, DB 38, Addr 0
+	CLOSED FB=> Rack 0, DB 38, Addr 1
+Valve V039:
+	OPEN FB  => Rack 0, DB 39, Addr 0
+	CLOSED FB=> Rack 0, DB 39, Addr 1
+Valve V040:
+	OPEN FB  => Rack 0, DB 40, Addr 0
+	CLOSED FB=> Rack 0, DB 40, Addr 1
+Valve V041:
+	OPEN FB  => Rack 0, DB 41, Addr 0
+	CLOSED FB=> Rack 0, DB 41, Addr 1
+Valve V042:
+	OPEN FB  => Rack 0, DB 42, Addr 0
+	CLOSED FB=> Rack 0, DB 42, Addr 1
+Valve V043:
+	OPEN FB  => Rack 0, DB 43, Addr 0
+	CLOSED FB=> Rack 0, DB 43, Addr 1
+Valve V044:
+	OPEN FB  => Rack 0, DB 44, Addr 0
+	CLOSED FB=> Rack 0, DB 44, Addr 1
+Valve V045:
+	OPEN FB  => Rack 0, DB 45, Addr 0
+	CLOSED FB=> Rack 0, DB 45, Addr 1
+Valve V046:
+	OPEN FB  => Rack 0, DB 46, Addr 0
+	CLOSED FB=> Rack 0, DB 46, Addr 1
+Valve V047:
+	OPEN FB  => Rack 0, DB 47, Addr 0
+	CLOSED FB=> Rack 0, DB 47, Addr 1
+Valve V048:
+	OPEN FB  => Rack 0, DB 48, Addr 0
+	CLOSED FB=> Rack 0, DB 48, Addr 1
+Valve V049:
+	OPEN FB  => Rack 0, DB 49, Addr 0
+	CLOSED FB=> Rack 0, DB 49, Addr 1
+Valve V050:
+	OPEN FB  => Rack 0, DB 50, Addr 0
+	CLOSED FB=> Rack 0, DB 50, Addr 1
+Valve V051:
+	OPEN FB  => Rack 0, DB 51, Addr 0
+	CLOSED FB=> Rack 0, DB 51, Addr 1
+Valve V052:
+	OPEN FB  => Rack 0, DB 52, Addr 0
+	CLOSED FB=> Rack 0, DB 52, Addr 1
+Valve V053:
+	OPEN FB  => Rack 0, DB 53, Addr 0
+	CLOSED FB=> Rack 0, DB 53, Addr 1
+Valve V054:
+	OPEN FB  => Rack 0, DB 54, Addr 0
+	CLOSED FB=> Rack 0, DB 54, Addr 1
+Valve V055:
+	OPEN FB  => Rack 0, DB 55, Addr 0
+	CLOSED FB=> Rack 0, DB 55, Addr 1
+Valve V056:
+	OPEN FB  => Rack 0, DB 56, Addr 0
+	CLOSED FB=> Rack 0, DB 56, Addr 1
+Valve V057:
+	OPEN FB  => Rack 0, DB 57, Addr 0
+	CLOSED FB=> Rack 0, DB 57, Addr 1
+Valve V058:
+	OPEN FB  => Rack 0, DB 58, Addr 0
+	CLOSED FB=> Rack 0, DB 58, Addr 1
+Valve V059:
+	OPEN FB  => Rack 0, DB 59, Addr 0
+	CLOSED FB=> Rack 0, DB 59, Addr 1
+Valve V060:
+	OPEN FB  => Rack 0, DB 60, Addr 0
+	CLOSED FB=> Rack 0, DB 60, Addr 1
+Valve V061:
+	OPEN FB  => Rack 0, DB 61, Addr 0
+	CLOSED FB=> Rack 0, DB 61, Addr 1
+Valve V062:
+	OPEN FB  => Rack 0, DB 62, Addr 0
+	CLOSED FB=> Rack 0, DB 62, Addr 1
+Valve V063:
+	OPEN FB  => Rack 0, DB 63, Addr 0
+	CLOSED FB=> Rack 0, DB 63, Addr 1
+Valve V064:
+	OPEN FB  => Rack 0, DB 64, Addr 0
+	CLOSED FB=> Rack 0, DB 64, Addr 1
+Valve V065:
+	OPEN FB  => Rack 0, DB 65, Addr 0
+	CLOSED FB=> Rack 0, DB 65, Addr 1
+Valve V066:
+	OPEN FB  => Rack 0, DB 66, Addr 0
+	CLOSED FB=> Rack 0, DB 66, Addr 1
+Valve V067:
+	OPEN FB  => Rack 0, DB 67, Addr 0
+	CLOSED FB=> Rack 0, DB 67, Addr 1
+Valve V068:
+	OPEN FB  => Rack 0, DB 68, Addr 0
+	CLOSED FB=> Rack 0, DB 68, Addr 1
+Valve V069:
+	OPEN FB  => Rack 0, DB 69, Addr 0
+	CLOSED FB=> Rack 0, DB 69, Addr 1
+Valve V070:
+	OPEN FB  => Rack 0, DB 70, Addr 0
+	CLOSED FB=> Rack 0, DB 70, Addr 1
+Valve V071:
+	OPEN FB  => Rack 0, DB 71, Addr 0
+	CLOSED FB=> Rack 0, DB 71, Addr 1
+Valve V072:
+	OPEN FB  => Rack 0, DB 72, Addr 0
+	CLOSED FB=> Rack 0, DB 72, Addr 1
+Valve V073:
+	OPEN FB  => Rack 0, DB 73, Addr 0
+	CLOSED FB=> Rack 0, DB 73, Addr 1
+Valve V074:
+	OPEN FB  => Rack 0, DB 74, Addr 0
+	CLOSED FB=> Rack 0, DB 74, Addr 1
+Valve V075:
+	OPEN FB  => Rack 0, DB 75, Addr 0
+	CLOSED FB=> Rack 0, DB 75, Addr 1
+Valve V076:
+	OPEN FB  => Rack 0, DB 76, Addr 0
+	CLOSED FB=> Rack 0, DB 76, Addr 1
+Valve V077:
+	OPEN FB  => Rack 0, DB 77, Addr 0
+	CLOSED FB=> Rack 0, DB 77, Addr 1
+Valve V078:
+	OPEN FB  => Rack 0, DB 78, Addr 0
+	CLOSED FB=> Rack 0, DB 78, Addr 1
+Valve V079:
+	OPEN FB  => Rack 0, DB 79, Addr 0
+	CLOSED FB=> Rack 0, DB 79, Addr 1
+Valve V080:
+	OPEN FB  => Rack 0, DB 80, Addr 0
+	CLOSED FB=> Rack 0, DB 80, Addr 1
+Valve V081:
+	OPEN FB  => Rack 0, DB 81, Addr 0
+	CLOSED FB=> Rack 0, DB 81, Addr 1
+Valve V082:
+	OPEN FB  => Rack 0, DB 82, Addr 0
+	CLOSED FB=> Rack 0, DB 82, Addr 1
+Valve V083:
+	OPEN FB  => Rack 0, DB 83, Addr 0
+	CLOSED FB=> Rack 0, DB 83, Addr 1
+Valve V084:
+	OPEN FB  => Rack 0, DB 84, Addr 0
+	CLOSED FB=> Rack 0, DB 84, Addr 1
+Valve V085:
+	OPEN FB  => Rack 0, DB 85, Addr 0
+	CLOSED FB=> Rack 0, DB 85, Addr 1
+Valve V086:
+	OPEN FB  => Rack 0, DB 86, Addr 0
+	CLOSED FB=> Rack 0, DB 86, Addr 1
+Valve V087:
+	OPEN FB  => Rack 0, DB 87, Addr 0
+	CLOSED FB=> Rack 0, DB 87, Addr 1
+Valve V088:
+	OPEN FB  => Rack 0, DB 88, Addr 0
+	CLOSED FB=> Rack 0, DB 88, Addr 1
+Valve V089:
+	OPEN FB  => Rack 0, DB 89, Addr 0
+	CLOSED FB=> Rack 0, DB 89, Addr 1
+Valve V090:
+	OPEN FB  => Rack 0, DB 90, Addr 0
+	CLOSED FB=> Rack 0, DB 90, Addr 1
+Valve V091:
+	OPEN FB  => Rack 0, DB 91, Addr 0
+	CLOSED FB=> Rack 0, DB 91, Addr 1
+Valve V092:
+	OPEN FB  => Rack 0, DB 92, Addr 0
+	CLOSED FB=> Rack 0, DB 92, Addr 1
+Valve V093:
+	OPEN FB  => Rack 0, DB 93, Addr 0
+	CLOSED FB=> Rack 0, DB 93, Addr 1
+Valve V094:
+	OPEN FB  => Rack 0, DB 94, Addr 0
+	CLOSED FB=> Rack 0, DB 94, Addr 1
+Valve V095:
+	OPEN FB  => Rack 0, DB 95, Addr 0
+	CLOSED FB=> Rack 0, DB 95, Addr 1
+Valve V096:
+	OPEN FB  => Rack 0, DB 96, Addr 0
+	CLOSED FB=> Rack 0, DB 96, Addr 1
+Valve V097:
+	OPEN FB  => Rack 0, DB 97, Addr 0
+	CLOSED FB=> Rack 0, DB 97, Addr 1
+Valve V098:
+	OPEN FB  => Rack 0, DB 98, Addr 0
+	CLOSED FB=> Rack 0, DB 98, Addr 1
+Valve V099:
+	OPEN FB  => Rack 0, DB 99, Addr 0
+	CLOSED FB=> Rack 0, DB 99, Addr 1
+Valve V100:
+	OPEN FB  => Rack 0, DB 100, Addr 0
+	CLOSED FB=> Rack 0, DB 100, Addr 1
+Valve V1000:
+	OPEN FB  => Rack 0, DB 1000, Addr 0
+	CLOSED FB=> Rack 0, DB 1000, Addr 1
+Valve V101:
+	OPEN FB  => Rack 0, DB 101, Addr 0
+	CLOSED FB=> Rack 0, DB 101, Addr 1
+Valve V102:
+	OPEN FB  => Rack 0, DB 102, Addr 0
+	CLOSED FB=> Rack 0, DB 102, Addr 1
+Valve V103:
+	OPEN FB  => Rack 0, DB 103, Addr 0
+	CLOSED FB=> Rack 0, DB 103, Addr 1
+Valve V104:
+	OPEN FB  => Rack 0, DB 104, Addr 0
+	CLOSED FB=> Rack 0, DB 104, Addr 1
+Valve V105:
+	OPEN FB  => Rack 0, DB 105, Addr 0
+	CLOSED FB=> Rack 0, DB 105, Addr 1
+Valve V106:
+	OPEN FB  => Rack 0, DB 106, Addr 0
+	CLOSED FB=> Rack 0, DB 106, Addr 1
+Valve V107:
+	OPEN FB  => Rack 0, DB 107, Addr 0
+	CLOSED FB=> Rack 0, DB 107, Addr 1
+Valve V108:
+	OPEN FB  => Rack 0, DB 108, Addr 0
+	CLOSED FB=> Rack 0, DB 108, Addr 1
+Valve V109:
+	OPEN FB  => Rack 0, DB 109, Addr 0
+	CLOSED FB=> Rack 0, DB 109, Addr 1
+Valve V110:
+	OPEN FB  => Rack 0, DB 110, Addr 0
+	CLOSED FB=> Rack 0, DB 110, Addr 1
+Valve V111:
+	OPEN FB  => Rack 0, DB 111, Addr 0
+	CLOSED FB=> Rack 0, DB 111, Addr 1
+Valve V112:
+	OPEN FB  => Rack 0, DB 112, Addr 0
+	CLOSED FB=> Rack 0, DB 112, Addr 1
+Valve V113:
+	OPEN FB  => Rack 0, DB 113, Addr 0
+	CLOSED FB=> Rack 0, DB 113, Addr 1
+Valve V114:
+	OPEN FB  => Rack 0, DB 114, Addr 0
+	CLOSED FB=> Rack 0, DB 114, Addr 1
+Valve V115:
+	OPEN FB  => Rack 0, DB 115, Addr 0
+	CLOSED FB=> Rack 0, DB 115, Addr 1
+Valve V116:
+	OPEN FB  => Rack 0, DB 116, Addr 0
+	CLOSED FB=> Rack 0, DB 116, Addr 1
+Valve V117:
+	OPEN FB  => Rack 0, DB 117, Addr 0
+	CLOSED FB=> Rack 0, DB 117, Addr 1
+Valve V118:
+	OPEN FB  => Rack 0, DB 118, Addr 0
+	CLOSED FB=> Rack 0, DB 118, Addr 1
+Valve V119:
+	OPEN FB  => Rack 0, DB 119, Addr 0
+	CLOSED FB=> Rack 0, DB 119, Addr 1
+Valve V120:
+	OPEN FB  => Rack 0, DB 120, Addr 0
+	CLOSED FB=> Rack 0, DB 120, Addr 1
+Valve V121:
+	OPEN FB  => Rack 0, DB 121, Addr 0
+	CLOSED FB=> Rack 0, DB 121, Addr 1
+Valve V122:
+	OPEN FB  => Rack 0, DB 122, Addr 0
+	CLOSED FB=> Rack 0, DB 122, Addr 1
+Valve V123:
+	OPEN FB  => Rack 0, DB 123, Addr 0
+	CLOSED FB=> Rack 0, DB 123, Addr 1
+Valve V124:
+	OPEN FB  => Rack 0, DB 124, Addr 0
+	CLOSED FB=> Rack 0, DB 124, Addr 1
+Valve V125:
+	OPEN FB  => Rack 0, DB 125, Addr 0
+	CLOSED FB=> Rack 0, DB 125, Addr 1
+Valve V126:
+	OPEN FB  => Rack 0, DB 126, Addr 0
+	CLOSED FB=> Rack 0, DB 126, Addr 1
+Valve V127:
+	OPEN FB  => Rack 0, DB 127, Addr 0
+	CLOSED FB=> Rack 0, DB 127, Addr 1
+Valve V128:
+	OPEN FB  => Rack 0, DB 128, Addr 0
+	CLOSED FB=> Rack 0, DB 128, Addr 1
+Valve V129:
+	OPEN FB  => Rack 0, DB 129, Addr 0
+	CLOSED FB=> Rack 0, DB 129, Addr 1
+Valve V130:
+	OPEN FB  => Rack 0, DB 130, Addr 0
+	CLOSED FB=> Rack 0, DB 130, Addr 1
+Valve V131:
+	OPEN FB  => Rack 0, DB 131, Addr 0
+	CLOSED FB=> Rack 0, DB 131, Addr 1
+Valve V132:
+	OPEN FB  => Rack 0, DB 132, Addr 0
+	CLOSED FB=> Rack 0, DB 132, Addr 1
+Valve V133:
+	OPEN FB  => Rack 0, DB 133, Addr 0
+	CLOSED FB=> Rack 0, DB 133, Addr 1
+Valve V134:
+	OPEN FB  => Rack 0, DB 134, Addr 0
+	CLOSED FB=> Rack 0, DB 134, Addr 1
+Valve V135:
+	OPEN FB  => Rack 0, DB 135, Addr 0
+	CLOSED FB=> Rack 0, DB 135, Addr 1
+Valve V136:
+	OPEN FB  => Rack 0, DB 136, Addr 0
+	CLOSED FB=> Rack 0, DB 136, Addr 1
+Valve V137:
+	OPEN FB  => Rack 0, DB 137, Addr 0
+	CLOSED FB=> Rack 0, DB 137, Addr 1
+Valve V138:
+	OPEN FB  => Rack 0, DB 138, Addr 0
+	CLOSED FB=> Rack 0, DB 138, Addr 1
+Valve V139:
+	OPEN FB  => Rack 0, DB 139, Addr 0
+	CLOSED FB=> Rack 0, DB 139, Addr 1
+Valve V140:
+	OPEN FB  => Rack 0, DB 140, Addr 0
+	CLOSED FB=> Rack 0, DB 140, Addr 1
+Valve V141:
+	OPEN FB  => Rack 0, DB 141, Addr 0
+	CLOSED FB=> Rack 0, DB 141, Addr 1
+Valve V142:
+	OPEN FB  => Rack 0, DB 142, Addr 0
+	CLOSED FB=> Rack 0, DB 142, Addr 1
+Valve V143:
+	OPEN FB  => Rack 0, DB 143, Addr 0
+	CLOSED FB=> Rack 0, DB 143, Addr 1
+Valve V144:
+	OPEN FB  => Rack 0, DB 144, Addr 0
+	CLOSED FB=> Rack 0, DB 144, Addr 1
+Valve V145:
+	OPEN FB  => Rack 0, DB 145, Addr 0
+	CLOSED FB=> Rack 0, DB 145, Addr 1
+Valve V146:
+	OPEN FB  => Rack 0, DB 146, Addr 0
+	CLOSED FB=> Rack 0, DB 146, Addr 1
+Valve V147:
+	OPEN FB  => Rack 0, DB 147, Addr 0
+	CLOSED FB=> Rack 0, DB 147, Addr 1
+Valve V148:
+	OPEN FB  => Rack 0, DB 148, Addr 0
+	CLOSED FB=> Rack 0, DB 148, Addr 1
+Valve V149:
+	OPEN FB  => Rack 0, DB 149, Addr 0
+	CLOSED FB=> Rack 0, DB 149, Addr 1
+Valve V150:
+	OPEN FB  => Rack 0, DB 150, Addr 0
+	CLOSED FB=> Rack 0, DB 150, Addr 1
+Valve V151:
+	OPEN FB  => Rack 0, DB 151, Addr 0
+	CLOSED FB=> Rack 0, DB 151, Addr 1
+Valve V152:
+	OPEN FB  => Rack 0, DB 152, Addr 0
+	CLOSED FB=> Rack 0, DB 152, Addr 1
+Valve V153:
+	OPEN FB  => Rack 0, DB 153, Addr 0
+	CLOSED FB=> Rack 0, DB 153, Addr 1
+Valve V154:
+	OPEN FB  => Rack 0, DB 154, Addr 0
+	CLOSED FB=> Rack 0, DB 154, Addr 1
+Valve V155:
+	OPEN FB  => Rack 0, DB 155, Addr 0
+	CLOSED FB=> Rack 0, DB 155, Addr 1
+Valve V156:
+	OPEN FB  => Rack 0, DB 156, Addr 0
+	CLOSED FB=> Rack 0, DB 156, Addr 1
+Valve V157:
+	OPEN FB  => Rack 0, DB 157, Addr 0
+	CLOSED FB=> Rack 0, DB 157, Addr 1
+Valve V158:
+	OPEN FB  => Rack 0, DB 158, Addr 0
+	CLOSED FB=> Rack 0, DB 158, Addr 1
+Valve V159:
+	OPEN FB  => Rack 0, DB 159, Addr 0
+	CLOSED FB=> Rack 0, DB 159, Addr 1
+Valve V160:
+	OPEN FB  => Rack 0, DB 160, Addr 0
+	CLOSED FB=> Rack 0, DB 160, Addr 1
+Valve V161:
+	OPEN FB  => Rack 0, DB 161, Addr 0
+	CLOSED FB=> Rack 0, DB 161, Addr 1
+Valve V162:
+	OPEN FB  => Rack 0, DB 162, Addr 0
+	CLOSED FB=> Rack 0, DB 162, Addr 1
+Valve V163:
+	OPEN FB  => Rack 0, DB 163, Addr 0
+	CLOSED FB=> Rack 0, DB 163, Addr 1
+Valve V164:
+	OPEN FB  => Rack 0, DB 164, Addr 0
+	CLOSED FB=> Rack 0, DB 164, Addr 1
+Valve V165:
+	OPEN FB  => Rack 0, DB 165, Addr 0
+	CLOSED FB=> Rack 0, DB 165, Addr 1
+Valve V166:
+	OPEN FB  => Rack 0, DB 166, Addr 0
+	CLOSED FB=> Rack 0, DB 166, Addr 1
+Valve V167:
+	OPEN FB  => Rack 0, DB 167, Addr 0
+	CLOSED FB=> Rack 0, DB 167, Addr 1
+Valve V168:
+	OPEN FB  => Rack 0, DB 168, Addr 0
+	CLOSED FB=> Rack 0, DB 168, Addr 1
+Valve V169:
+	OPEN FB  => Rack 0, DB 169, Addr 0
+	CLOSED FB=> Rack 0, DB 169, Addr 1
+Valve V170:
+	OPEN FB  => Rack 0, DB 170, Addr 0
+	CLOSED FB=> Rack 0, DB 170, Addr 1
+Valve V171:
+	OPEN FB  => Rack 0, DB 171, Addr 0
+	CLOSED FB=> Rack 0, DB 171, Addr 1
+Valve V172:
+	OPEN FB  => Rack 0, DB 172, Addr 0
+	CLOSED FB=> Rack 0, DB 172, Addr 1
+Valve V173:
+	OPEN FB  => Rack 0, DB 173, Addr 0
+	CLOSED FB=> Rack 0, DB 173, Addr 1
+Valve V174:
+	OPEN FB  => Rack 0, DB 174, Addr 0
+	CLOSED FB=> Rack 0, DB 174, Addr 1
+Valve V175:
+	OPEN FB  => Rack 0, DB 175, Addr 0
+	CLOSED FB=> Rack 0, DB 175, Addr 1
+Valve V176:
+	OPEN FB  => Rack 0, DB 176, Addr 0
+	CLOSED FB=> Rack 0, DB 176, Addr 1
+Valve V177:
+	OPEN FB  => Rack 0, DB 177, Addr 0
+	CLOSED FB=> Rack 0, DB 177, Addr 1
+Valve V178:
+	OPEN FB  => Rack 0, DB 178, Addr 0
+	CLOSED FB=> Rack 0, DB 178, Addr 1
+Valve V179:
+	OPEN FB  => Rack 0, DB 179, Addr 0
+	CLOSED FB=> Rack 0, DB 179, Addr 1
+Valve V180:
+	OPEN FB  => Rack 0, DB 180, Addr 0
+	CLOSED FB=> Rack 0, DB 180, Addr 1
+Valve V181:
+	OPEN FB  => Rack 0, DB 181, Addr 0
+	CLOSED FB=> Rack 0, DB 181, Addr 1
+Valve V182:
+	OPEN FB  => Rack 0, DB 182, Addr 0
+	CLOSED FB=> Rack 0, DB 182, Addr 1
+Valve V183:
+	OPEN FB  => Rack 0, DB 183, Addr 0
+	CLOSED FB=> Rack 0, DB 183, Addr 1
+Valve V184:
+	OPEN FB  => Rack 0, DB 184, Addr 0
+	CLOSED FB=> Rack 0, DB 184, Addr 1
+Valve V185:
+	OPEN FB  => Rack 0, DB 185, Addr 0
+	CLOSED FB=> Rack 0, DB 185, Addr 1
+Valve V186:
+	OPEN FB  => Rack 0, DB 186, Addr 0
+	CLOSED FB=> Rack 0, DB 186, Addr 1
+Valve V187:
+	OPEN FB  => Rack 0, DB 187, Addr 0
+	CLOSED FB=> Rack 0, DB 187, Addr 1
+Valve V188:
+	OPEN FB  => Rack 0, DB 188, Addr 0
+	CLOSED FB=> Rack 0, DB 188, Addr 1
+Valve V189:
+	OPEN FB  => Rack 0, DB 189, Addr 0
+	CLOSED FB=> Rack 0, DB 189, Addr 1
+Valve V190:
+	OPEN FB  => Rack 0, DB 190, Addr 0
+	CLOSED FB=> Rack 0, DB 190, Addr 1
+Valve V191:
+	OPEN FB  => Rack 0, DB 191, Addr 0
+	CLOSED FB=> Rack 0, DB 191, Addr 1
+Valve V192:
+	OPEN FB  => Rack 0, DB 192, Addr 0
+	CLOSED FB=> Rack 0, DB 192, Addr 1
+Valve V193:
+	OPEN FB  => Rack 0, DB 193, Addr 0
+	CLOSED FB=> Rack 0, DB 193, Addr 1
+Valve V194:
+	OPEN FB  => Rack 0, DB 194, Addr 0
+	CLOSED FB=> Rack 0, DB 194, Addr 1
+Valve V195:
+	OPEN FB  => Rack 0, DB 195, Addr 0
+	CLOSED FB=> Rack 0, DB 195, Addr 1
+Valve V196:
+	OPEN FB  => Rack 0, DB 196, Addr 0
+	CLOSED FB=> Rack 0, DB 196, Addr 1
+Valve V197:
+	OPEN FB  => Rack 0, DB 197, Addr 0
+	CLOSED FB=> Rack 0, DB 197, Addr 1
+Valve V198:
+	OPEN FB  => Rack 0, DB 198, Addr 0
+	CLOSED FB=> Rack 0, DB 198, Addr 1
+Valve V199:
+	OPEN FB  => Rack 0, DB 199, Addr 0
+	CLOSED FB=> Rack 0, DB 199, Addr 1
+Valve V200:
+	OPEN FB  => Rack 0, DB 200, Addr 0
+	CLOSED FB=> Rack 0, DB 200, Addr 1
+Valve V201:
+	OPEN FB  => Rack 0, DB 201, Addr 0
+	CLOSED FB=> Rack 0, DB 201, Addr 1
+Valve V202:
+	OPEN FB  => Rack 0, DB 202, Addr 0
+	CLOSED FB=> Rack 0, DB 202, Addr 1
+Valve V203:
+	OPEN FB  => Rack 0, DB 203, Addr 0
+	CLOSED FB=> Rack 0, DB 203, Addr 1
+Valve V204:
+	OPEN FB  => Rack 0, DB 204, Addr 0
+	CLOSED FB=> Rack 0, DB 204, Addr 1
+Valve V205:
+	OPEN FB  => Rack 0, DB 205, Addr 0
+	CLOSED FB=> Rack 0, DB 205, Addr 1
+Valve V206:
+	OPEN FB  => Rack 0, DB 206, Addr 0
+	CLOSED FB=> Rack 0, DB 206, Addr 1
+Valve V207:
+	OPEN FB  => Rack 0, DB 207, Addr 0
+	CLOSED FB=> Rack 0, DB 207, Addr 1
+Valve V208:
+	OPEN FB  => Rack 0, DB 208, Addr 0
+	CLOSED FB=> Rack 0, DB 208, Addr 1
+Valve V209:
+	OPEN FB  => Rack 0, DB 209, Addr 0
+	CLOSED FB=> Rack 0, DB 209, Addr 1
+Valve V210:
+	OPEN FB  => Rack 0, DB 210, Addr 0
+	CLOSED FB=> Rack 0, DB 210, Addr 1
+Valve V211:
+	OPEN FB  => Rack 0, DB 211, Addr 0
+	CLOSED FB=> Rack 0, DB 211, Addr 1
+Valve V212:
+	OPEN FB  => Rack 0, DB 212, Addr 0
+	CLOSED FB=> Rack 0, DB 212, Addr 1
+Valve V213:
+	OPEN FB  => Rack 0, DB 213, Addr 0
+	CLOSED FB=> Rack 0, DB 213, Addr 1
+Valve V214:
+	OPEN FB  => Rack 0, DB 214, Addr 0
+	CLOSED FB=> Rack 0, DB 214, Addr 1
+Valve V215:
+	OPEN FB  => Rack 0, DB 215, Addr 0
+	CLOSED FB=> Rack 0, DB 215, Addr 1
+Valve V216:
+	OPEN FB  => Rack 0, DB 216, Addr 0
+	CLOSED FB=> Rack 0, DB 216, Addr 1
+Valve V217:
+	OPEN FB  => Rack 0, DB 217, Addr 0
+	CLOSED FB=> Rack 0, DB 217, Addr 1
+Valve V218:
+	OPEN FB  => Rack 0, DB 218, Addr 0
+	CLOSED FB=> Rack 0, DB 218, Addr 1
+Valve V219:
+	OPEN FB  => Rack 0, DB 219, Addr 0
+	CLOSED FB=> Rack 0, DB 219, Addr 1
+Valve V220:
+	OPEN FB  => Rack 0, DB 220, Addr 0
+	CLOSED FB=> Rack 0, DB 220, Addr 1
+Valve V221:
+	OPEN FB  => Rack 0, DB 221, Addr 0
+	CLOSED FB=> Rack 0, DB 221, Addr 1
+Valve V222:
+	OPEN FB  => Rack 0, DB 222, Addr 0
+	CLOSED FB=> Rack 0, DB 222, Addr 1
+Valve V223:
+	OPEN FB  => Rack 0, DB 223, Addr 0
+	CLOSED FB=> Rack 0, DB 223, Addr 1
+Valve V224:
+	OPEN FB  => Rack 0, DB 224, Addr 0
+	CLOSED FB=> Rack 0, DB 224, Addr 1
+Valve V225:
+	OPEN FB  => Rack 0, DB 225, Addr 0
+	CLOSED FB=> Rack 0, DB 225, Addr 1
+Valve V226:
+	OPEN FB  => Rack 0, DB 226, Addr 0
+	CLOSED FB=> Rack 0, DB 226, Addr 1
+Valve V227:
+	OPEN FB  => Rack 0, DB 227, Addr 0
+	CLOSED FB=> Rack 0, DB 227, Addr 1
+Valve V228:
+	OPEN FB  => Rack 0, DB 228, Addr 0
+	CLOSED FB=> Rack 0, DB 228, Addr 1
+Valve V229:
+	OPEN FB  => Rack 0, DB 229, Addr 0
+	CLOSED FB=> Rack 0, DB 229, Addr 1
+Valve V230:
+	OPEN FB  => Rack 0, DB 230, Addr 0
+	CLOSED FB=> Rack 0, DB 230, Addr 1
+Valve V231:
+	OPEN FB  => Rack 0, DB 231, Addr 0
+	CLOSED FB=> Rack 0, DB 231, Addr 1
+Valve V232:
+	OPEN FB  => Rack 0, DB 232, Addr 0
+	CLOSED FB=> Rack 0, DB 232, Addr 1
+Valve V233:
+	OPEN FB  => Rack 0, DB 233, Addr 0
+	CLOSED FB=> Rack 0, DB 233, Addr 1
+Valve V234:
+	OPEN FB  => Rack 0, DB 234, Addr 0
+	CLOSED FB=> Rack 0, DB 234, Addr 1
+Valve V235:
+	OPEN FB  => Rack 0, DB 235, Addr 0
+	CLOSED FB=> Rack 0, DB 235, Addr 1
+Valve V236:
+	OPEN FB  => Rack 0, DB 236, Addr 0
+	CLOSED FB=> Rack 0, DB 236, Addr 1
+Valve V237:
+	OPEN FB  => Rack 0, DB 237, Addr 0
+	CLOSED FB=> Rack 0, DB 237, Addr 1
+Valve V238:
+	OPEN FB  => Rack 0, DB 238, Addr 0
+	CLOSED FB=> Rack 0, DB 238, Addr 1
+Valve V239:
+	OPEN FB  => Rack 0, DB 239, Addr 0
+	CLOSED FB=> Rack 0, DB 239, Addr 1
+Valve V240:
+	OPEN FB  => Rack 0, DB 240, Addr 0
+	CLOSED FB=> Rack 0, DB 240, Addr 1
+Valve V241:
+	OPEN FB  => Rack 0, DB 241, Addr 0
+	CLOSED FB=> Rack 0, DB 241, Addr 1
+Valve V242:
+	OPEN FB  => Rack 0, DB 242, Addr 0
+	CLOSED FB=> Rack 0, DB 242, Addr 1
+Valve V243:
+	OPEN FB  => Rack 0, DB 243, Addr 0
+	CLOSED FB=> Rack 0, DB 243, Addr 1
+Valve V244:
+	OPEN FB  => Rack 0, DB 244, Addr 0
+	CLOSED FB=> Rack 0, DB 244, Addr 1
+Valve V245:
+	OPEN FB  => Rack 0, DB 245, Addr 0
+	CLOSED FB=> Rack 0, DB 245, Addr 1
+Valve V246:
+	OPEN FB  => Rack 0, DB 246, Addr 0
+	CLOSED FB=> Rack 0, DB 246, Addr 1
+Valve V247:
+	OPEN FB  => Rack 0, DB 247, Addr 0
+	CLOSED FB=> Rack 0, DB 247, Addr 1
+Valve V248:
+	OPEN FB  => Rack 0, DB 248, Addr 0
+	CLOSED FB=> Rack 0, DB 248, Addr 1
+Valve V249:
+	OPEN FB  => Rack 0, DB 249, Addr 0
+	CLOSED FB=> Rack 0, DB 249, Addr 1
+Valve V250:
+	OPEN FB  => Rack 0, DB 250, Addr 0
+	CLOSED FB=> Rack 0, DB 250, Addr 1
+Valve V251:
+	OPEN FB  => Rack 0, DB 251, Addr 0
+	CLOSED FB=> Rack 0, DB 251, Addr 1
+Valve V252:
+	OPEN FB  => Rack 0, DB 252, Addr 0
+	CLOSED FB=> Rack 0, DB 252, Addr 1
+Valve V253:
+	OPEN FB  => Rack 0, DB 253, Addr 0
+	CLOSED FB=> Rack 0, DB 253, Addr 1
+Valve V254:
+	OPEN FB  => Rack 0, DB 254, Addr 0
+	CLOSED FB=> Rack 0, DB 254, Addr 1
+Valve V255:
+	OPEN FB  => Rack 0, DB 255, Addr 0
+	CLOSED FB=> Rack 0, DB 255, Addr 1
+Valve V256:
+	OPEN FB  => Rack 0, DB 256, Addr 0
+	CLOSED FB=> Rack 0, DB 256, Addr 1
+Valve V257:
+	OPEN FB  => Rack 0, DB 257, Addr 0
+	CLOSED FB=> Rack 0, DB 257, Addr 1
+Valve V258:
+	OPEN FB  => Rack 0, DB 258, Addr 0
+	CLOSED FB=> Rack 0, DB 258, Addr 1
+Valve V259:
+	OPEN FB  => Rack 0, DB 259, Addr 0
+	CLOSED FB=> Rack 0, DB 259, Addr 1
+Valve V260:
+	OPEN FB  => Rack 0, DB 260, Addr 0
+	CLOSED FB=> Rack 0, DB 260, Addr 1
+Valve V261:
+	OPEN FB  => Rack 0, DB 261, Addr 0
+	CLOSED FB=> Rack 0, DB 261, Addr 1
+Valve V262:
+	OPEN FB  => Rack 0, DB 262, Addr 0
+	CLOSED FB=> Rack 0, DB 262, Addr 1
+Valve V263:
+	OPEN FB  => Rack 0, DB 263, Addr 0
+	CLOSED FB=> Rack 0, DB 263, Addr 1
+Valve V264:
+	OPEN FB  => Rack 0, DB 264, Addr 0
+	CLOSED FB=> Rack 0, DB 264, Addr 1
+Valve V265:
+	OPEN FB  => Rack 0, DB 265, Addr 0
+	CLOSED FB=> Rack 0, DB 265, Addr 1
+Valve V266:
+	OPEN FB  => Rack 0, DB 266, Addr 0
+	CLOSED FB=> Rack 0, DB 266, Addr 1
+Valve V267:
+	OPEN FB  => Rack 0, DB 267, Addr 0
+	CLOSED FB=> Rack 0, DB 267, Addr 1
+Valve V268:
+	OPEN FB  => Rack 0, DB 268, Addr 0
+	CLOSED FB=> Rack 0, DB 268, Addr 1
+Valve V269:
+	OPEN FB  => Rack 0, DB 269, Addr 0
+	CLOSED FB=> Rack 0, DB 269, Addr 1
+Valve V270:
+	OPEN FB  => Rack 0, DB 270, Addr 0
+	CLOSED FB=> Rack 0, DB 270, Addr 1
+Valve V271:
+	OPEN FB  => Rack 0, DB 271, Addr 0
+	CLOSED FB=> Rack 0, DB 271, Addr 1
+Valve V272:
+	OPEN FB  => Rack 0, DB 272, Addr 0
+	CLOSED FB=> Rack 0, DB 272, Addr 1
+Valve V273:
+	OPEN FB  => Rack 0, DB 273, Addr 0
+	CLOSED FB=> Rack 0, DB 273, Addr 1
+Valve V274:
+	OPEN FB  => Rack 0, DB 274, Addr 0
+	CLOSED FB=> Rack 0, DB 274, Addr 1
+Valve V275:
+	OPEN FB  => Rack 0, DB 275, Addr 0
+	CLOSED FB=> Rack 0, DB 275, Addr 1
+Valve V276:
+	OPEN FB  => Rack 0, DB 276, Addr 0
+	CLOSED FB=> Rack 0, DB 276, Addr 1
+Valve V277:
+	OPEN FB  => Rack 0, DB 277, Addr 0
+	CLOSED FB=> Rack 0, DB 277, Addr 1
+Valve V278:
+	OPEN FB  => Rack 0, DB 278, Addr 0
+	CLOSED FB=> Rack 0, DB 278, Addr 1
+Valve V279:
+	OPEN FB  => Rack 0, DB 279, Addr 0
+	CLOSED FB=> Rack 0, DB 279, Addr 1
+Valve V280:
+	OPEN FB  => Rack 0, DB 280, Addr 0
+	CLOSED FB=> Rack 0, DB 280, Addr 1
+Valve V281:
+	OPEN FB  => Rack 0, DB 281, Addr 0
+	CLOSED FB=> Rack 0, DB 281, Addr 1
+Valve V282:
+	OPEN FB  => Rack 0, DB 282, Addr 0
+	CLOSED FB=> Rack 0, DB 282, Addr 1
+Valve V283:
+	OPEN FB  => Rack 0, DB 283, Addr 0
+	CLOSED FB=> Rack 0, DB 283, Addr 1
+Valve V284:
+	OPEN FB  => Rack 0, DB 284, Addr 0
+	CLOSED FB=> Rack 0, DB 284, Addr 1
+Valve V285:
+	OPEN FB  => Rack 0, DB 285, Addr 0
+	CLOSED FB=> Rack 0, DB 285, Addr 1
+Valve V286:
+	OPEN FB  => Rack 0, DB 286, Addr 0
+	CLOSED FB=> Rack 0, DB 286, Addr 1
+Valve V287:
+	OPEN FB  => Rack 0, DB 287, Addr 0
+	CLOSED FB=> Rack 0, DB 287, Addr 1
+Valve V288:
+	OPEN FB  => Rack 0, DB 288, Addr 0
+	CLOSED FB=> Rack 0, DB 288, Addr 1
+Valve V289:
+	OPEN FB  => Rack 0, DB 289, Addr 0
+	CLOSED FB=> Rack 0, DB 289, Addr 1
+Valve V290:
+	OPEN FB  => Rack 0, DB 290, Addr 0
+	CLOSED FB=> Rack 0, DB 290, Addr 1
+Valve V291:
+	OPEN FB  => Rack 0, DB 291, Addr 0
+	CLOSED FB=> Rack 0, DB 291, Addr 1
+Valve V292:
+	OPEN FB  => Rack 0, DB 292, Addr 0
+	CLOSED FB=> Rack 0, DB 292, Addr 1
+Valve V293:
+	OPEN FB  => Rack 0, DB 293, Addr 0
+	CLOSED FB=> Rack 0, DB 293, Addr 1
+Valve V294:
+	OPEN FB  => Rack 0, DB 294, Addr 0
+	CLOSED FB=> Rack 0, DB 294, Addr 1
+Valve V295:
+	OPEN FB  => Rack 0, DB 295, Addr 0
+	CLOSED FB=> Rack 0, DB 295, Addr 1
+Valve V296:
+	OPEN FB  => Rack 0, DB 296, Addr 0
+	CLOSED FB=> Rack 0, DB 296, Addr 1
+Valve V297:
+	OPEN FB  => Rack 0, DB 297, Addr 0
+	CLOSED FB=> Rack 0, DB 297, Addr 1
+Valve V298:
+	OPEN FB  => Rack 0, DB 298, Addr 0
+	CLOSED FB=> Rack 0, DB 298, Addr 1
+Valve V299:
+	OPEN FB  => Rack 0, DB 299, Addr 0
+	CLOSED FB=> Rack 0, DB 299, Addr 1
+Valve V300:
+	OPEN FB  => Rack 0, DB 300, Addr 0
+	CLOSED FB=> Rack 0, DB 300, Addr 1
+Valve V301:
+	OPEN FB  => Rack 0, DB 301, Addr 0
+	CLOSED FB=> Rack 0, DB 301, Addr 1
+Valve V302:
+	OPEN FB  => Rack 0, DB 302, Addr 0
+	CLOSED FB=> Rack 0, DB 302, Addr 1
+Valve V303:
+	OPEN FB  => Rack 0, DB 303, Addr 0
+	CLOSED FB=> Rack 0, DB 303, Addr 1
+Valve V304:
+	OPEN FB  => Rack 0, DB 304, Addr 0
+	CLOSED FB=> Rack 0, DB 304, Addr 1
+Valve V305:
+	OPEN FB  => Rack 0, DB 305, Addr 0
+	CLOSED FB=> Rack 0, DB 305, Addr 1
+Valve V306:
+	OPEN FB  => Rack 0, DB 306, Addr 0
+	CLOSED FB=> Rack 0, DB 306, Addr 1
+Valve V307:
+	OPEN FB  => Rack 0, DB 307, Addr 0
+	CLOSED FB=> Rack 0, DB 307, Addr 1
+Valve V308:
+	OPEN FB  => Rack 0, DB 308, Addr 0
+	CLOSED FB=> Rack 0, DB 308, Addr 1
+Valve V309:
+	OPEN FB  => Rack 0, DB 309, Addr 0
+	CLOSED FB=> Rack 0, DB 309, Addr 1
+Valve V310:
+	OPEN FB  => Rack 0, DB 310, Addr 0
+	CLOSED FB=> Rack 0, DB 310, Addr 1
+Valve V311:
+	OPEN FB  => Rack 0, DB 311, Addr 0
+	CLOSED FB=> Rack 0, DB 311, Addr 1
+Valve V312:
+	OPEN FB  => Rack 0, DB 312, Addr 0
+	CLOSED FB=> Rack 0, DB 312, Addr 1
+Valve V313:
+	OPEN FB  => Rack 0, DB 313, Addr 0
+	CLOSED FB=> Rack 0, DB 313, Addr 1
+Valve V314:
+	OPEN FB  => Rack 0, DB 314, Addr 0
+	CLOSED FB=> Rack 0, DB 314, Addr 1
+Valve V315:
+	OPEN FB  => Rack 0, DB 315, Addr 0
+	CLOSED FB=> Rack 0, DB 315, Addr 1
+Valve V316:
+	OPEN FB  => Rack 0, DB 316, Addr 0
+	CLOSED FB=> Rack 0, DB 316, Addr 1
+Valve V317:
+	OPEN FB  => Rack 0, DB 317, Addr 0
+	CLOSED FB=> Rack 0, DB 317, Addr 1
+Valve V318:
+	OPEN FB  => Rack 0, DB 318, Addr 0
+	CLOSED FB=> Rack 0, DB 318, Addr 1
+Valve V319:
+	OPEN FB  => Rack 0, DB 319, Addr 0
+	CLOSED FB=> Rack 0, DB 319, Addr 1
+Valve V320:
+	OPEN FB  => Rack 0, DB 320, Addr 0
+	CLOSED FB=> Rack 0, DB 320, Addr 1
+Valve V321:
+	OPEN FB  => Rack 0, DB 321, Addr 0
+	CLOSED FB=> Rack 0, DB 321, Addr 1
+Valve V322:
+	OPEN FB  => Rack 0, DB 322, Addr 0
+	CLOSED FB=> Rack 0, DB 322, Addr 1
+Valve V323:
+	OPEN FB  => Rack 0, DB 323, Addr 0
+	CLOSED FB=> Rack 0, DB 323, Addr 1
+Valve V324:
+	OPEN FB  => Rack 0, DB 324, Addr 0
+	CLOSED FB=> Rack 0, DB 324, Addr 1
+Valve V325:
+	OPEN FB  => Rack 0, DB 325, Addr 0
+	CLOSED FB=> Rack 0, DB 325, Addr 1
+Valve V326:
+	OPEN FB  => Rack 0, DB 326, Addr 0
+	CLOSED FB=> Rack 0, DB 326, Addr 1
+Valve V327:
+	OPEN FB  => Rack 0, DB 327, Addr 0
+	CLOSED FB=> Rack 0, DB 327, Addr 1
+Valve V328:
+	OPEN FB  => Rack 0, DB 328, Addr 0
+	CLOSED FB=> Rack 0, DB 328, Addr 1
+Valve V329:
+	OPEN FB  => Rack 0, DB 329, Addr 0
+	CLOSED FB=> Rack 0, DB 329, Addr 1
+Valve V330:
+	OPEN FB  => Rack 0, DB 330, Addr 0
+	CLOSED FB=> Rack 0, DB 330, Addr 1
+Valve V331:
+	OPEN FB  => Rack 0, DB 331, Addr 0
+	CLOSED FB=> Rack 0, DB 331, Addr 1
+Valve V332:
+	OPEN FB  => Rack 0, DB 332, Addr 0
+	CLOSED FB=> Rack 0, DB 332, Addr 1
+Valve V333:
+	OPEN FB  => Rack 0, DB 333, Addr 0
+	CLOSED FB=> Rack 0, DB 333, Addr 1
+Valve V334:
+	OPEN FB  => Rack 0, DB 334, Addr 0
+	CLOSED FB=> Rack 0, DB 334, Addr 1
+Valve V335:
+	OPEN FB  => Rack 0, DB 335, Addr 0
+	CLOSED FB=> Rack 0, DB 335, Addr 1
+Valve V336:
+	OPEN FB  => Rack 0, DB 336, Addr 0
+	CLOSED FB=> Rack 0, DB 336, Addr 1
+Valve V337:
+	OPEN FB  => Rack 0, DB 337, Addr 0
+	CLOSED FB=> Rack 0, DB 337, Addr 1
+Valve V338:
+	OPEN FB  => Rack 0, DB 338, Addr 0
+	CLOSED FB=> Rack 0, DB 338, Addr 1
+Valve V339:
+	OPEN FB  => Rack 0, DB 339, Addr 0
+	CLOSED FB=> Rack 0, DB 339, Addr 1
+Valve V340:
+	OPEN FB  => Rack 0, DB 340, Addr 0
+	CLOSED FB=> Rack 0, DB 340, Addr 1
+Valve V341:
+	OPEN FB  => Rack 0, DB 341, Addr 0
+	CLOSED FB=> Rack 0, DB 341, Addr 1
+Valve V342:
+	OPEN FB  => Rack 0, DB 342, Addr 0
+	CLOSED FB=> Rack 0, DB 342, Addr 1
+Valve V343:
+	OPEN FB  => Rack 0, DB 343, Addr 0
+	CLOSED FB=> Rack 0, DB 343, Addr 1
+Valve V344:
+	OPEN FB  => Rack 0, DB 344, Addr 0
+	CLOSED FB=> Rack 0, DB 344, Addr 1
+Valve V345:
+	OPEN FB  => Rack 0, DB 345, Addr 0
+	CLOSED FB=> Rack 0, DB 345, Addr 1
+Valve V346:
+	OPEN FB  => Rack 0, DB 346, Addr 0
+	CLOSED FB=> Rack 0, DB 346, Addr 1
+Valve V347:
+	OPEN FB  => Rack 0, DB 347, Addr 0
+	CLOSED FB=> Rack 0, DB 347, Addr 1
+Valve V348:
+	OPEN FB  => Rack 0, DB 348, Addr 0
+	CLOSED FB=> Rack 0, DB 348, Addr 1
+Valve V349:
+	OPEN FB  => Rack 0, DB 349, Addr 0
+	CLOSED FB=> Rack 0, DB 349, Addr 1
+Valve V350:
+	OPEN FB  => Rack 0, DB 350, Addr 0
+	CLOSED FB=> Rack 0, DB 350, Addr 1
+Valve V351:
+	OPEN FB  => Rack 0, DB 351, Addr 0
+	CLOSED FB=> Rack 0, DB 351, Addr 1
+Valve V352:
+	OPEN FB  => Rack 0, DB 352, Addr 0
+	CLOSED FB=> Rack 0, DB 352, Addr 1
+Valve V353:
+	OPEN FB  => Rack 0, DB 353, Addr 0
+	CLOSED FB=> Rack 0, DB 353, Addr 1
+Valve V354:
+	OPEN FB  => Rack 0, DB 354, Addr 0
+	CLOSED FB=> Rack 0, DB 354, Addr 1
+Valve V355:
+	OPEN FB  => Rack 0, DB 355, Addr 0
+	CLOSED FB=> Rack 0, DB 355, Addr 1
+Valve V356:
+	OPEN FB  => Rack 0, DB 356, Addr 0
+	CLOSED FB=> Rack 0, DB 356, Addr 1
+Valve V357:
+	OPEN FB  => Rack 0, DB 357, Addr 0
+	CLOSED FB=> Rack 0, DB 357, Addr 1
+Valve V358:
+	OPEN FB  => Rack 0, DB 358, Addr 0
+	CLOSED FB=> Rack 0, DB 358, Addr 1
+Valve V359:
+	OPEN FB  => Rack 0, DB 359, Addr 0
+	CLOSED FB=> Rack 0, DB 359, Addr 1
+Valve V360:
+	OPEN FB  => Rack 0, DB 360, Addr 0
+	CLOSED FB=> Rack 0, DB 360, Addr 1
+Valve V361:
+	OPEN FB  => Rack 0, DB 361, Addr 0
+	CLOSED FB=> Rack 0, DB 361, Addr 1
+Valve V362:
+	OPEN FB  => Rack 0, DB 362, Addr 0
+	CLOSED FB=> Rack 0, DB 362, Addr 1
+Valve V363:
+	OPEN FB  => Rack 0, DB 363, Addr 0
+	CLOSED FB=> Rack 0, DB 363, Addr 1
+Valve V364:
+	OPEN FB  => Rack 0, DB 364, Addr 0
+	CLOSED FB=> Rack 0, DB 364, Addr 1
+Valve V365:
+	OPEN FB  => Rack 0, DB 365, Addr 0
+	CLOSED FB=> Rack 0, DB 365, Addr 1
+Valve V366:
+	OPEN FB  => Rack 0, DB 366, Addr 0
+	CLOSED FB=> Rack 0, DB 366, Addr 1
+Valve V367:
+	OPEN FB  => Rack 0, DB 367, Addr 0
+	CLOSED FB=> Rack 0, DB 367, Addr 1
+Valve V368:
+	OPEN FB  => Rack 0, DB 368, Addr 0
+	CLOSED FB=> Rack 0, DB 368, Addr 1
+Valve V369:
+	OPEN FB  => Rack 0, DB 369, Addr 0
+	CLOSED FB=> Rack 0, DB 369, Addr 1
+Valve V370:
+	OPEN FB  => Rack 0, DB 370, Addr 0
+	CLOSED FB=> Rack 0, DB 370, Addr 1
+Valve V371:
+	OPEN FB  => Rack 0, DB 371, Addr 0
+	CLOSED FB=> Rack 0, DB 371, Addr 1
+Valve V372:
+	OPEN FB  => Rack 0, DB 372, Addr 0
+	CLOSED FB=> Rack 0, DB 372, Addr 1
+Valve V373:
+	OPEN FB  => Rack 0, DB 373, Addr 0
+	CLOSED FB=> Rack 0, DB 373, Addr 1
+Valve V374:
+	OPEN FB  => Rack 0, DB 374, Addr 0
+	CLOSED FB=> Rack 0, DB 374, Addr 1
+Valve V375:
+	OPEN FB  => Rack 0, DB 375, Addr 0
+	CLOSED FB=> Rack 0, DB 375, Addr 1
+Valve V376:
+	OPEN FB  => Rack 0, DB 376, Addr 0
+	CLOSED FB=> Rack 0, DB 376, Addr 1
+Valve V377:
+	OPEN FB  => Rack 0, DB 377, Addr 0
+	CLOSED FB=> Rack 0, DB 377, Addr 1
+Valve V378:
+	OPEN FB  => Rack 0, DB 378, Addr 0
+	CLOSED FB=> Rack 0, DB 378, Addr 1
+Valve V379:
+	OPEN FB  => Rack 0, DB 379, Addr 0
+	CLOSED FB=> Rack 0, DB 379, Addr 1
+Valve V380:
+	OPEN FB  => Rack 0, DB 380, Addr 0
+	CLOSED FB=> Rack 0, DB 380, Addr 1
+Valve V381:
+	OPEN FB  => Rack 0, DB 381, Addr 0
+	CLOSED FB=> Rack 0, DB 381, Addr 1
+Valve V382:
+	OPEN FB  => Rack 0, DB 382, Addr 0
+	CLOSED FB=> Rack 0, DB 382, Addr 1
+Valve V383:
+	OPEN FB  => Rack 0, DB 383, Addr 0
+	CLOSED FB=> Rack 0, DB 383, Addr 1
+Valve V384:
+	OPEN FB  => Rack 0, DB 384, Addr 0
+	CLOSED FB=> Rack 0, DB 384, Addr 1
+Valve V385:
+	OPEN FB  => Rack 0, DB 385, Addr 0
+	CLOSED FB=> Rack 0, DB 385, Addr 1
+Valve V386:
+	OPEN FB  => Rack 0, DB 386, Addr 0
+	CLOSED FB=> Rack 0, DB 386, Addr 1
+Valve V387:
+	OPEN FB  => Rack 0, DB 387, Addr 0
+	CLOSED FB=> Rack 0, DB 387, Addr 1
+Valve V388:
+	OPEN FB  => Rack 0, DB 388, Addr 0
+	CLOSED FB=> Rack 0, DB 388, Addr 1
+Valve V389:
+	OPEN FB  => Rack 0, DB 389, Addr 0
+	CLOSED FB=> Rack 0, DB 389, Addr 1
+Valve V390:
+	OPEN FB  => Rack 0, DB 390, Addr 0
+	CLOSED FB=> Rack 0, DB 390, Addr 1
+Valve V391:
+	OPEN FB  => Rack 0, DB 391, Addr 0
+	CLOSED FB=> Rack 0, DB 391, Addr 1
+Valve V392:
+	OPEN FB  => Rack 0, DB 392, Addr 0
+	CLOSED FB=> Rack 0, DB 392, Addr 1
+Valve V393:
+	OPEN FB  => Rack 0, DB 393, Addr 0
+	CLOSED FB=> Rack 0, DB 393, Addr 1
+Valve V394:
+	OPEN FB  => Rack 0, DB 394, Addr 0
+	CLOSED FB=> Rack 0, DB 394, Addr 1
+Valve V395:
+	OPEN FB  => Rack 0, DB 395, Addr 0
+	CLOSED FB=> Rack 0, DB 395, Addr 1
+Valve V396:
+	OPEN FB  => Rack 0, DB 396, Addr 0
+	CLOSED FB=> Rack 0, DB 396, Addr 1
+Valve V397:
+	OPEN FB  => Rack 0, DB 397, Addr 0
+	CLOSED FB=> Rack 0, DB 397, Addr 1
+Valve V398:
+	OPEN FB  => Rack 0, DB 398, Addr 0
+	CLOSED FB=> Rack 0, DB 398, Addr 1
+Valve V399:
+	OPEN FB  => Rack 0, DB 399, Addr 0
+	CLOSED FB=> Rack 0, DB 399, Addr 1
+Valve V400:
+	OPEN FB  => Rack 0, DB 400, Addr 0
+	CLOSED FB=> Rack 0, DB 400, Addr 1
+Valve V401:
+	OPEN FB  => Rack 0, DB 401, Addr 0
+	CLOSED FB=> Rack 0, DB 401, Addr 1
+Valve V402:
+	OPEN FB  => Rack 0, DB 402, Addr 0
+	CLOSED FB=> Rack 0, DB 402, Addr 1
+Valve V403:
+	OPEN FB  => Rack 0, DB 403, Addr 0
+	CLOSED FB=> Rack 0, DB 403, Addr 1
+Valve V404:
+	OPEN FB  => Rack 0, DB 404, Addr 0
+	CLOSED FB=> Rack 0, DB 404, Addr 1
+Valve V405:
+	OPEN FB  => Rack 0, DB 405, Addr 0
+	CLOSED FB=> Rack 0, DB 405, Addr 1
+Valve V406:
+	OPEN FB  => Rack 0, DB 406, Addr 0
+	CLOSED FB=> Rack 0, DB 406, Addr 1
+Valve V407:
+	OPEN FB  => Rack 0, DB 407, Addr 0
+	CLOSED FB=> Rack 0, DB 407, Addr 1
+Valve V408:
+	OPEN FB  => Rack 0, DB 408, Addr 0
+	CLOSED FB=> Rack 0, DB 408, Addr 1
+Valve V409:
+	OPEN FB  => Rack 0, DB 409, Addr 0
+	CLOSED FB=> Rack 0, DB 409, Addr 1
+Valve V410:
+	OPEN FB  => Rack 0, DB 410, Addr 0
+	CLOSED FB=> Rack 0, DB 410, Addr 1
+Valve V411:
+	OPEN FB  => Rack 0, DB 411, Addr 0
+	CLOSED FB=> Rack 0, DB 411, Addr 1
+Valve V412:
+	OPEN FB  => Rack 0, DB 412, Addr 0
+	CLOSED FB=> Rack 0, DB 412, Addr 1
+Valve V413:
+	OPEN FB  => Rack 0, DB 413, Addr 0
+	CLOSED FB=> Rack 0, DB 413, Addr 1
+Valve V414:
+	OPEN FB  => Rack 0, DB 414, Addr 0
+	CLOSED FB=> Rack 0, DB 414, Addr 1
+Valve V415:
+	OPEN FB  => Rack 0, DB 415, Addr 0
+	CLOSED FB=> Rack 0, DB 415, Addr 1
+Valve V416:
+	OPEN FB  => Rack 0, DB 416, Addr 0
+	CLOSED FB=> Rack 0, DB 416, Addr 1
+Valve V417:
+	OPEN FB  => Rack 0, DB 417, Addr 0
+	CLOSED FB=> Rack 0, DB 417, Addr 1
+Valve V418:
+	OPEN FB  => Rack 0, DB 418, Addr 0
+	CLOSED FB=> Rack 0, DB 418, Addr 1
+Valve V419:
+	OPEN FB  => Rack 0, DB 419, Addr 0
+	CLOSED FB=> Rack 0, DB 419, Addr 1
+Valve V420:
+	OPEN FB  => Rack 0, DB 420, Addr 0
+	CLOSED FB=> Rack 0, DB 420, Addr 1
+Valve V421:
+	OPEN FB  => Rack 0, DB 421, Addr 0
+	CLOSED FB=> Rack 0, DB 421, Addr 1
+Valve V422:
+	OPEN FB  => Rack 0, DB 422, Addr 0
+	CLOSED FB=> Rack 0, DB 422, Addr 1
+Valve V423:
+	OPEN FB  => Rack 0, DB 423, Addr 0
+	CLOSED FB=> Rack 0, DB 423, Addr 1
+Valve V424:
+	OPEN FB  => Rack 0, DB 424, Addr 0
+	CLOSED FB=> Rack 0, DB 424, Addr 1
+Valve V425:
+	OPEN FB  => Rack 0, DB 425, Addr 0
+	CLOSED FB=> Rack 0, DB 425, Addr 1
+Valve V426:
+	OPEN FB  => Rack 0, DB 426, Addr 0
+	CLOSED FB=> Rack 0, DB 426, Addr 1
+Valve V427:
+	OPEN FB  => Rack 0, DB 427, Addr 0
+	CLOSED FB=> Rack 0, DB 427, Addr 1
+Valve V428:
+	OPEN FB  => Rack 0, DB 428, Addr 0
+	CLOSED FB=> Rack 0, DB 428, Addr 1
+Valve V429:
+	OPEN FB  => Rack 0, DB 429, Addr 0
+	CLOSED FB=> Rack 0, DB 429, Addr 1
+Valve V430:
+	OPEN FB  => Rack 0, DB 430, Addr 0
+	CLOSED FB=> Rack 0, DB 430, Addr 1
+Valve V431:
+	OPEN FB  => Rack 0, DB 431, Addr 0
+	CLOSED FB=> Rack 0, DB 431, Addr 1
+Valve V432:
+	OPEN FB  => Rack 0, DB 432, Addr 0
+	CLOSED FB=> Rack 0, DB 432, Addr 1
+Valve V433:
+	OPEN FB  => Rack 0, DB 433, Addr 0
+	CLOSED FB=> Rack 0, DB 433, Addr 1
+Valve V434:
+	OPEN FB  => Rack 0, DB 434, Addr 0
+	CLOSED FB=> Rack 0, DB 434, Addr 1
+Valve V435:
+	OPEN FB  => Rack 0, DB 435, Addr 0
+	CLOSED FB=> Rack 0, DB 435, Addr 1
+Valve V436:
+	OPEN FB  => Rack 0, DB 436, Addr 0
+	CLOSED FB=> Rack 0, DB 436, Addr 1
+Valve V437:
+	OPEN FB  => Rack 0, DB 437, Addr 0
+	CLOSED FB=> Rack 0, DB 437, Addr 1
+Valve V438:
+	OPEN FB  => Rack 0, DB 438, Addr 0
+	CLOSED FB=> Rack 0, DB 438, Addr 1
+Valve V439:
+	OPEN FB  => Rack 0, DB 439, Addr 0
+	CLOSED FB=> Rack 0, DB 439, Addr 1
+Valve V440:
+	OPEN FB  => Rack 0, DB 440, Addr 0
+	CLOSED FB=> Rack 0, DB 440, Addr 1
+Valve V441:
+	OPEN FB  => Rack 0, DB 441, Addr 0
+	CLOSED FB=> Rack 0, DB 441, Addr 1
+Valve V442:
+	OPEN FB  => Rack 0, DB 442, Addr 0
+	CLOSED FB=> Rack 0, DB 442, Addr 1
+Valve V443:
+	OPEN FB  => Rack 0, DB 443, Addr 0
+	CLOSED FB=> Rack 0, DB 443, Addr 1
+Valve V444:
+	OPEN FB  => Rack 0, DB 444, Addr 0
+	CLOSED FB=> Rack 0, DB 444, Addr 1
+Valve V445:
+	OPEN FB  => Rack 0, DB 445, Addr 0
+	CLOSED FB=> Rack 0, DB 445, Addr 1
+Valve V446:
+	OPEN FB  => Rack 0, DB 446, Addr 0
+	CLOSED FB=> Rack 0, DB 446, Addr 1
+Valve V447:
+	OPEN FB  => Rack 0, DB 447, Addr 0
+	CLOSED FB=> Rack 0, DB 447, Addr 1
+Valve V448:
+	OPEN FB  => Rack 0, DB 448, Addr 0
+	CLOSED FB=> Rack 0, DB 448, Addr 1
+Valve V449:
+	OPEN FB  => Rack 0, DB 449, Addr 0
+	CLOSED FB=> Rack 0, DB 449, Addr 1
+Valve V450:
+	OPEN FB  => Rack 0, DB 450, Addr 0
+	CLOSED FB=> Rack 0, DB 450, Addr 1
+Valve V451:
+	OPEN FB  => Rack 0, DB 451, Addr 0
+	CLOSED FB=> Rack 0, DB 451, Addr 1
+Valve V452:
+	OPEN FB  => Rack 0, DB 452, Addr 0
+	CLOSED FB=> Rack 0, DB 452, Addr 1
+Valve V453:
+	OPEN FB  => Rack 0, DB 453, Addr 0
+	CLOSED FB=> Rack 0, DB 453, Addr 1
+Valve V454:
+	OPEN FB  => Rack 0, DB 454, Addr 0
+	CLOSED FB=> Rack 0, DB 454, Addr 1
+Valve V455:
+	OPEN FB  => Rack 0, DB 455, Addr 0
+	CLOSED FB=> Rack 0, DB 455, Addr 1
+Valve V456:
+	OPEN FB  => Rack 0, DB 456, Addr 0
+	CLOSED FB=> Rack 0, DB 456, Addr 1
+Valve V457:
+	OPEN FB  => Rack 0, DB 457, Addr 0
+	CLOSED FB=> Rack 0, DB 457, Addr 1
+Valve V458:
+	OPEN FB  => Rack 0, DB 458, Addr 0
+	CLOSED FB=> Rack 0, DB 458, Addr 1
+Valve V459:
+	OPEN FB  => Rack 0, DB 459, Addr 0
+	CLOSED FB=> Rack 0, DB 459, Addr 1
+Valve V460:
+	OPEN FB  => Rack 0, DB 460, Addr 0
+	CLOSED FB=> Rack 0, DB 460, Addr 1
+Valve V461:
+	OPEN FB  => Rack 0, DB 461, Addr 0
+	CLOSED FB=> Rack 0, DB 461, Addr 1
+Valve V462:
+	OPEN FB  => Rack 0, DB 462, Addr 0
+	CLOSED FB=> Rack 0, DB 462, Addr 1
+Valve V463:
+	OPEN FB  => Rack 0, DB 463, Addr 0
+	CLOSED FB=> Rack 0, DB 463, Addr 1
+Valve V464:
+	OPEN FB  => Rack 0, DB 464, Addr 0
+	CLOSED FB=> Rack 0, DB 464, Addr 1
+Valve V465:
+	OPEN FB  => Rack 0, DB 465, Addr 0
+	CLOSED FB=> Rack 0, DB 465, Addr 1
+Valve V466:
+	OPEN FB  => Rack 0, DB 466, Addr 0
+	CLOSED FB=> Rack 0, DB 466, Addr 1
+Valve V467:
+	OPEN FB  => Rack 0, DB 467, Addr 0
+	CLOSED FB=> Rack 0, DB 467, Addr 1
+Valve V468:
+	OPEN FB  => Rack 0, DB 468, Addr 0
+	CLOSED FB=> Rack 0, DB 468, Addr 1
+Valve V469:
+	OPEN FB  => Rack 0, DB 469, Addr 0
+	CLOSED FB=> Rack 0, DB 469, Addr 1
+Valve V470:
+	OPEN FB  => Rack 0, DB 470, Addr 0
+	CLOSED FB=> Rack 0, DB 470, Addr 1
+Valve V471:
+	OPEN FB  => Rack 0, DB 471, Addr 0
+	CLOSED FB=> Rack 0, DB 471, Addr 1
+Valve V472:
+	OPEN FB  => Rack 0, DB 472, Addr 0
+	CLOSED FB=> Rack 0, DB 472, Addr 1
+Valve V473:
+	OPEN FB  => Rack 0, DB 473, Addr 0
+	CLOSED FB=> Rack 0, DB 473, Addr 1
+Valve V474:
+	OPEN FB  => Rack 0, DB 474, Addr 0
+	CLOSED FB=> Rack 0, DB 474, Addr 1
+Valve V475:
+	OPEN FB  => Rack 0, DB 475, Addr 0
+	CLOSED FB=> Rack 0, DB 475, Addr 1
+Valve V476:
+	OPEN FB  => Rack 0, DB 476, Addr 0
+	CLOSED FB=> Rack 0, DB 476, Addr 1
+Valve V477:
+	OPEN FB  => Rack 0, DB 477, Addr 0
+	CLOSED FB=> Rack 0, DB 477, Addr 1
+Valve V478:
+	OPEN FB  => Rack 0, DB 478, Addr 0
+	CLOSED FB=> Rack 0, DB 478, Addr 1
+Valve V479:
+	OPEN FB  => Rack 0, DB 479, Addr 0
+	CLOSED FB=> Rack 0, DB 479, Addr 1
+Valve V480:
+	OPEN FB  => Rack 0, DB 480, Addr 0
+	CLOSED FB=> Rack 0, DB 480, Addr 1
+Valve V481:
+	OPEN FB  => Rack 0, DB 481, Addr 0
+	CLOSED FB=> Rack 0, DB 481, Addr 1
+Valve V482:
+	OPEN FB  => Rack 0, DB 482, Addr 0
+	CLOSED FB=> Rack 0, DB 482, Addr 1
+Valve V483:
+	OPEN FB  => Rack 0, DB 483, Addr 0
+	CLOSED FB=> Rack 0, DB 483, Addr 1
+Valve V484:
+	OPEN FB  => Rack 0, DB 484, Addr 0
+	CLOSED FB=> Rack 0, DB 484, Addr 1
+Valve V485:
+	OPEN FB  => Rack 0, DB 485, Addr 0
+	CLOSED FB=> Rack 0, DB 485, Addr 1
+Valve V486:
+	OPEN FB  => Rack 0, DB 486, Addr 0
+	CLOSED FB=> Rack 0, DB 486, Addr 1
+Valve V487:
+	OPEN FB  => Rack 0, DB 487, Addr 0
+	CLOSED FB=> Rack 0, DB 487, Addr 1
+Valve V488:
+	OPEN FB  => Rack 0, DB 488, Addr 0
+	CLOSED FB=> Rack 0, DB 488, Addr 1
+Valve V489:
+	OPEN FB  => Rack 0, DB 489, Addr 0
+	CLOSED FB=> Rack 0, DB 489, Addr 1
+Valve V490:
+	OPEN FB  => Rack 0, DB 490, Addr 0
+	CLOSED FB=> Rack 0, DB 490, Addr 1
+Valve V491:
+	OPEN FB  => Rack 0, DB 491, Addr 0
+	CLOSED FB=> Rack 0, DB 491, Addr 1
+Valve V492:
+	OPEN FB  => Rack 0, DB 492, Addr 0
+	CLOSED FB=> Rack 0, DB 492, Addr 1
+Valve V493:
+	OPEN FB  => Rack 0, DB 493, Addr 0
+	CLOSED FB=> Rack 0, DB 493, Addr 1
+Valve V494:
+	OPEN FB  => Rack 0, DB 494, Addr 0
+	CLOSED FB=> Rack 0, DB 494, Addr 1
+Valve V495:
+	OPEN FB  => Rack 0, DB 495, Addr 0
+	CLOSED FB=> Rack 0, DB 495, Addr 1
+Valve V496:
+	OPEN FB  => Rack 0, DB 496, Addr 0
+	CLOSED FB=> Rack 0, DB 496, Addr 1
+Valve V497:
+	OPEN FB  => Rack 0, DB 497, Addr 0
+	CLOSED FB=> Rack 0, DB 497, Addr 1
+Valve V498:
+	OPEN FB  => Rack 0, DB 498, Addr 0
+	CLOSED FB=> Rack 0, DB 498, Addr 1
+Valve V499:
+	OPEN FB  => Rack 0, DB 499, Addr 0
+	CLOSED FB=> Rack 0, DB 499, Addr 1
+Valve V500:
+	OPEN FB  => Rack 0, DB 500, Addr 0
+	CLOSED FB=> Rack 0, DB 500, Addr 1
+Valve V501:
+	OPEN FB  => Rack 0, DB 501, Addr 0
+	CLOSED FB=> Rack 0, DB 501, Addr 1
+Valve V502:
+	OPEN FB  => Rack 0, DB 502, Addr 0
+	CLOSED FB=> Rack 0, DB 502, Addr 1
+Valve V503:
+	OPEN FB  => Rack 0, DB 503, Addr 0
+	CLOSED FB=> Rack 0, DB 503, Addr 1
+Valve V504:
+	OPEN FB  => Rack 0, DB 504, Addr 0
+	CLOSED FB=> Rack 0, DB 504, Addr 1
+Valve V505:
+	OPEN FB  => Rack 0, DB 505, Addr 0
+	CLOSED FB=> Rack 0, DB 505, Addr 1
+Valve V506:
+	OPEN FB  => Rack 0, DB 506, Addr 0
+	CLOSED FB=> Rack 0, DB 506, Addr 1
+Valve V507:
+	OPEN FB  => Rack 0, DB 507, Addr 0
+	CLOSED FB=> Rack 0, DB 507, Addr 1
+Valve V508:
+	OPEN FB  => Rack 0, DB 508, Addr 0
+	CLOSED FB=> Rack 0, DB 508, Addr 1
+Valve V509:
+	OPEN FB  => Rack 0, DB 509, Addr 0
+	CLOSED FB=> Rack 0, DB 509, Addr 1
+Valve V510:
+	OPEN FB  => Rack 0, DB 510, Addr 0
+	CLOSED FB=> Rack 0, DB 510, Addr 1
+Valve V511:
+	OPEN FB  => Rack 0, DB 511, Addr 0
+	CLOSED FB=> Rack 0, DB 511, Addr 1
+Valve V512:
+	OPEN FB  => Rack 0, DB 512, Addr 0
+	CLOSED FB=> Rack 0, DB 512, Addr 1
+Valve V513:
+	OPEN FB  => Rack 0, DB 513, Addr 0
+	CLOSED FB=> Rack 0, DB 513, Addr 1
+Valve V514:
+	OPEN FB  => Rack 0, DB 514, Addr 0
+	CLOSED FB=> Rack 0, DB 514, Addr 1
+Valve V515:
+	OPEN FB  => Rack 0, DB 515, Addr 0
+	CLOSED FB=> Rack 0, DB 515, Addr 1
+Valve V516:
+	OPEN FB  => Rack 0, DB 516, Addr 0
+	CLOSED FB=> Rack 0, DB 516, Addr 1
+Valve V517:
+	OPEN FB  => Rack 0, DB 517, Addr 0
+	CLOSED FB=> Rack 0, DB 517, Addr 1
+Valve V518:
+	OPEN FB  => Rack 0, DB 518, Addr 0
+	CLOSED FB=> Rack 0, DB 518, Addr 1
+Valve V519:
+	OPEN FB  => Rack 0, DB 519, Addr 0
+	CLOSED FB=> Rack 0, DB 519, Addr 1
+Valve V520:
+	OPEN FB  => Rack 0, DB 520, Addr 0
+	CLOSED FB=> Rack 0, DB 520, Addr 1
+Valve V521:
+	OPEN FB  => Rack 0, DB 521, Addr 0
+	CLOSED FB=> Rack 0, DB 521, Addr 1
+Valve V522:
+	OPEN FB  => Rack 0, DB 522, Addr 0
+	CLOSED FB=> Rack 0, DB 522, Addr 1
+Valve V523:
+	OPEN FB  => Rack 0, DB 523, Addr 0
+	CLOSED FB=> Rack 0, DB 523, Addr 1
+Valve V524:
+	OPEN FB  => Rack 0, DB 524, Addr 0
+	CLOSED FB=> Rack 0, DB 524, Addr 1
+Valve V525:
+	OPEN FB  => Rack 0, DB 525, Addr 0
+	CLOSED FB=> Rack 0, DB 525, Addr 1
+Valve V526:
+	OPEN FB  => Rack 0, DB 526, Addr 0
+	CLOSED FB=> Rack 0, DB 526, Addr 1
+Valve V527:
+	OPEN FB  => Rack 0, DB 527, Addr 0
+	CLOSED FB=> Rack 0, DB 527, Addr 1
+Valve V528:
+	OPEN FB  => Rack 0, DB 528, Addr 0
+	CLOSED FB=> Rack 0, DB 528, Addr 1
+Valve V529:
+	OPEN FB  => Rack 0, DB 529, Addr 0
+	CLOSED FB=> Rack 0, DB 529, Addr 1
+Valve V530:
+	OPEN FB  => Rack 0, DB 530, Addr 0
+	CLOSED FB=> Rack 0, DB 530, Addr 1
+Valve V531:
+	OPEN FB  => Rack 0, DB 531, Addr 0
+	CLOSED FB=> Rack 0, DB 531, Addr 1
+Valve V532:
+	OPEN FB  => Rack 0, DB 532, Addr 0
+	CLOSED FB=> Rack 0, DB 532, Addr 1
+Valve V533:
+	OPEN FB  => Rack 0, DB 533, Addr 0
+	CLOSED FB=> Rack 0, DB 533, Addr 1
+Valve V534:
+	OPEN FB  => Rack 0, DB 534, Addr 0
+	CLOSED FB=> Rack 0, DB 534, Addr 1
+Valve V535:
+	OPEN FB  => Rack 0, DB 535, Addr 0
+	CLOSED FB=> Rack 0, DB 535, Addr 1
+Valve V536:
+	OPEN FB  => Rack 0, DB 536, Addr 0
+	CLOSED FB=> Rack 0, DB 536, Addr 1
+Valve V537:
+	OPEN FB  => Rack 0, DB 537, Addr 0
+	CLOSED FB=> Rack 0, DB 537, Addr 1
+Valve V538:
+	OPEN FB  => Rack 0, DB 538, Addr 0
+	CLOSED FB=> Rack 0, DB 538, Addr 1
+Valve V539:
+	OPEN FB  => Rack 0, DB 539, Addr 0
+	CLOSED FB=> Rack 0, DB 539, Addr 1
+Valve V540:
+	OPEN FB  => Rack 0, DB 540, Addr 0
+	CLOSED FB=> Rack 0, DB 540, Addr 1
+Valve V541:
+	OPEN FB  => Rack 0, DB 541, Addr 0
+	CLOSED FB=> Rack 0, DB 541, Addr 1
+Valve V542:
+	OPEN FB  => Rack 0, DB 542, Addr 0
+	CLOSED FB=> Rack 0, DB 542, Addr 1
+Valve V543:
+	OPEN FB  => Rack 0, DB 543, Addr 0
+	CLOSED FB=> Rack 0, DB 543, Addr 1
+Valve V544:
+	OPEN FB  => Rack 0, DB 544, Addr 0
+	CLOSED FB=> Rack 0, DB 544, Addr 1
+Valve V545:
+	OPEN FB  => Rack 0, DB 545, Addr 0
+	CLOSED FB=> Rack 0, DB 545, Addr 1
+Valve V546:
+	OPEN FB  => Rack 0, DB 546, Addr 0
+	CLOSED FB=> Rack 0, DB 546, Addr 1
+Valve V547:
+	OPEN FB  => Rack 0, DB 547, Addr 0
+	CLOSED FB=> Rack 0, DB 547, Addr 1
+Valve V548:
+	OPEN FB  => Rack 0, DB 548, Addr 0
+	CLOSED FB=> Rack 0, DB 548, Addr 1
+Valve V549:
+	OPEN FB  => Rack 0, DB 549, Addr 0
+	CLOSED FB=> Rack 0, DB 549, Addr 1
+Valve V550:
+	OPEN FB  => Rack 0, DB 550, Addr 0
+	CLOSED FB=> Rack 0, DB 550, Addr 1
+Valve V551:
+	OPEN FB  => Rack 0, DB 551, Addr 0
+	CLOSED FB=> Rack 0, DB 551, Addr 1
+Valve V552:
+	OPEN FB  => Rack 0, DB 552, Addr 0
+	CLOSED FB=> Rack 0, DB 552, Addr 1
+Valve V553:
+	OPEN FB  => Rack 0, DB 553, Addr 0
+	CLOSED FB=> Rack 0, DB 553, Addr 1
+Valve V554:
+	OPEN FB  => Rack 0, DB 554, Addr 0
+	CLOSED FB=> Rack 0, DB 554, Addr 1
+Valve V555:
+	OPEN FB  => Rack 0, DB 555, Addr 0
+	CLOSED FB=> Rack 0, DB 555, Addr 1
+Valve V556:
+	OPEN FB  => Rack 0, DB 556, Addr 0
+	CLOSED FB=> Rack 0, DB 556, Addr 1
+Valve V557:
+	OPEN FB  => Rack 0, DB 557, Addr 0
+	CLOSED FB=> Rack 0, DB 557, Addr 1
+Valve V558:
+	OPEN FB  => Rack 0, DB 558, Addr 0
+	CLOSED FB=> Rack 0, DB 558, Addr 1
+Valve V559:
+	OPEN FB  => Rack 0, DB 559, Addr 0
+	CLOSED FB=> Rack 0, DB 559, Addr 1
+Valve V560:
+	OPEN FB  => Rack 0, DB 560, Addr 0
+	CLOSED FB=> Rack 0, DB 560, Addr 1
+Valve V561:
+	OPEN FB  => Rack 0, DB 561, Addr 0
+	CLOSED FB=> Rack 0, DB 561, Addr 1
+Valve V562:
+	OPEN FB  => Rack 0, DB 562, Addr 0
+	CLOSED FB=> Rack 0, DB 562, Addr 1
+Valve V563:
+	OPEN FB  => Rack 0, DB 563, Addr 0
+	CLOSED FB=> Rack 0, DB 563, Addr 1
+Valve V564:
+	OPEN FB  => Rack 0, DB 564, Addr 0
+	CLOSED FB=> Rack 0, DB 564, Addr 1
+Valve V565:
+	OPEN FB  => Rack 0, DB 565, Addr 0
+	CLOSED FB=> Rack 0, DB 565, Addr 1
+Valve V566:
+	OPEN FB  => Rack 0, DB 566, Addr 0
+	CLOSED FB=> Rack 0, DB 566, Addr 1
+Valve V567:
+	OPEN FB  => Rack 0, DB 567, Addr 0
+	CLOSED FB=> Rack 0, DB 567, Addr 1
+Valve V568:
+	OPEN FB  => Rack 0, DB 568, Addr 0
+	CLOSED FB=> Rack 0, DB 568, Addr 1
+Valve V569:
+	OPEN FB  => Rack 0, DB 569, Addr 0
+	CLOSED FB=> Rack 0, DB 569, Addr 1
+Valve V570:
+	OPEN FB  => Rack 0, DB 570, Addr 0
+	CLOSED FB=> Rack 0, DB 570, Addr 1
+Valve V571:
+	OPEN FB  => Rack 0, DB 571, Addr 0
+	CLOSED FB=> Rack 0, DB 571, Addr 1
+Valve V572:
+	OPEN FB  => Rack 0, DB 572, Addr 0
+	CLOSED FB=> Rack 0, DB 572, Addr 1
+Valve V573:
+	OPEN FB  => Rack 0, DB 573, Addr 0
+	CLOSED FB=> Rack 0, DB 573, Addr 1
+Valve V574:
+	OPEN FB  => Rack 0, DB 574, Addr 0
+	CLOSED FB=> Rack 0, DB 574, Addr 1
+Valve V575:
+	OPEN FB  => Rack 0, DB 575, Addr 0
+	CLOSED FB=> Rack 0, DB 575, Addr 1
+Valve V576:
+	OPEN FB  => Rack 0, DB 576, Addr 0
+	CLOSED FB=> Rack 0, DB 576, Addr 1
+Valve V577:
+	OPEN FB  => Rack 0, DB 577, Addr 0
+	CLOSED FB=> Rack 0, DB 577, Addr 1
+Valve V578:
+	OPEN FB  => Rack 0, DB 578, Addr 0
+	CLOSED FB=> Rack 0, DB 578, Addr 1
+Valve V579:
+	OPEN FB  => Rack 0, DB 579, Addr 0
+	CLOSED FB=> Rack 0, DB 579, Addr 1
+Valve V580:
+	OPEN FB  => Rack 0, DB 580, Addr 0
+	CLOSED FB=> Rack 0, DB 580, Addr 1
+Valve V581:
+	OPEN FB  => Rack 0, DB 581, Addr 0
+	CLOSED FB=> Rack 0, DB 581, Addr 1
+Valve V582:
+	OPEN FB  => Rack 0, DB 582, Addr 0
+	CLOSED FB=> Rack 0, DB 582, Addr 1
+Valve V583:
+	OPEN FB  => Rack 0, DB 583, Addr 0
+	CLOSED FB=> Rack 0, DB 583, Addr 1
+Valve V584:
+	OPEN FB  => Rack 0, DB 584, Addr 0
+	CLOSED FB=> Rack 0, DB 584, Addr 1
+Valve V585:
+	OPEN FB  => Rack 0, DB 585, Addr 0
+	CLOSED FB=> Rack 0, DB 585, Addr 1
+Valve V586:
+	OPEN FB  => Rack 0, DB 586, Addr 0
+	CLOSED FB=> Rack 0, DB 586, Addr 1
+Valve V587:
+	OPEN FB  => Rack 0, DB 587, Addr 0
+	CLOSED FB=> Rack 0, DB 587, Addr 1
+Valve V588:
+	OPEN FB  => Rack 0, DB 588, Addr 0
+	CLOSED FB=> Rack 0, DB 588, Addr 1
+Valve V589:
+	OPEN FB  => Rack 0, DB 589, Addr 0
+	CLOSED FB=> Rack 0, DB 589, Addr 1
+Valve V590:
+	OPEN FB  => Rack 0, DB 590, Addr 0
+	CLOSED FB=> Rack 0, DB 590, Addr 1
+Valve V591:
+	OPEN FB  => Rack 0, DB 591, Addr 0
+	CLOSED FB=> Rack 0, DB 591, Addr 1
+Valve V592:
+	OPEN FB  => Rack 0, DB 592, Addr 0
+	CLOSED FB=> Rack 0, DB 592, Addr 1
+Valve V593:
+	OPEN FB  => Rack 0, DB 593, Addr 0
+	CLOSED FB=> Rack 0, DB 593, Addr 1
+Valve V594:
+	OPEN FB  => Rack 0, DB 594, Addr 0
+	CLOSED FB=> Rack 0, DB 594, Addr 1
+Valve V595:
+	OPEN FB  => Rack 0, DB 595, Addr 0
+	CLOSED FB=> Rack 0, DB 595, Addr 1
+Valve V596:
+	OPEN FB  => Rack 0, DB 596, Addr 0
+	CLOSED FB=> Rack 0, DB 596, Addr 1
+Valve V597:
+	OPEN FB  => Rack 0, DB 597, Addr 0
+	CLOSED FB=> Rack 0, DB 597, Addr 1
+Valve V598:
+	OPEN FB  => Rack 0, DB 598, Addr 0
+	CLOSED FB=> Rack 0, DB 598, Addr 1
+Valve V599:
+	OPEN FB  => Rack 0, DB 599, Addr 0
+	CLOSED FB=> Rack 0, DB 599, Addr 1
+Valve V600:
+	OPEN FB  => Rack 0, DB 600, Addr 0
+	CLOSED FB=> Rack 0, DB 600, Addr 1
+Valve V601:
+	OPEN FB  => Rack 0, DB 601, Addr 0
+	CLOSED FB=> Rack 0, DB 601, Addr 1
+Valve V602:
+	OPEN FB  => Rack 0, DB 602, Addr 0
+	CLOSED FB=> Rack 0, DB 602, Addr 1
+Valve V603:
+	OPEN FB  => Rack 0, DB 603, Addr 0
+	CLOSED FB=> Rack 0, DB 603, Addr 1
+Valve V604:
+	OPEN FB  => Rack 0, DB 604, Addr 0
+	CLOSED FB=> Rack 0, DB 604, Addr 1
+Valve V605:
+	OPEN FB  => Rack 0, DB 605, Addr 0
+	CLOSED FB=> Rack 0, DB 605, Addr 1
+Valve V606:
+	OPEN FB  => Rack 0, DB 606, Addr 0
+	CLOSED FB=> Rack 0, DB 606, Addr 1
+Valve V607:
+	OPEN FB  => Rack 0, DB 607, Addr 0
+	CLOSED FB=> Rack 0, DB 607, Addr 1
+Valve V608:
+	OPEN FB  => Rack 0, DB 608, Addr 0
+	CLOSED FB=> Rack 0, DB 608, Addr 1
+Valve V609:
+	OPEN FB  => Rack 0, DB 609, Addr 0
+	CLOSED FB=> Rack 0, DB 609, Addr 1
+Valve V610:
+	OPEN FB  => Rack 0, DB 610, Addr 0
+	CLOSED FB=> Rack 0, DB 610, Addr 1
+Valve V611:
+	OPEN FB  => Rack 0, DB 611, Addr 0
+	CLOSED FB=> Rack 0, DB 611, Addr 1
+Valve V612:
+	OPEN FB  => Rack 0, DB 612, Addr 0
+	CLOSED FB=> Rack 0, DB 612, Addr 1
+Valve V613:
+	OPEN FB  => Rack 0, DB 613, Addr 0
+	CLOSED FB=> Rack 0, DB 613, Addr 1
+Valve V614:
+	OPEN FB  => Rack 0, DB 614, Addr 0
+	CLOSED FB=> Rack 0, DB 614, Addr 1
+Valve V615:
+	OPEN FB  => Rack 0, DB 615, Addr 0
+	CLOSED FB=> Rack 0, DB 615, Addr 1
+Valve V616:
+	OPEN FB  => Rack 0, DB 616, Addr 0
+	CLOSED FB=> Rack 0, DB 616, Addr 1
+Valve V617:
+	OPEN FB  => Rack 0, DB 617, Addr 0
+	CLOSED FB=> Rack 0, DB 617, Addr 1
+Valve V618:
+	OPEN FB  => Rack 0, DB 618, Addr 0
+	CLOSED FB=> Rack 0, DB 618, Addr 1
+Valve V619:
+	OPEN FB  => Rack 0, DB 619, Addr 0
+	CLOSED FB=> Rack 0, DB 619, Addr 1
+Valve V620:
+	OPEN FB  => Rack 0, DB 620, Addr 0
+	CLOSED FB=> Rack 0, DB 620, Addr 1
+Valve V621:
+	OPEN FB  => Rack 0, DB 621, Addr 0
+	CLOSED FB=> Rack 0, DB 621, Addr 1
+Valve V622:
+	OPEN FB  => Rack 0, DB 622, Addr 0
+	CLOSED FB=> Rack 0, DB 622, Addr 1
+Valve V623:
+	OPEN FB  => Rack 0, DB 623, Addr 0
+	CLOSED FB=> Rack 0, DB 623, Addr 1
+Valve V624:
+	OPEN FB  => Rack 0, DB 624, Addr 0
+	CLOSED FB=> Rack 0, DB 624, Addr 1
+Valve V625:
+	OPEN FB  => Rack 0, DB 625, Addr 0
+	CLOSED FB=> Rack 0, DB 625, Addr 1
+Valve V626:
+	OPEN FB  => Rack 0, DB 626, Addr 0
+	CLOSED FB=> Rack 0, DB 626, Addr 1
+Valve V627:
+	OPEN FB  => Rack 0, DB 627, Addr 0
+	CLOSED FB=> Rack 0, DB 627, Addr 1
+Valve V628:
+	OPEN FB  => Rack 0, DB 628, Addr 0
+	CLOSED FB=> Rack 0, DB 628, Addr 1
+Valve V629:
+	OPEN FB  => Rack 0, DB 629, Addr 0
+	CLOSED FB=> Rack 0, DB 629, Addr 1
+Valve V630:
+	OPEN FB  => Rack 0, DB 630, Addr 0
+	CLOSED FB=> Rack 0, DB 630, Addr 1
+Valve V631:
+	OPEN FB  => Rack 0, DB 631, Addr 0
+	CLOSED FB=> Rack 0, DB 631, Addr 1
+Valve V632:
+	OPEN FB  => Rack 0, DB 632, Addr 0
+	CLOSED FB=> Rack 0, DB 632, Addr 1
+Valve V633:
+	OPEN FB  => Rack 0, DB 633, Addr 0
+	CLOSED FB=> Rack 0, DB 633, Addr 1
+Valve V634:
+	OPEN FB  => Rack 0, DB 634, Addr 0
+	CLOSED FB=> Rack 0, DB 634, Addr 1
+Valve V635:
+	OPEN FB  => Rack 0, DB 635, Addr 0
+	CLOSED FB=> Rack 0, DB 635, Addr 1
+Valve V636:
+	OPEN FB  => Rack 0, DB 636, Addr 0
+	CLOSED FB=> Rack 0, DB 636, Addr 1
+Valve V637:
+	OPEN FB  => Rack 0, DB 637, Addr 0
+	CLOSED FB=> Rack 0, DB 637, Addr 1
+Valve V638:
+	OPEN FB  => Rack 0, DB 638, Addr 0
+	CLOSED FB=> Rack 0, DB 638, Addr 1
+Valve V639:
+	OPEN FB  => Rack 0, DB 639, Addr 0
+	CLOSED FB=> Rack 0, DB 639, Addr 1
+Valve V640:
+	OPEN FB  => Rack 0, DB 640, Addr 0
+	CLOSED FB=> Rack 0, DB 640, Addr 1
+Valve V641:
+	OPEN FB  => Rack 0, DB 641, Addr 0
+	CLOSED FB=> Rack 0, DB 641, Addr 1
+Valve V642:
+	OPEN FB  => Rack 0, DB 642, Addr 0
+	CLOSED FB=> Rack 0, DB 642, Addr 1
+Valve V643:
+	OPEN FB  => Rack 0, DB 643, Addr 0
+	CLOSED FB=> Rack 0, DB 643, Addr 1
+Valve V644:
+	OPEN FB  => Rack 0, DB 644, Addr 0
+	CLOSED FB=> Rack 0, DB 644, Addr 1
+Valve V645:
+	OPEN FB  => Rack 0, DB 645, Addr 0
+	CLOSED FB=> Rack 0, DB 645, Addr 1
+Valve V646:
+	OPEN FB  => Rack 0, DB 646, Addr 0
+	CLOSED FB=> Rack 0, DB 646, Addr 1
+Valve V647:
+	OPEN FB  => Rack 0, DB 647, Addr 0
+	CLOSED FB=> Rack 0, DB 647, Addr 1
+Valve V648:
+	OPEN FB  => Rack 0, DB 648, Addr 0
+	CLOSED FB=> Rack 0, DB 648, Addr 1
+Valve V649:
+	OPEN FB  => Rack 0, DB 649, Addr 0
+	CLOSED FB=> Rack 0, DB 649, Addr 1
+Valve V650:
+	OPEN FB  => Rack 0, DB 650, Addr 0
+	CLOSED FB=> Rack 0, DB 650, Addr 1
+Valve V651:
+	OPEN FB  => Rack 0, DB 651, Addr 0
+	CLOSED FB=> Rack 0, DB 651, Addr 1
+Valve V652:
+	OPEN FB  => Rack 0, DB 652, Addr 0
+	CLOSED FB=> Rack 0, DB 652, Addr 1
+Valve V653:
+	OPEN FB  => Rack 0, DB 653, Addr 0
+	CLOSED FB=> Rack 0, DB 653, Addr 1
+Valve V654:
+	OPEN FB  => Rack 0, DB 654, Addr 0
+	CLOSED FB=> Rack 0, DB 654, Addr 1
+Valve V655:
+	OPEN FB  => Rack 0, DB 655, Addr 0
+	CLOSED FB=> Rack 0, DB 655, Addr 1
+Valve V656:
+	OPEN FB  => Rack 0, DB 656, Addr 0
+	CLOSED FB=> Rack 0, DB 656, Addr 1
+Valve V657:
+	OPEN FB  => Rack 0, DB 657, Addr 0
+	CLOSED FB=> Rack 0, DB 657, Addr 1
+Valve V658:
+	OPEN FB  => Rack 0, DB 658, Addr 0
+	CLOSED FB=> Rack 0, DB 658, Addr 1
+Valve V659:
+	OPEN FB  => Rack 0, DB 659, Addr 0
+	CLOSED FB=> Rack 0, DB 659, Addr 1
+Valve V660:
+	OPEN FB  => Rack 0, DB 660, Addr 0
+	CLOSED FB=> Rack 0, DB 660, Addr 1
+Valve V661:
+	OPEN FB  => Rack 0, DB 661, Addr 0
+	CLOSED FB=> Rack 0, DB 661, Addr 1
+Valve V662:
+	OPEN FB  => Rack 0, DB 662, Addr 0
+	CLOSED FB=> Rack 0, DB 662, Addr 1
+Valve V663:
+	OPEN FB  => Rack 0, DB 663, Addr 0
+	CLOSED FB=> Rack 0, DB 663, Addr 1
+Valve V664:
+	OPEN FB  => Rack 0, DB 664, Addr 0
+	CLOSED FB=> Rack 0, DB 664, Addr 1
+Valve V665:
+	OPEN FB  => Rack 0, DB 665, Addr 0
+	CLOSED FB=> Rack 0, DB 665, Addr 1
+Valve V666:
+	OPEN FB  => Rack 0, DB 666, Addr 0
+	CLOSED FB=> Rack 0, DB 666, Addr 1
+Valve V667:
+	OPEN FB  => Rack 0, DB 667, Addr 0
+	CLOSED FB=> Rack 0, DB 667, Addr 1
+Valve V668:
+	OPEN FB  => Rack 0, DB 668, Addr 0
+	CLOSED FB=> Rack 0, DB 668, Addr 1
+Valve V669:
+	OPEN FB  => Rack 0, DB 669, Addr 0
+	CLOSED FB=> Rack 0, DB 669, Addr 1
+Valve V670:
+	OPEN FB  => Rack 0, DB 670, Addr 0
+	CLOSED FB=> Rack 0, DB 670, Addr 1
+Valve V671:
+	OPEN FB  => Rack 0, DB 671, Addr 0
+	CLOSED FB=> Rack 0, DB 671, Addr 1
+Valve V672:
+	OPEN FB  => Rack 0, DB 672, Addr 0
+	CLOSED FB=> Rack 0, DB 672, Addr 1
+Valve V673:
+	OPEN FB  => Rack 0, DB 673, Addr 0
+	CLOSED FB=> Rack 0, DB 673, Addr 1
+Valve V674:
+	OPEN FB  => Rack 0, DB 674, Addr 0
+	CLOSED FB=> Rack 0, DB 674, Addr 1
+Valve V675:
+	OPEN FB  => Rack 0, DB 675, Addr 0
+	CLOSED FB=> Rack 0, DB 675, Addr 1
+Valve V676:
+	OPEN FB  => Rack 0, DB 676, Addr 0
+	CLOSED FB=> Rack 0, DB 676, Addr 1
+Valve V677:
+	OPEN FB  => Rack 0, DB 677, Addr 0
+	CLOSED FB=> Rack 0, DB 677, Addr 1
+Valve V678:
+	OPEN FB  => Rack 0, DB 678, Addr 0
+	CLOSED FB=> Rack 0, DB 678, Addr 1
+Valve V679:
+	OPEN FB  => Rack 0, DB 679, Addr 0
+	CLOSED FB=> Rack 0, DB 679, Addr 1
+Valve V680:
+	OPEN FB  => Rack 0, DB 680, Addr 0
+	CLOSED FB=> Rack 0, DB 680, Addr 1
+Valve V681:
+	OPEN FB  => Rack 0, DB 681, Addr 0
+	CLOSED FB=> Rack 0, DB 681, Addr 1
+Valve V682:
+	OPEN FB  => Rack 0, DB 682, Addr 0
+	CLOSED FB=> Rack 0, DB 682, Addr 1
+Valve V683:
+	OPEN FB  => Rack 0, DB 683, Addr 0
+	CLOSED FB=> Rack 0, DB 683, Addr 1
+Valve V684:
+	OPEN FB  => Rack 0, DB 684, Addr 0
+	CLOSED FB=> Rack 0, DB 684, Addr 1
+Valve V685:
+	OPEN FB  => Rack 0, DB 685, Addr 0
+	CLOSED FB=> Rack 0, DB 685, Addr 1
+Valve V686:
+	OPEN FB  => Rack 0, DB 686, Addr 0
+	CLOSED FB=> Rack 0, DB 686, Addr 1
+Valve V687:
+	OPEN FB  => Rack 0, DB 687, Addr 0
+	CLOSED FB=> Rack 0, DB 687, Addr 1
+Valve V688:
+	OPEN FB  => Rack 0, DB 688, Addr 0
+	CLOSED FB=> Rack 0, DB 688, Addr 1
+Valve V689:
+	OPEN FB  => Rack 0, DB 689, Addr 0
+	CLOSED FB=> Rack 0, DB 689, Addr 1
+Valve V690:
+	OPEN FB  => Rack 0, DB 690, Addr 0
+	CLOSED FB=> Rack 0, DB 690, Addr 1
+Valve V691:
+	OPEN FB  => Rack 0, DB 691, Addr 0
+	CLOSED FB=> Rack 0, DB 691, Addr 1
+Valve V692:
+	OPEN FB  => Rack 0, DB 692, Addr 0
+	CLOSED FB=> Rack 0, DB 692, Addr 1
+Valve V693:
+	OPEN FB  => Rack 0, DB 693, Addr 0
+	CLOSED FB=> Rack 0, DB 693, Addr 1
+Valve V694:
+	OPEN FB  => Rack 0, DB 694, Addr 0
+	CLOSED FB=> Rack 0, DB 694, Addr 1
+Valve V695:
+	OPEN FB  => Rack 0, DB 695, Addr 0
+	CLOSED FB=> Rack 0, DB 695, Addr 1
+Valve V696:
+	OPEN FB  => Rack 0, DB 696, Addr 0
+	CLOSED FB=> Rack 0, DB 696, Addr 1
+Valve V697:
+	OPEN FB  => Rack 0, DB 697, Addr 0
+	CLOSED FB=> Rack 0, DB 697, Addr 1
+Valve V698:
+	OPEN FB  => Rack 0, DB 698, Addr 0
+	CLOSED FB=> Rack 0, DB 698, Addr 1
+Valve V699:
+	OPEN FB  => Rack 0, DB 699, Addr 0
+	CLOSED FB=> Rack 0, DB 699, Addr 1
+Valve V700:
+	OPEN FB  => Rack 0, DB 700, Addr 0
+	CLOSED FB=> Rack 0, DB 700, Addr 1
+Valve V701:
+	OPEN FB  => Rack 0, DB 701, Addr 0
+	CLOSED FB=> Rack 0, DB 701, Addr 1
+Valve V702:
+	OPEN FB  => Rack 0, DB 702, Addr 0
+	CLOSED FB=> Rack 0, DB 702, Addr 1
+Valve V703:
+	OPEN FB  => Rack 0, DB 703, Addr 0
+	CLOSED FB=> Rack 0, DB 703, Addr 1
+Valve V704:
+	OPEN FB  => Rack 0, DB 704, Addr 0
+	CLOSED FB=> Rack 0, DB 704, Addr 1
+Valve V705:
+	OPEN FB  => Rack 0, DB 705, Addr 0
+	CLOSED FB=> Rack 0, DB 705, Addr 1
+Valve V706:
+	OPEN FB  => Rack 0, DB 706, Addr 0
+	CLOSED FB=> Rack 0, DB 706, Addr 1
+Valve V707:
+	OPEN FB  => Rack 0, DB 707, Addr 0
+	CLOSED FB=> Rack 0, DB 707, Addr 1
+Valve V708:
+	OPEN FB  => Rack 0, DB 708, Addr 0
+	CLOSED FB=> Rack 0, DB 708, Addr 1
+Valve V709:
+	OPEN FB  => Rack 0, DB 709, Addr 0
+	CLOSED FB=> Rack 0, DB 709, Addr 1
+Valve V710:
+	OPEN FB  => Rack 0, DB 710, Addr 0
+	CLOSED FB=> Rack 0, DB 710, Addr 1
+Valve V711:
+	OPEN FB  => Rack 0, DB 711, Addr 0
+	CLOSED FB=> Rack 0, DB 711, Addr 1
+Valve V712:
+	OPEN FB  => Rack 0, DB 712, Addr 0
+	CLOSED FB=> Rack 0, DB 712, Addr 1
+Valve V713:
+	OPEN FB  => Rack 0, DB 713, Addr 0
+	CLOSED FB=> Rack 0, DB 713, Addr 1
+Valve V714:
+	OPEN FB  => Rack 0, DB 714, Addr 0
+	CLOSED FB=> Rack 0, DB 714, Addr 1
+Valve V715:
+	OPEN FB  => Rack 0, DB 715, Addr 0
+	CLOSED FB=> Rack 0, DB 715, Addr 1
+Valve V716:
+	OPEN FB  => Rack 0, DB 716, Addr 0
+	CLOSED FB=> Rack 0, DB 716, Addr 1
+Valve V717:
+	OPEN FB  => Rack 0, DB 717, Addr 0
+	CLOSED FB=> Rack 0, DB 717, Addr 1
+Valve V718:
+	OPEN FB  => Rack 0, DB 718, Addr 0
+	CLOSED FB=> Rack 0, DB 718, Addr 1
+Valve V719:
+	OPEN FB  => Rack 0, DB 719, Addr 0
+	CLOSED FB=> Rack 0, DB 719, Addr 1
+Valve V720:
+	OPEN FB  => Rack 0, DB 720, Addr 0
+	CLOSED FB=> Rack 0, DB 720, Addr 1
+Valve V721:
+	OPEN FB  => Rack 0, DB 721, Addr 0
+	CLOSED FB=> Rack 0, DB 721, Addr 1
+Valve V722:
+	OPEN FB  => Rack 0, DB 722, Addr 0
+	CLOSED FB=> Rack 0, DB 722, Addr 1
+Valve V723:
+	OPEN FB  => Rack 0, DB 723, Addr 0
+	CLOSED FB=> Rack 0, DB 723, Addr 1
+Valve V724:
+	OPEN FB  => Rack 0, DB 724, Addr 0
+	CLOSED FB=> Rack 0, DB 724, Addr 1
+Valve V725:
+	OPEN FB  => Rack 0, DB 725, Addr 0
+	CLOSED FB=> Rack 0, DB 725, Addr 1
+Valve V726:
+	OPEN FB  => Rack 0, DB 726, Addr 0
+	CLOSED FB=> Rack 0, DB 726, Addr 1
+Valve V727:
+	OPEN FB  => Rack 0, DB 727, Addr 0
+	CLOSED FB=> Rack 0, DB 727, Addr 1
+Valve V728:
+	OPEN FB  => Rack 0, DB 728, Addr 0
+	CLOSED FB=> Rack 0, DB 728, Addr 1
+Valve V729:
+	OPEN FB  => Rack 0, DB 729, Addr 0
+	CLOSED FB=> Rack 0, DB 729, Addr 1
+Valve V730:
+	OPEN FB  => Rack 0, DB 730, Addr 0
+	CLOSED FB=> Rack 0, DB 730, Addr 1
+Valve V731:
+	OPEN FB  => Rack 0, DB 731, Addr 0
+	CLOSED FB=> Rack 0, DB 731, Addr 1
+Valve V732:
+	OPEN FB  => Rack 0, DB 732, Addr 0
+	CLOSED FB=> Rack 0, DB 732, Addr 1
+Valve V733:
+	OPEN FB  => Rack 0, DB 733, Addr 0
+	CLOSED FB=> Rack 0, DB 733, Addr 1
+Valve V734:
+	OPEN FB  => Rack 0, DB 734, Addr 0
+	CLOSED FB=> Rack 0, DB 734, Addr 1
+Valve V735:
+	OPEN FB  => Rack 0, DB 735, Addr 0
+	CLOSED FB=> Rack 0, DB 735, Addr 1
+Valve V736:
+	OPEN FB  => Rack 0, DB 736, Addr 0
+	CLOSED FB=> Rack 0, DB 736, Addr 1
+Valve V737:
+	OPEN FB  => Rack 0, DB 737, Addr 0
+	CLOSED FB=> Rack 0, DB 737, Addr 1
+Valve V738:
+	OPEN FB  => Rack 0, DB 738, Addr 0
+	CLOSED FB=> Rack 0, DB 738, Addr 1
+Valve V739:
+	OPEN FB  => Rack 0, DB 739, Addr 0
+	CLOSED FB=> Rack 0, DB 739, Addr 1
+Valve V740:
+	OPEN FB  => Rack 0, DB 740, Addr 0
+	CLOSED FB=> Rack 0, DB 740, Addr 1
+Valve V741:
+	OPEN FB  => Rack 0, DB 741, Addr 0
+	CLOSED FB=> Rack 0, DB 741, Addr 1
+Valve V742:
+	OPEN FB  => Rack 0, DB 742, Addr 0
+	CLOSED FB=> Rack 0, DB 742, Addr 1
+Valve V743:
+	OPEN FB  => Rack 0, DB 743, Addr 0
+	CLOSED FB=> Rack 0, DB 743, Addr 1
+Valve V744:
+	OPEN FB  => Rack 0, DB 744, Addr 0
+	CLOSED FB=> Rack 0, DB 744, Addr 1
+Valve V745:
+	OPEN FB  => Rack 0, DB 745, Addr 0
+	CLOSED FB=> Rack 0, DB 745, Addr 1
+Valve V746:
+	OPEN FB  => Rack 0, DB 746, Addr 0
+	CLOSED FB=> Rack 0, DB 746, Addr 1
+Valve V747:
+	OPEN FB  => Rack 0, DB 747, Addr 0
+	CLOSED FB=> Rack 0, DB 747, Addr 1
+Valve V748:
+	OPEN FB  => Rack 0, DB 748, Addr 0
+	CLOSED FB=> Rack 0, DB 748, Addr 1
+Valve V749:
+	OPEN FB  => Rack 0, DB 749, Addr 0
+	CLOSED FB=> Rack 0, DB 749, Addr 1
+Valve V750:
+	OPEN FB  => Rack 0, DB 750, Addr 0
+	CLOSED FB=> Rack 0, DB 750, Addr 1
+Valve V751:
+	OPEN FB  => Rack 0, DB 751, Addr 0
+	CLOSED FB=> Rack 0, DB 751, Addr 1
+Valve V752:
+	OPEN FB  => Rack 0, DB 752, Addr 0
+	CLOSED FB=> Rack 0, DB 752, Addr 1
+Valve V753:
+	OPEN FB  => Rack 0, DB 753, Addr 0
+	CLOSED FB=> Rack 0, DB 753, Addr 1
+Valve V754:
+	OPEN FB  => Rack 0, DB 754, Addr 0
+	CLOSED FB=> Rack 0, DB 754, Addr 1
+Valve V755:
+	OPEN FB  => Rack 0, DB 755, Addr 0
+	CLOSED FB=> Rack 0, DB 755, Addr 1
+Valve V756:
+	OPEN FB  => Rack 0, DB 756, Addr 0
+	CLOSED FB=> Rack 0, DB 756, Addr 1
+Valve V757:
+	OPEN FB  => Rack 0, DB 757, Addr 0
+	CLOSED FB=> Rack 0, DB 757, Addr 1
+Valve V758:
+	OPEN FB  => Rack 0, DB 758, Addr 0
+	CLOSED FB=> Rack 0, DB 758, Addr 1
+Valve V759:
+	OPEN FB  => Rack 0, DB 759, Addr 0
+	CLOSED FB=> Rack 0, DB 759, Addr 1
+Valve V760:
+	OPEN FB  => Rack 0, DB 760, Addr 0
+	CLOSED FB=> Rack 0, DB 760, Addr 1
+Valve V761:
+	OPEN FB  => Rack 0, DB 761, Addr 0
+	CLOSED FB=> Rack 0, DB 761, Addr 1
+Valve V762:
+	OPEN FB  => Rack 0, DB 762, Addr 0
+	CLOSED FB=> Rack 0, DB 762, Addr 1
+Valve V763:
+	OPEN FB  => Rack 0, DB 763, Addr 0
+	CLOSED FB=> Rack 0, DB 763, Addr 1
+Valve V764:
+	OPEN FB  => Rack 0, DB 764, Addr 0
+	CLOSED FB=> Rack 0, DB 764, Addr 1
+Valve V765:
+	OPEN FB  => Rack 0, DB 765, Addr 0
+	CLOSED FB=> Rack 0, DB 765, Addr 1
+Valve V766:
+	OPEN FB  => Rack 0, DB 766, Addr 0
+	CLOSED FB=> Rack 0, DB 766, Addr 1
+Valve V767:
+	OPEN FB  => Rack 0, DB 767, Addr 0
+	CLOSED FB=> Rack 0, DB 767, Addr 1
+Valve V768:
+	OPEN FB  => Rack 0, DB 768, Addr 0
+	CLOSED FB=> Rack 0, DB 768, Addr 1
+Valve V769:
+	OPEN FB  => Rack 0, DB 769, Addr 0
+	CLOSED FB=> Rack 0, DB 769, Addr 1
+Valve V770:
+	OPEN FB  => Rack 0, DB 770, Addr 0
+	CLOSED FB=> Rack 0, DB 770, Addr 1
+Valve V771:
+	OPEN FB  => Rack 0, DB 771, Addr 0
+	CLOSED FB=> Rack 0, DB 771, Addr 1
+Valve V772:
+	OPEN FB  => Rack 0, DB 772, Addr 0
+	CLOSED FB=> Rack 0, DB 772, Addr 1
+Valve V773:
+	OPEN FB  => Rack 0, DB 773, Addr 0
+	CLOSED FB=> Rack 0, DB 773, Addr 1
+Valve V774:
+	OPEN FB  => Rack 0, DB 774, Addr 0
+	CLOSED FB=> Rack 0, DB 774, Addr 1
+Valve V775:
+	OPEN FB  => Rack 0, DB 775, Addr 0
+	CLOSED FB=> Rack 0, DB 775, Addr 1
+Valve V776:
+	OPEN FB  => Rack 0, DB 776, Addr 0
+	CLOSED FB=> Rack 0, DB 776, Addr 1
+Valve V777:
+	OPEN FB  => Rack 0, DB 777, Addr 0
+	CLOSED FB=> Rack 0, DB 777, Addr 1
+Valve V778:
+	OPEN FB  => Rack 0, DB 778, Addr 0
+	CLOSED FB=> Rack 0, DB 778, Addr 1
+Valve V779:
+	OPEN FB  => Rack 0, DB 779, Addr 0
+	CLOSED FB=> Rack 0, DB 779, Addr 1
+Valve V780:
+	OPEN FB  => Rack 0, DB 780, Addr 0
+	CLOSED FB=> Rack 0, DB 780, Addr 1
+Valve V781:
+	OPEN FB  => Rack 0, DB 781, Addr 0
+	CLOSED FB=> Rack 0, DB 781, Addr 1
+Valve V782:
+	OPEN FB  => Rack 0, DB 782, Addr 0
+	CLOSED FB=> Rack 0, DB 782, Addr 1
+Valve V783:
+	OPEN FB  => Rack 0, DB 783, Addr 0
+	CLOSED FB=> Rack 0, DB 783, Addr 1
+Valve V784:
+	OPEN FB  => Rack 0, DB 784, Addr 0
+	CLOSED FB=> Rack 0, DB 784, Addr 1
+Valve V785:
+	OPEN FB  => Rack 0, DB 785, Addr 0
+	CLOSED FB=> Rack 0, DB 785, Addr 1
+Valve V786:
+	OPEN FB  => Rack 0, DB 786, Addr 0
+	CLOSED FB=> Rack 0, DB 786, Addr 1
+Valve V787:
+	OPEN FB  => Rack 0, DB 787, Addr 0
+	CLOSED FB=> Rack 0, DB 787, Addr 1
+Valve V788:
+	OPEN FB  => Rack 0, DB 788, Addr 0
+	CLOSED FB=> Rack 0, DB 788, Addr 1
+Valve V789:
+	OPEN FB  => Rack 0, DB 789, Addr 0
+	CLOSED FB=> Rack 0, DB 789, Addr 1
+Valve V790:
+	OPEN FB  => Rack 0, DB 790, Addr 0
+	CLOSED FB=> Rack 0, DB 790, Addr 1
+Valve V791:
+	OPEN FB  => Rack 0, DB 791, Addr 0
+	CLOSED FB=> Rack 0, DB 791, Addr 1
+Valve V792:
+	OPEN FB  => Rack 0, DB 792, Addr 0
+	CLOSED FB=> Rack 0, DB 792, Addr 1
+Valve V793:
+	OPEN FB  => Rack 0, DB 793, Addr 0
+	CLOSED FB=> Rack 0, DB 793, Addr 1
+Valve V794:
+	OPEN FB  => Rack 0, DB 794, Addr 0
+	CLOSED FB=> Rack 0, DB 794, Addr 1
+Valve V795:
+	OPEN FB  => Rack 0, DB 795, Addr 0
+	CLOSED FB=> Rack 0, DB 795, Addr 1
+Valve V796:
+	OPEN FB  => Rack 0, DB 796, Addr 0
+	CLOSED FB=> Rack 0, DB 796, Addr 1
+Valve V797:
+	OPEN FB  => Rack 0, DB 797, Addr 0
+	CLOSED FB=> Rack 0, DB 797, Addr 1
+Valve V798:
+	OPEN FB  => Rack 0, DB 798, Addr 0
+	CLOSED FB=> Rack 0, DB 798, Addr 1
+Valve V799:
+	OPEN FB  => Rack 0, DB 799, Addr 0
+	CLOSED FB=> Rack 0, DB 799, Addr 1
+Valve V800:
+	OPEN FB  => Rack 0, DB 800, Addr 0
+	CLOSED FB=> Rack 0, DB 800, Addr 1
+Valve V801:
+	OPEN FB  => Rack 0, DB 801, Addr 0
+	CLOSED FB=> Rack 0, DB 801, Addr 1
+Valve V802:
+	OPEN FB  => Rack 0, DB 802, Addr 0
+	CLOSED FB=> Rack 0, DB 802, Addr 1
+Valve V803:
+	OPEN FB  => Rack 0, DB 803, Addr 0
+	CLOSED FB=> Rack 0, DB 803, Addr 1
+Valve V804:
+	OPEN FB  => Rack 0, DB 804, Addr 0
+	CLOSED FB=> Rack 0, DB 804, Addr 1
+Valve V805:
+	OPEN FB  => Rack 0, DB 805, Addr 0
+	CLOSED FB=> Rack 0, DB 805, Addr 1
+Valve V806:
+	OPEN FB  => Rack 0, DB 806, Addr 0
+	CLOSED FB=> Rack 0, DB 806, Addr 1
+Valve V807:
+	OPEN FB  => Rack 0, DB 807, Addr 0
+	CLOSED FB=> Rack 0, DB 807, Addr 1
+Valve V808:
+	OPEN FB  => Rack 0, DB 808, Addr 0
+	CLOSED FB=> Rack 0, DB 808, Addr 1
+Valve V809:
+	OPEN FB  => Rack 0, DB 809, Addr 0
+	CLOSED FB=> Rack 0, DB 809, Addr 1
+Valve V810:
+	OPEN FB  => Rack 0, DB 810, Addr 0
+	CLOSED FB=> Rack 0, DB 810, Addr 1
+Valve V811:
+	OPEN FB  => Rack 0, DB 811, Addr 0
+	CLOSED FB=> Rack 0, DB 811, Addr 1
+Valve V812:
+	OPEN FB  => Rack 0, DB 812, Addr 0
+	CLOSED FB=> Rack 0, DB 812, Addr 1
+Valve V813:
+	OPEN FB  => Rack 0, DB 813, Addr 0
+	CLOSED FB=> Rack 0, DB 813, Addr 1
+Valve V814:
+	OPEN FB  => Rack 0, DB 814, Addr 0
+	CLOSED FB=> Rack 0, DB 814, Addr 1
+Valve V815:
+	OPEN FB  => Rack 0, DB 815, Addr 0
+	CLOSED FB=> Rack 0, DB 815, Addr 1
+Valve V816:
+	OPEN FB  => Rack 0, DB 816, Addr 0
+	CLOSED FB=> Rack 0, DB 816, Addr 1
+Valve V817:
+	OPEN FB  => Rack 0, DB 817, Addr 0
+	CLOSED FB=> Rack 0, DB 817, Addr 1
+Valve V818:
+	OPEN FB  => Rack 0, DB 818, Addr 0
+	CLOSED FB=> Rack 0, DB 818, Addr 1
+Valve V819:
+	OPEN FB  => Rack 0, DB 819, Addr 0
+	CLOSED FB=> Rack 0, DB 819, Addr 1
+Valve V820:
+	OPEN FB  => Rack 0, DB 820, Addr 0
+	CLOSED FB=> Rack 0, DB 820, Addr 1
+Valve V821:
+	OPEN FB  => Rack 0, DB 821, Addr 0
+	CLOSED FB=> Rack 0, DB 821, Addr 1
+Valve V822:
+	OPEN FB  => Rack 0, DB 822, Addr 0
+	CLOSED FB=> Rack 0, DB 822, Addr 1
+Valve V823:
+	OPEN FB  => Rack 0, DB 823, Addr 0
+	CLOSED FB=> Rack 0, DB 823, Addr 1
+Valve V824:
+	OPEN FB  => Rack 0, DB 824, Addr 0
+	CLOSED FB=> Rack 0, DB 824, Addr 1
+Valve V825:
+	OPEN FB  => Rack 0, DB 825, Addr 0
+	CLOSED FB=> Rack 0, DB 825, Addr 1
+Valve V826:
+	OPEN FB  => Rack 0, DB 826, Addr 0
+	CLOSED FB=> Rack 0, DB 826, Addr 1
+Valve V827:
+	OPEN FB  => Rack 0, DB 827, Addr 0
+	CLOSED FB=> Rack 0, DB 827, Addr 1
+Valve V828:
+	OPEN FB  => Rack 0, DB 828, Addr 0
+	CLOSED FB=> Rack 0, DB 828, Addr 1
+Valve V829:
+	OPEN FB  => Rack 0, DB 829, Addr 0
+	CLOSED FB=> Rack 0, DB 829, Addr 1
+Valve V830:
+	OPEN FB  => Rack 0, DB 830, Addr 0
+	CLOSED FB=> Rack 0, DB 830, Addr 1
+Valve V831:
+	OPEN FB  => Rack 0, DB 831, Addr 0
+	CLOSED FB=> Rack 0, DB 831, Addr 1
+Valve V832:
+	OPEN FB  => Rack 0, DB 832, Addr 0
+	CLOSED FB=> Rack 0, DB 832, Addr 1
+Valve V833:
+	OPEN FB  => Rack 0, DB 833, Addr 0
+	CLOSED FB=> Rack 0, DB 833, Addr 1
+Valve V834:
+	OPEN FB  => Rack 0, DB 834, Addr 0
+	CLOSED FB=> Rack 0, DB 834, Addr 1
+Valve V835:
+	OPEN FB  => Rack 0, DB 835, Addr 0
+	CLOSED FB=> Rack 0, DB 835, Addr 1
+Valve V836:
+	OPEN FB  => Rack 0, DB 836, Addr 0
+	CLOSED FB=> Rack 0, DB 836, Addr 1
+Valve V837:
+	OPEN FB  => Rack 0, DB 837, Addr 0
+	CLOSED FB=> Rack 0, DB 837, Addr 1
+Valve V838:
+	OPEN FB  => Rack 0, DB 838, Addr 0
+	CLOSED FB=> Rack 0, DB 838, Addr 1
+Valve V839:
+	OPEN FB  => Rack 0, DB 839, Addr 0
+	CLOSED FB=> Rack 0, DB 839, Addr 1
+Valve V840:
+	OPEN FB  => Rack 0, DB 840, Addr 0
+	CLOSED FB=> Rack 0, DB 840, Addr 1
+Valve V841:
+	OPEN FB  => Rack 0, DB 841, Addr 0
+	CLOSED FB=> Rack 0, DB 841, Addr 1
+Valve V842:
+	OPEN FB  => Rack 0, DB 842, Addr 0
+	CLOSED FB=> Rack 0, DB 842, Addr 1
+Valve V843:
+	OPEN FB  => Rack 0, DB 843, Addr 0
+	CLOSED FB=> Rack 0, DB 843, Addr 1
+Valve V844:
+	OPEN FB  => Rack 0, DB 844, Addr 0
+	CLOSED FB=> Rack 0, DB 844, Addr 1
+Valve V845:
+	OPEN FB  => Rack 0, DB 845, Addr 0
+	CLOSED FB=> Rack 0, DB 845, Addr 1
+Valve V846:
+	OPEN FB  => Rack 0, DB 846, Addr 0
+	CLOSED FB=> Rack 0, DB 846, Addr 1
+Valve V847:
+	OPEN FB  => Rack 0, DB 847, Addr 0
+	CLOSED FB=> Rack 0, DB 847, Addr 1
+Valve V848:
+	OPEN FB  => Rack 0, DB 848, Addr 0
+	CLOSED FB=> Rack 0, DB 848, Addr 1
+Valve V849:
+	OPEN FB  => Rack 0, DB 849, Addr 0
+	CLOSED FB=> Rack 0, DB 849, Addr 1
+Valve V850:
+	OPEN FB  => Rack 0, DB 850, Addr 0
+	CLOSED FB=> Rack 0, DB 850, Addr 1
+Valve V851:
+	OPEN FB  => Rack 0, DB 851, Addr 0
+	CLOSED FB=> Rack 0, DB 851, Addr 1
+Valve V852:
+	OPEN FB  => Rack 0, DB 852, Addr 0
+	CLOSED FB=> Rack 0, DB 852, Addr 1
+Valve V853:
+	OPEN FB  => Rack 0, DB 853, Addr 0
+	CLOSED FB=> Rack 0, DB 853, Addr 1
+Valve V854:
+	OPEN FB  => Rack 0, DB 854, Addr 0
+	CLOSED FB=> Rack 0, DB 854, Addr 1
+Valve V855:
+	OPEN FB  => Rack 0, DB 855, Addr 0
+	CLOSED FB=> Rack 0, DB 855, Addr 1
+Valve V856:
+	OPEN FB  => Rack 0, DB 856, Addr 0
+	CLOSED FB=> Rack 0, DB 856, Addr 1
+Valve V857:
+	OPEN FB  => Rack 0, DB 857, Addr 0
+	CLOSED FB=> Rack 0, DB 857, Addr 1
+Valve V858:
+	OPEN FB  => Rack 0, DB 858, Addr 0
+	CLOSED FB=> Rack 0, DB 858, Addr 1
+Valve V859:
+	OPEN FB  => Rack 0, DB 859, Addr 0
+	CLOSED FB=> Rack 0, DB 859, Addr 1
+Valve V860:
+	OPEN FB  => Rack 0, DB 860, Addr 0
+	CLOSED FB=> Rack 0, DB 860, Addr 1
+Valve V861:
+	OPEN FB  => Rack 0, DB 861, Addr 0
+	CLOSED FB=> Rack 0, DB 861, Addr 1
+Valve V862:
+	OPEN FB  => Rack 0, DB 862, Addr 0
+	CLOSED FB=> Rack 0, DB 862, Addr 1
+Valve V863:
+	OPEN FB  => Rack 0, DB 863, Addr 0
+	CLOSED FB=> Rack 0, DB 863, Addr 1
+Valve V864:
+	OPEN FB  => Rack 0, DB 864, Addr 0
+	CLOSED FB=> Rack 0, DB 864, Addr 1
+Valve V865:
+	OPEN FB  => Rack 0, DB 865, Addr 0
+	CLOSED FB=> Rack 0, DB 865, Addr 1
+Valve V866:
+	OPEN FB  => Rack 0, DB 866, Addr 0
+	CLOSED FB=> Rack 0, DB 866, Addr 1
+Valve V867:
+	OPEN FB  => Rack 0, DB 867, Addr 0
+	CLOSED FB=> Rack 0, DB 867, Addr 1
+Valve V868:
+	OPEN FB  => Rack 0, DB 868, Addr 0
+	CLOSED FB=> Rack 0, DB 868, Addr 1
+Valve V869:
+	OPEN FB  => Rack 0, DB 869, Addr 0
+	CLOSED FB=> Rack 0, DB 869, Addr 1
+Valve V870:
+	OPEN FB  => Rack 0, DB 870, Addr 0
+	CLOSED FB=> Rack 0, DB 870, Addr 1
+Valve V871:
+	OPEN FB  => Rack 0, DB 871, Addr 0
+	CLOSED FB=> Rack 0, DB 871, Addr 1
+Valve V872:
+	OPEN FB  => Rack 0, DB 872, Addr 0
+	CLOSED FB=> Rack 0, DB 872, Addr 1
+Valve V873:
+	OPEN FB  => Rack 0, DB 873, Addr 0
+	CLOSED FB=> Rack 0, DB 873, Addr 1
+Valve V874:
+	OPEN FB  => Rack 0, DB 874, Addr 0
+	CLOSED FB=> Rack 0, DB 874, Addr 1
+Valve V875:
+	OPEN FB  => Rack 0, DB 875, Addr 0
+	CLOSED FB=> Rack 0, DB 875, Addr 1
+Valve V876:
+	OPEN FB  => Rack 0, DB 876, Addr 0
+	CLOSED FB=> Rack 0, DB 876, Addr 1
+Valve V877:
+	OPEN FB  => Rack 0, DB 877, Addr 0
+	CLOSED FB=> Rack 0, DB 877, Addr 1
+Valve V878:
+	OPEN FB  => Rack 0, DB 878, Addr 0
+	CLOSED FB=> Rack 0, DB 878, Addr 1
+Valve V879:
+	OPEN FB  => Rack 0, DB 879, Addr 0
+	CLOSED FB=> Rack 0, DB 879, Addr 1
+Valve V880:
+	OPEN FB  => Rack 0, DB 880, Addr 0
+	CLOSED FB=> Rack 0, DB 880, Addr 1
+Valve V881:
+	OPEN FB  => Rack 0, DB 881, Addr 0
+	CLOSED FB=> Rack 0, DB 881, Addr 1
+Valve V882:
+	OPEN FB  => Rack 0, DB 882, Addr 0
+	CLOSED FB=> Rack 0, DB 882, Addr 1
+Valve V883:
+	OPEN FB  => Rack 0, DB 883, Addr 0
+	CLOSED FB=> Rack 0, DB 883, Addr 1
+Valve V884:
+	OPEN FB  => Rack 0, DB 884, Addr 0
+	CLOSED FB=> Rack 0, DB 884, Addr 1
+Valve V885:
+	OPEN FB  => Rack 0, DB 885, Addr 0
+	CLOSED FB=> Rack 0, DB 885, Addr 1
+Valve V886:
+	OPEN FB  => Rack 0, DB 886, Addr 0
+	CLOSED FB=> Rack 0, DB 886, Addr 1
+Valve V887:
+	OPEN FB  => Rack 0, DB 887, Addr 0
+	CLOSED FB=> Rack 0, DB 887, Addr 1
+Valve V888:
+	OPEN FB  => Rack 0, DB 888, Addr 0
+	CLOSED FB=> Rack 0, DB 888, Addr 1
+Valve V889:
+	OPEN FB  => Rack 0, DB 889, Addr 0
+	CLOSED FB=> Rack 0, DB 889, Addr 1
+Valve V890:
+	OPEN FB  => Rack 0, DB 890, Addr 0
+	CLOSED FB=> Rack 0, DB 890, Addr 1
+Valve V891:
+	OPEN FB  => Rack 0, DB 891, Addr 0
+	CLOSED FB=> Rack 0, DB 891, Addr 1
+Valve V892:
+	OPEN FB  => Rack 0, DB 892, Addr 0
+	CLOSED FB=> Rack 0, DB 892, Addr 1
+Valve V893:
+	OPEN FB  => Rack 0, DB 893, Addr 0
+	CLOSED FB=> Rack 0, DB 893, Addr 1
+Valve V894:
+	OPEN FB  => Rack 0, DB 894, Addr 0
+	CLOSED FB=> Rack 0, DB 894, Addr 1
+Valve V895:
+	OPEN FB  => Rack 0, DB 895, Addr 0
+	CLOSED FB=> Rack 0, DB 895, Addr 1
+Valve V896:
+	OPEN FB  => Rack 0, DB 896, Addr 0
+	CLOSED FB=> Rack 0, DB 896, Addr 1
+Valve V897:
+	OPEN FB  => Rack 0, DB 897, Addr 0
+	CLOSED FB=> Rack 0, DB 897, Addr 1
+Valve V898:
+	OPEN FB  => Rack 0, DB 898, Addr 0
+	CLOSED FB=> Rack 0, DB 898, Addr 1
+Valve V899:
+	OPEN FB  => Rack 0, DB 899, Addr 0
+	CLOSED FB=> Rack 0, DB 899, Addr 1
+Valve V900:
+	OPEN FB  => Rack 0, DB 900, Addr 0
+	CLOSED FB=> Rack 0, DB 900, Addr 1
+Valve V901:
+	OPEN FB  => Rack 0, DB 901, Addr 0
+	CLOSED FB=> Rack 0, DB 901, Addr 1
+Valve V902:
+	OPEN FB  => Rack 0, DB 902, Addr 0
+	CLOSED FB=> Rack 0, DB 902, Addr 1
+Valve V903:
+	OPEN FB  => Rack 0, DB 903, Addr 0
+	CLOSED FB=> Rack 0, DB 903, Addr 1
+Valve V904:
+	OPEN FB  => Rack 0, DB 904, Addr 0
+	CLOSED FB=> Rack 0, DB 904, Addr 1
+Valve V905:
+	OPEN FB  => Rack 0, DB 905, Addr 0
+	CLOSED FB=> Rack 0, DB 905, Addr 1
+Valve V906:
+	OPEN FB  => Rack 0, DB 906, Addr 0
+	CLOSED FB=> Rack 0, DB 906, Addr 1
+Valve V907:
+	OPEN FB  => Rack 0, DB 907, Addr 0
+	CLOSED FB=> Rack 0, DB 907, Addr 1
+Valve V908:
+	OPEN FB  => Rack 0, DB 908, Addr 0
+	CLOSED FB=> Rack 0, DB 908, Addr 1
+Valve V909:
+	OPEN FB  => Rack 0, DB 909, Addr 0
+	CLOSED FB=> Rack 0, DB 909, Addr 1
+Valve V910:
+	OPEN FB  => Rack 0, DB 910, Addr 0
+	CLOSED FB=> Rack 0, DB 910, Addr 1
+Valve V911:
+	OPEN FB  => Rack 0, DB 911, Addr 0
+	CLOSED FB=> Rack 0, DB 911, Addr 1
+Valve V912:
+	OPEN FB  => Rack 0, DB 912, Addr 0
+	CLOSED FB=> Rack 0, DB 912, Addr 1
+Valve V913:
+	OPEN FB  => Rack 0, DB 913, Addr 0
+	CLOSED FB=> Rack 0, DB 913, Addr 1
+Valve V914:
+	OPEN FB  => Rack 0, DB 914, Addr 0
+	CLOSED FB=> Rack 0, DB 914, Addr 1
+Valve V915:
+	OPEN FB  => Rack 0, DB 915, Addr 0
+	CLOSED FB=> Rack 0, DB 915, Addr 1
+Valve V916:
+	OPEN FB  => Rack 0, DB 916, Addr 0
+	CLOSED FB=> Rack 0, DB 916, Addr 1
+Valve V917:
+	OPEN FB  => Rack 0, DB 917, Addr 0
+	CLOSED FB=> Rack 0, DB 917, Addr 1
+Valve V918:
+	OPEN FB  => Rack 0, DB 918, Addr 0
+	CLOSED FB=> Rack 0, DB 918, Addr 1
+Valve V919:
+	OPEN FB  => Rack 0, DB 919, Addr 0
+	CLOSED FB=> Rack 0, DB 919, Addr 1
+Valve V920:
+	OPEN FB  => Rack 0, DB 920, Addr 0
+	CLOSED FB=> Rack 0, DB 920, Addr 1
+Valve V921:
+	OPEN FB  => Rack 0, DB 921, Addr 0
+	CLOSED FB=> Rack 0, DB 921, Addr 1
+Valve V922:
+	OPEN FB  => Rack 0, DB 922, Addr 0
+	CLOSED FB=> Rack 0, DB 922, Addr 1
+Valve V923:
+	OPEN FB  => Rack 0, DB 923, Addr 0
+	CLOSED FB=> Rack 0, DB 923, Addr 1
+Valve V924:
+	OPEN FB  => Rack 0, DB 924, Addr 0
+	CLOSED FB=> Rack 0, DB 924, Addr 1
+Valve V925:
+	OPEN FB  => Rack 0, DB 925, Addr 0
+	CLOSED FB=> Rack 0, DB 925, Addr 1
+Valve V926:
+	OPEN FB  => Rack 0, DB 926, Addr 0
+	CLOSED FB=> Rack 0, DB 926, Addr 1
+Valve V927:
+	OPEN FB  => Rack 0, DB 927, Addr 0
+	CLOSED FB=> Rack 0, DB 927, Addr 1
+Valve V928:
+	OPEN FB  => Rack 0, DB 928, Addr 0
+	CLOSED FB=> Rack 0, DB 928, Addr 1
+Valve V929:
+	OPEN FB  => Rack 0, DB 929, Addr 0
+	CLOSED FB=> Rack 0, DB 929, Addr 1
+Valve V930:
+	OPEN FB  => Rack 0, DB 930, Addr 0
+	CLOSED FB=> Rack 0, DB 930, Addr 1
+Valve V931:
+	OPEN FB  => Rack 0, DB 931, Addr 0
+	CLOSED FB=> Rack 0, DB 931, Addr 1
+Valve V932:
+	OPEN FB  => Rack 0, DB 932, Addr 0
+	CLOSED FB=> Rack 0, DB 932, Addr 1
+Valve V933:
+	OPEN FB  => Rack 0, DB 933, Addr 0
+	CLOSED FB=> Rack 0, DB 933, Addr 1
+Valve V934:
+	OPEN FB  => Rack 0, DB 934, Addr 0
+	CLOSED FB=> Rack 0, DB 934, Addr 1
+Valve V935:
+	OPEN FB  => Rack 0, DB 935, Addr 0
+	CLOSED FB=> Rack 0, DB 935, Addr 1
+Valve V936:
+	OPEN FB  => Rack 0, DB 936, Addr 0
+	CLOSED FB=> Rack 0, DB 936, Addr 1
+Valve V937:
+	OPEN FB  => Rack 0, DB 937, Addr 0
+	CLOSED FB=> Rack 0, DB 937, Addr 1
+Valve V938:
+	OPEN FB  => Rack 0, DB 938, Addr 0
+	CLOSED FB=> Rack 0, DB 938, Addr 1
+Valve V939:
+	OPEN FB  => Rack 0, DB 939, Addr 0
+	CLOSED FB=> Rack 0, DB 939, Addr 1
+Valve V940:
+	OPEN FB  => Rack 0, DB 940, Addr 0
+	CLOSED FB=> Rack 0, DB 940, Addr 1
+Valve V941:
+	OPEN FB  => Rack 0, DB 941, Addr 0
+	CLOSED FB=> Rack 0, DB 941, Addr 1
+Valve V942:
+	OPEN FB  => Rack 0, DB 942, Addr 0
+	CLOSED FB=> Rack 0, DB 942, Addr 1
+Valve V943:
+	OPEN FB  => Rack 0, DB 943, Addr 0
+	CLOSED FB=> Rack 0, DB 943, Addr 1
+Valve V944:
+	OPEN FB  => Rack 0, DB 944, Addr 0
+	CLOSED FB=> Rack 0, DB 944, Addr 1
+Valve V945:
+	OPEN FB  => Rack 0, DB 945, Addr 0
+	CLOSED FB=> Rack 0, DB 945, Addr 1
+Valve V946:
+	OPEN FB  => Rack 0, DB 946, Addr 0
+	CLOSED FB=> Rack 0, DB 946, Addr 1
+Valve V947:
+	OPEN FB  => Rack 0, DB 947, Addr 0
+	CLOSED FB=> Rack 0, DB 947, Addr 1
+Valve V948:
+	OPEN FB  => Rack 0, DB 948, Addr 0
+	CLOSED FB=> Rack 0, DB 948, Addr 1
+Valve V949:
+	OPEN FB  => Rack 0, DB 949, Addr 0
+	CLOSED FB=> Rack 0, DB 949, Addr 1
+Valve V950:
+	OPEN FB  => Rack 0, DB 950, Addr 0
+	CLOSED FB=> Rack 0, DB 950, Addr 1
+Valve V951:
+	OPEN FB  => Rack 0, DB 951, Addr 0
+	CLOSED FB=> Rack 0, DB 951, Addr 1
+Valve V952:
+	OPEN FB  => Rack 0, DB 952, Addr 0
+	CLOSED FB=> Rack 0, DB 952, Addr 1
+Valve V953:
+	OPEN FB  => Rack 0, DB 953, Addr 0
+	CLOSED FB=> Rack 0, DB 953, Addr 1
+Valve V954:
+	OPEN FB  => Rack 0, DB 954, Addr 0
+	CLOSED FB=> Rack 0, DB 954, Addr 1
+Valve V955:
+	OPEN FB  => Rack 0, DB 955, Addr 0
+	CLOSED FB=> Rack 0, DB 955, Addr 1
+Valve V956:
+	OPEN FB  => Rack 0, DB 956, Addr 0
+	CLOSED FB=> Rack 0, DB 956, Addr 1
+Valve V957:
+	OPEN FB  => Rack 0, DB 957, Addr 0
+	CLOSED FB=> Rack 0, DB 957, Addr 1
+Valve V958:
+	OPEN FB  => Rack 0, DB 958, Addr 0
+	CLOSED FB=> Rack 0, DB 958, Addr 1
+Valve V959:
+	OPEN FB  => Rack 0, DB 959, Addr 0
+	CLOSED FB=> Rack 0, DB 959, Addr 1
+Valve V960:
+	OPEN FB  => Rack 0, DB 960, Addr 0
+	CLOSED FB=> Rack 0, DB 960, Addr 1
+Valve V961:
+	OPEN FB  => Rack 0, DB 961, Addr 0
+	CLOSED FB=> Rack 0, DB 961, Addr 1
+Valve V962:
+	OPEN FB  => Rack 0, DB 962, Addr 0
+	CLOSED FB=> Rack 0, DB 962, Addr 1
+Valve V963:
+	OPEN FB  => Rack 0, DB 963, Addr 0
+	CLOSED FB=> Rack 0, DB 963, Addr 1
+Valve V964:
+	OPEN FB  => Rack 0, DB 964, Addr 0
+	CLOSED FB=> Rack 0, DB 964, Addr 1
+Valve V965:
+	OPEN FB  => Rack 0, DB 965, Addr 0
+	CLOSED FB=> Rack 0, DB 965, Addr 1
+Valve V966:
+	OPEN FB  => Rack 0, DB 966, Addr 0
+	CLOSED FB=> Rack 0, DB 966, Addr 1
+Valve V967:
+	OPEN FB  => Rack 0, DB 967, Addr 0
+	CLOSED FB=> Rack 0, DB 967, Addr 1
+Valve V968:
+	OPEN FB  => Rack 0, DB 968, Addr 0
+	CLOSED FB=> Rack 0, DB 968, Addr 1
+Valve V969:
+	OPEN FB  => Rack 0, DB 969, Addr 0
+	CLOSED FB=> Rack 0, DB 969, Addr 1
+Valve V970:
+	OPEN FB  => Rack 0, DB 970, Addr 0
+	CLOSED FB=> Rack 0, DB 970, Addr 1
+Valve V971:
+	OPEN FB  => Rack 0, DB 971, Addr 0
+	CLOSED FB=> Rack 0, DB 971, Addr 1
+Valve V972:
+	OPEN FB  => Rack 0, DB 972, Addr 0
+	CLOSED FB=> Rack 0, DB 972, Addr 1
+Valve V973:
+	OPEN FB  => Rack 0, DB 973, Addr 0
+	CLOSED FB=> Rack 0, DB 973, Addr 1
+Valve V974:
+	OPEN FB  => Rack 0, DB 974, Addr 0
+	CLOSED FB=> Rack 0, DB 974, Addr 1
+Valve V975:
+	OPEN FB  => Rack 0, DB 975, Addr 0
+	CLOSED FB=> Rack 0, DB 975, Addr 1
+Valve V976:
+	OPEN FB  => Rack 0, DB 976, Addr 0
+	CLOSED FB=> Rack 0, DB 976, Addr 1
+Valve V977:
+	OPEN FB  => Rack 0, DB 977, Addr 0
+	CLOSED FB=> Rack 0, DB 977, Addr 1
+Valve V978:
+	OPEN FB  => Rack 0, DB 978, Addr 0
+	CLOSED FB=> Rack 0, DB 978, Addr 1
+Valve V979:
+	OPEN FB  => Rack 0, DB 979, Addr 0
+	CLOSED FB=> Rack 0, DB 979, Addr 1
+Valve V980:
+	OPEN FB  => Rack 0, DB 980, Addr 0
+	CLOSED FB=> Rack 0, DB 980, Addr 1
+Valve V981:
+	OPEN FB  => Rack 0, DB 981, Addr 0
+	CLOSED FB=> Rack 0, DB 981, Addr 1
+Valve V982:
+	OPEN FB  => Rack 0, DB 982, Addr 0
+	CLOSED FB=> Rack 0, DB 982, Addr 1
+Valve V983:
+	OPEN FB  => Rack 0, DB 983, Addr 0
+	CLOSED FB=> Rack 0, DB 983, Addr 1
+Valve V984:
+	OPEN FB  => Rack 0, DB 984, Addr 0
+	CLOSED FB=> Rack 0, DB 984, Addr 1
+Valve V985:
+	OPEN FB  => Rack 0, DB 985, Addr 0
+	CLOSED FB=> Rack 0, DB 985, Addr 1
+Valve V986:
+	OPEN FB  => Rack 0, DB 986, Addr 0
+	CLOSED FB=> Rack 0, DB 986, Addr 1
+Valve V987:
+	OPEN FB  => Rack 0, DB 987, Addr 0
+	CLOSED FB=> Rack 0, DB 987, Addr 1
+Valve V988:
+	OPEN FB  => Rack 0, DB 988, Addr 0
+	CLOSED FB=> Rack 0, DB 988, Addr 1
+Valve V989:
+	OPEN FB  => Rack 0, DB 989, Addr 0
+	CLOSED FB=> Rack 0, DB 989, Addr 1
+Valve V990:
+	OPEN FB  => Rack 0, DB 990, Addr 0
+	CLOSED FB=> Rack 0, DB 990, Addr 1
+Valve V991:
+	OPEN FB  => Rack 0, DB 991, Addr 0
+	CLOSED FB=> Rack 0, DB 991, Addr 1
+Valve V992:
+	OPEN FB  => Rack 0, DB 992, Addr 0
+	CLOSED FB=> Rack 0, DB 992, Addr 1
+Valve V993:
+	OPEN FB  => Rack 0, DB 993, Addr 0
+	CLOSED FB=> Rack 0, DB 993, Addr 1
+Valve V994:
+	OPEN FB  => Rack 0, DB 994, Addr 0
+	CLOSED FB=> Rack 0, DB 994, Addr 1
+Valve V995:
+	OPEN FB  => Rack 0, DB 995, Addr 0
+	CLOSED FB=> Rack 0, DB 995, Addr 1
+Valve V996:
+	OPEN FB  => Rack 0, DB 996, Addr 0
+	CLOSED FB=> Rack 0, DB 996, Addr 1
+Valve V997:
+	OPEN FB  => Rack 0, DB 997, Addr 0
+	CLOSED FB=> Rack 0, DB 997, Addr 1
+Valve V998:
+	OPEN FB  => Rack 0, DB 998, Addr 0
+	CLOSED FB=> Rack 0, DB 998, Addr 1
+Valve V999:
+	OPEN FB  => Rack 0, DB 999, Addr 0
+	CLOSED FB=> Rack 0, DB 999, Addr 1

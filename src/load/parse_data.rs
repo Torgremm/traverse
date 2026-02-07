@@ -112,10 +112,20 @@ fn validate(data: &DataFile, schema: &SchemaConfig) -> Result<()> {
 
 fn validate_type(table: &str, row: usize, col: &str, col_type: &str, value: &Value) -> Result<()> {
     let ok = match col_type {
-        "int" => value.is_i64() || value.is_u64(),
-        "float" => value.is_f64(),
+        "int" => {
+            value.is_i64()
+                || value.is_u64()
+                || value.as_str().and_then(|s| s.parse::<i64>().ok()).is_some()
+        }
+        "float" => value.is_f64() || value.as_str().and_then(|s| s.parse::<f64>().ok()).is_some(),
         "text" => value.is_string(),
-        "bool" => value.is_boolean(),
+        "bool" => {
+            value.is_boolean()
+                || value
+                    .as_str()
+                    .and_then(|s| s.parse::<bool>().ok())
+                    .is_some()
+        }
         _ => false,
     };
 
