@@ -43,7 +43,11 @@ impl Storage {
         Ok(result.rows_affected())
     }
 
-    pub fn build_scope_query(schema: &SchemaConfig, user_query: &str) -> anyhow::Result<String> {
+    pub fn build_scope_query(
+        schema: &SchemaConfig,
+        user_query: &str,
+        key: &Option<String>,
+    ) -> anyhow::Result<String> {
         let user_query = user_query.trim_end_matches(';');
 
         let root_table_name = user_query
@@ -61,6 +65,16 @@ impl Storage {
             .ok_or_else(|| anyhow!("Root table '{}' not found in schema", root_table_name))?;
 
         let pk = &root_table.primary_key;
+        let scope_key = key.as_ref().unwrap_or(pk);
+
+        let Some(_) = root_table.columns.iter().find(|c| c.name == *scope_key) else {
+            return Err(anyhow::anyhow!(
+                "{} is not a column in the root table: {}",
+                scope_key,
+                root_table_name
+            ));
+        };
+
         let mut qb: QueryBuilder<Sqlite> = QueryBuilder::new("");
 
         // CTE: Build traversal tree
@@ -70,7 +84,7 @@ impl Storage {
 
         // Base case: root table
         qb.push("  SELECT ");
-        qb.push(pk);
+        qb.push(scope_key);
         qb.push(" AS root_id, '' AS path_prefix, ");
         qb.push(pk);
         qb.push(" AS pk_value, '");

@@ -33,12 +33,12 @@ pub struct UserScript {
 #[serde(rename_all = "lowercase")]
 pub enum FetchMode {
     Raw,
-    Scope,
+    Scope(Option<String>),
 }
 
 impl Default for FetchMode {
     fn default() -> Self {
-        FetchMode::Scope
+        FetchMode::Scope(None)
     }
 }
 
@@ -70,9 +70,9 @@ impl Script {
         })
     }
     pub async fn run(&self, schema: &SchemaConfig) -> Result<()> {
-        let sql = match self.data.mode {
+        let sql = match &self.data.mode {
             FetchMode::Raw => self.data.fetch.clone(),
-            FetchMode::Scope => Storage::build_scope_query(schema, &self.data.fetch)?,
+            FetchMode::Scope(key) => Storage::build_scope_query(schema, &self.data.fetch, key)?,
         };
 
         let rows: Vec<SqliteRow> = Storage::query(&sql, &self.project_dir).await?;
@@ -101,7 +101,7 @@ impl Script {
         }
         log::debug!("{:#?}", tera.get_template_names().collect::<String>());
 
-        match self.data.mode {
+        match &self.data.mode {
             FetchMode::Raw => {
                 for row in rows {
                     let mut context = Context::new();
@@ -117,7 +117,7 @@ impl Script {
                     stdout.push_str(&out);
                 }
             }
-            FetchMode::Scope => {
+            FetchMode::Scope(key) => {
                 let mut grouped: IndexMap<String, Vec<SqliteRow>> = IndexMap::new();
                 for row in rows {
                     let root_id: String = row.try_get("root_id")?;
