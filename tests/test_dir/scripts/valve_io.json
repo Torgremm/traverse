@@ -1,4 +1,4 @@
 {
-  "fetch": "SELECT * FROM valves;",
+  "fetch": "MATCH valves RETURN *",
   "act" : "{% include \"valve_info.csv\" %}"
 }
