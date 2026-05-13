@@ -2,6 +2,15 @@
 
 Traverse is a local-file graph data tool for small project datasets. A project is a directory with a schema, source data, optional scripts/templates, and a generated graph database stored as diffable JSONL files.
 
+## Repository Layout
+
+```text
+cli/
+  Rust CLI, graph engine, stdio API, and CLI tests
+client/
+  Native frontend plan and future client implementation
+```
+
 ## Project Layout
 
 ```text
@@ -26,7 +35,15 @@ project/
 
 ## Commands
 
-Run commands from the project directory.
+Commands use the current working directory as the Traverse data project. Run them from a project directory.
+
+When working from a project directory outside `cli/`, point Cargo at the CLI manifest:
+
+```powershell
+cargo run --manifest-path D:\repo\traverse\cli\Cargo.toml -- <command>
+```
+
+When working inside a project directory under `cli/`, plain `cargo run -- <command>` also works because Cargo can find `cli/Cargo.toml` by walking up parent directories.
 
 ```powershell
 cargo run -- load
@@ -172,7 +189,7 @@ Without schema, Traverse would have to infer types, primary keys, and edges from
 Request shape:
 
 ```json
-{"id":1,"method":"project.open","params":{"path":"D:/repo/traverse/tests/test_dir"}}
+{"id":1,"method":"project.open","params":{"path":"D:/repo/traverse/cli/tests/test_dir"}}
 ```
 
 Response shape:
