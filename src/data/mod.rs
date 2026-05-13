@@ -3,7 +3,7 @@ use std::path::{Path, PathBuf};
 use crate::load::{parse_data::DataFile, parse_tables::SchemaConfig};
 use anyhow::Result;
 pub(crate) use init::validate_property_value;
-pub use init::{Graph, QueryRow, Storage};
+pub use init::{Graph, GraphNode, QueryRow, Storage};
 
 mod init;
 mod query;

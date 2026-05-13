@@ -40,6 +40,7 @@ pub struct ServerState {
     project_dir: Option<PathBuf>,
     schema: Option<SchemaConfig>,
     graph: Option<crate::data::Graph>,
+    dirty: bool,
 }
 
 impl ServerState {
@@ -48,6 +49,7 @@ impl ServerState {
             project_dir: None,
             schema: None,
             graph: None,
+            dirty: false,
         }
     }
 
@@ -77,12 +79,11 @@ impl ServerState {
             "project.status" => Ok(json!({
                 "open": self.project_dir.is_some(),
                 "path": self.project_dir.as_ref().map(|path| path.display().to_string()),
+                "dirty": self.dirty,
             })),
             "project.save" => {
-                let project_dir = self.project_dir()?;
-                let schema = self.schema()?;
-                data::save(schema.clone(), project_dir).await?;
-                Ok(json!({ "saved": true }))
+                self.flush_graph()?;
+                Ok(json!({ "saved": true, "dirty": self.dirty }))
             }
             "types.list" => {
                 let schema = self.schema()?;
@@ -116,7 +117,10 @@ impl ServerState {
                 let output = script.render(self.schema()?).await?;
                 Ok(json!({ "output": output }))
             }
-            "shutdown" => Ok(json!({ "shutdown": true })),
+            "shutdown" => {
+                self.flush_graph()?;
+                Ok(json!({ "shutdown": true, "dirty": self.dirty }))
+            }
             method => bail!("Unknown method `{}`", method),
         }
     }
@@ -141,6 +145,7 @@ impl ServerState {
         self.project_dir = Some(project_dir);
         self.schema = Some(schema);
         self.graph = Some(graph);
+        self.dirty = false;
         Ok(result)
     }
 
@@ -152,7 +157,6 @@ impl ServerState {
             .ok_or_else(|| anyhow!("Missing object parameter `properties`"))?;
 
         let schema = self.schema()?.clone();
-        let project_dir = self.project_dir()?.to_path_buf();
         let graph = self.graph()?;
         let node = graph
             .nodes
@@ -189,7 +193,6 @@ impl ServerState {
         }
 
         let rebuilt = Storage::rebuild_graph_from_nodes(&schema, &candidate)?;
-        Storage::write_graph(&project_dir, &rebuilt)?;
         let updated = rebuilt
             .nodes
             .iter()
@@ -204,7 +207,20 @@ impl ServerState {
             }
         });
         self.graph = Some(rebuilt);
+        self.dirty = true;
         Ok(result)
+    }
+
+    fn flush_graph(&mut self) -> Result<()> {
+        if !self.dirty {
+            return Ok(());
+        }
+
+        let project_dir = self.project_dir()?;
+        let graph = self.graph()?;
+        Storage::write_graph(project_dir, graph)?;
+        self.dirty = false;
+        Ok(())
     }
 
     fn project_dir(&self) -> Result<&Path> {

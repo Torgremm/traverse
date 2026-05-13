@@ -144,6 +144,43 @@ mod tests {
         std::fs::remove_dir_all(&test_dir).unwrap();
     }
 
+    #[test]
+    fn graph_view_labels_nodes_by_schema_primary_key_not_fixture_field_names() {
+        let schema = load::parse_tables::SchemaConfig {
+            tables: vec![load::parse_tables::TableConfig {
+                name: "assets".to_string(),
+                primary_key: "code".to_string(),
+                columns: vec![
+                    load::parse_tables::ColumnConfig {
+                        name: "code".to_string(),
+                        col_type: "text".to_string(),
+                    },
+                    load::parse_tables::ColumnConfig {
+                        name: "description".to_string(),
+                        col_type: "text".to_string(),
+                    },
+                ],
+                foreign_keys: vec![],
+            }],
+        };
+        let graph = data::Graph {
+            nodes: vec![data::GraphNode {
+                id: "assets:A-1".to_string(),
+                label: "assets".to_string(),
+                properties: [
+                    ("code".to_string(), serde_json::json!("A-1")),
+                    ("description".to_string(), serde_json::json!("Pump")),
+                ]
+                .into_iter()
+                .collect(),
+            }],
+            edges: vec![],
+        };
+
+        let view = data::Storage::graph_view_for_graph(&schema, &graph);
+        assert_eq!(view["nodes"][0]["label"], "A-1");
+    }
+
     #[tokio::test]
     async fn stdio_api_opens_project_reads_and_mutates_state() {
         let test_dir = temp_project();
@@ -184,6 +221,78 @@ mod tests {
             update.result.unwrap()["node"]["properties"]["open_feedback"],
             "IO_OPEN_2"
         );
+
+        let graph = data::Storage::read_graph(&test_dir).unwrap();
+        let edge = graph
+            .edges
+            .iter()
+            .find(|edge| edge.from == "valves:V001" && edge.label == "open_feedback")
+            .unwrap();
+        assert_eq!(edge.to, "io:IO_OPEN_1");
+
+        let status = state
+            .handle_request(server::ApiRequest {
+                id: 4.into(),
+                method: "project.status".to_string(),
+                params: serde_json::json!({}),
+            })
+            .await;
+        assert_eq!(status.result.unwrap()["dirty"], true);
+
+        let save = state
+            .handle_request(server::ApiRequest {
+                id: 5.into(),
+                method: "project.save".to_string(),
+                params: serde_json::json!({}),
+            })
+            .await;
+        assert!(save.ok);
+        assert_eq!(save.result.unwrap()["dirty"], false);
+
+        let graph = data::Storage::read_graph(&test_dir).unwrap();
+        let edge = graph
+            .edges
+            .iter()
+            .find(|edge| edge.from == "valves:V001" && edge.label == "open_feedback")
+            .unwrap();
+        assert_eq!(edge.to, "io:IO_OPEN_2");
+
+        std::fs::remove_dir_all(&test_dir).unwrap();
+    }
+
+    #[tokio::test]
+    async fn stdio_api_flushes_dirty_graph_on_shutdown() {
+        let test_dir = temp_project();
+        let mut state = server::ServerState::new();
+
+        state
+            .handle_request(server::ApiRequest {
+                id: 1.into(),
+                method: "project.open".to_string(),
+                params: serde_json::json!({ "path": test_dir.display().to_string() }),
+            })
+            .await;
+
+        state
+            .handle_request(server::ApiRequest {
+                id: 2.into(),
+                method: "node.update".to_string(),
+                params: serde_json::json!({
+                    "id": "valves:V001",
+                    "properties": { "open_feedback": "IO_OPEN_2" }
+                }),
+            })
+            .await;
+
+        let shutdown = state
+            .handle_request(server::ApiRequest {
+                id: 3.into(),
+                method: "shutdown".to_string(),
+                params: serde_json::json!({}),
+            })
+            .await;
+        assert!(shutdown.ok);
+        assert_eq!(shutdown.result.unwrap()["dirty"], false);
 
         let graph = data::Storage::read_graph(&test_dir).unwrap();
         let edge = graph

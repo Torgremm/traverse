@@ -35,7 +35,7 @@ cargo run -- load
 Loads `schema.json` and `data/*.json`, validates the data, and writes `graph/nodes.jsonl` and `graph/edges.jsonl`.
 
 ```powershell
-cargo run -- query "MATCH valves RETURN *"
+cargo run -- query "MATCH <type> RETURN *"
 ```
 
 Runs a graph query against the local graph files and prints one JSON object per returned row.
@@ -47,7 +47,7 @@ cargo run -- types
 Prints type metadata as JSON for UI clients. Each type includes its name, primary key, color, columns, declared outgoing edges, and node count.
 
 ```powershell
-cargo run -- table valves
+cargo run -- table <type>
 ```
 
 Prints a table-view JSON payload for one type. The response includes columns and rows, with each row carrying `_id` plus the schema-defined fields.
@@ -65,16 +65,16 @@ cargo run -- serve
 Starts a long-lived line-delimited JSON API over stdio. This is the preferred integration point for native frontends because the backend can keep the project graph in memory between requests.
 
 ```powershell
-cargo run -- query "MATCH valves WHERE name = V001 SET description = inlet"
+cargo run -- query "MATCH <type> WHERE <primary_key> = <value> SET <field> = <value>"
 ```
 
 Runs a mutating graph query and rewrites the graph files deterministically. The command prints the number of changed nodes.
 
 ```powershell
-cargo run -- run valve_io.json
+cargo run -- run <script>.json
 ```
 
-Runs `scripts/valve_io.json`, using templates from `templates/`, and prints the rendered result to the console. If graph files are missing, `run` loads the project data first.
+Runs the selected file from `scripts/`, using templates from `templates/`, and prints the rendered result to the console. If graph files are missing, `run` loads the project data first.
 
 ```powershell
 cargo run -- save
@@ -101,11 +101,11 @@ Supported operators:
 Examples:
 
 ```text
-MATCH valves RETURN *
-MATCH valves WHERE name = V001 RETURN name,open_feedback
-MATCH valves WHERE name = V001 TRAVERSE open_feedback DEPTH 1 RETURN *
-MATCH valves WHERE name = V001 TRAVERSE * DEPTH 2 RETURN *
-MATCH valves WHERE name = V001 SET name = V001A
+MATCH <type> RETURN *
+MATCH <type> WHERE <field> = <value> RETURN <field>,<field>
+MATCH <type> WHERE <field> = <value> TRAVERSE <edge> DEPTH 1 RETURN *
+MATCH <type> WHERE <field> = <value> TRAVERSE * DEPTH 2 RETURN *
+MATCH <type> WHERE <field> = <value> SET <field> = <new_value>
 ```
 
 Values may be bare words, quoted strings, integers, floats, or booleans.
@@ -116,8 +116,8 @@ A script is a JSON file under `scripts/`:
 
 ```json
 {
-  "fetch": "MATCH valves RETURN *",
-  "act": "{% include \"valve_info.csv\" %}"
+  "fetch": "MATCH <type> RETURN *",
+  "act": "{% include \"template.txt\" %}"
 }
 ```
 
@@ -127,9 +127,9 @@ Script modes:
 
 ```json
 {
-  "fetch": "MATCH valves RETURN *",
+  "fetch": "MATCH <type> RETURN *",
   "mode": "raw",
-  "act": "{{ name }}"
+  "act": "{{ field_name }}"
 }
 ```
 
@@ -137,9 +137,9 @@ Script modes:
 
 ```json
 {
-  "fetch": "MATCH valves RETURN *",
+  "fetch": "MATCH <type> RETURN *",
   "mode": "scope",
-  "act": "{{ open_feedback_rack }}"
+  "act": "{{ edge_field_name }}"
 }
 ```
 
@@ -205,12 +205,12 @@ shutdown       {}
 Example session:
 
 ```json
-{"id":1,"method":"project.open","params":{"path":"D:/repo/traverse/tests/test_dir"}}
+{"id":1,"method":"project.open","params":{"path":"D:/projects/example"}}
 {"id":2,"method":"types.list","params":{}}
-{"id":3,"method":"table.get","params":{"type":"valves"}}
-{"id":4,"method":"node.update","params":{"id":"valves:V001","properties":{"open_feedback":"IO_OPEN_2"}}}
-{"id":5,"method":"script.run","params":{"script":"valve_io.json"}}
+{"id":3,"method":"table.get","params":{"type":"asset"}}
+{"id":4,"method":"node.update","params":{"id":"asset:A001","properties":{"status":"active"}}}
+{"id":5,"method":"script.run","params":{"script":"report.json"}}
 {"id":6,"method":"shutdown","params":{}}
 ```
 
-`project.open` loads `schema.json` and graph JSONL files into memory. If graph files are missing, it imports from `data/*.json` first. `node.update` validates fields against schema, rebuilds affected graph edges, writes deterministic graph JSONL, and keeps the in-memory graph current.
+`project.open` loads `schema.json` and graph JSONL files into memory. If graph files are missing, it imports from `data/*.json` first. `node.update` validates fields against schema, rebuilds affected graph edges in memory, and marks the project dirty. Dirty graph data is written to deterministic JSONL only on `project.save` or `shutdown`.

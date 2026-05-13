@@ -352,6 +352,11 @@ impl Storage {
             .iter()
             .map(|table| (table.name.as_str(), type_color(&table.name)))
             .collect::<HashMap<_, _>>();
+        let primary_keys = schema
+            .tables
+            .iter()
+            .map(|table| (table.name.as_str(), table.primary_key.as_str()))
+            .collect::<HashMap<_, _>>();
 
         let nodes = graph
             .nodes
@@ -360,7 +365,7 @@ impl Storage {
                 json!({
                     "id": node.id,
                     "type": node.label,
-                    "label": node_label(node),
+                    "label": node_label(&primary_keys, node),
                     "color": type_colors
                         .get(node.label.as_str())
                         .cloned()
@@ -887,10 +892,10 @@ fn type_color(label: &str) -> String {
     PALETTE[hash % PALETTE.len()].to_string()
 }
 
-fn node_label(node: &GraphNode) -> String {
-    node.properties
-        .get("name")
-        .or_else(|| node.properties.get("id"))
+fn node_label(primary_keys: &HashMap<&str, &str>, node: &GraphNode) -> String {
+    primary_keys
+        .get(node.label.as_str())
+        .and_then(|primary_key| node.properties.get(*primary_key))
         .map(value_key)
         .unwrap_or_else(|| node.id.clone())
 }
